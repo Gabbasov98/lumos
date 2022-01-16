@@ -1,4 +1,53 @@
 @import 'variables';
+@import 'cards';
+.display-1 {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 125%;
+    @media screen and (max-width: 1270px) {
+        font-size: 48px;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 36px;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: 32px;
+    }
+}
+
+.display-2 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 125%;
+    @media screen and (max-width: 1270px) {
+        font-size: 40px;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 32px;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: 24px;
+    }
+}
+
+.display-3 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 125%;
+    @media screen and (max-width: 1024px) {
+        font-size: 28px;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: 22px;
+    }
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .btn {
     display: flex;
     align-items: center;
@@ -46,5 +95,50 @@
         color: #fff;
         border-color: $black;
         background-color: $black;
+    }
+}
+
+.checkbox {
+    position: relative;
+    &:not(:first-child) {
+        margin-top: 14px;
+    }
+    input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        &:checked {
+            &+label:before {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                background-color: #5E62DA;
+                border-color: #5E62DA;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+    label {
+        font-size: 14px;
+        line-height: 143%;
+        font-weight: 400;
+        margin: 0;
+        padding-left: 36px;
+        position: relative;
+        cursor: pointer;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 24px;
+            height: 24px;
+            border: 2px solid #C5D6F1;
+            box-sizing: border-box;
+            border-radius: 8px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all .3s;
+        }
     }
 }

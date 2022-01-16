@@ -1,3 +1,232 @@
+.course-card,
+.course-card2 {
+  background: #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.05), 0px 8px 8px -4px rgba(16, 24, 40, 0.02);
+  border-radius: 24px;
+  overflow: hidden; }
+  .course-card__img,
+  .course-card2__img {
+    height: 220px;
+    overflow: hidden; }
+    .course-card__img img,
+    .course-card2__img img {
+      width: 100%;
+      display: block; }
+  .course-card__content,
+  .course-card2__content {
+    padding: 16px 24px 20px; }
+  .course-card__student,
+  .course-card2__student {
+    font-size: 14px;
+    line-height: 143%;
+    color: #74869C; }
+  .course-card__title,
+  .course-card2__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 143%;
+    margin-top: 4px; }
+  .course-card__desc,
+  .course-card2__desc {
+    font-size: 16px;
+    line-height: 150%;
+    color: #59697C;
+    margin-top: 4px; }
+
+.course-card2 {
+  border-radius: 16px; }
+  .course-card2__img {
+    height: unset; }
+  .course-card2__title {
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 0; }
+  .course-card2__content {
+    padding-bottom: 16px; }
+  .course-card2__info {
+    margin-top: 4px;
+    display: flex;
+    align-items: center; }
+  .course-card2__student {
+    font-weight: 600; }
+  .course-card2__duration {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #74869C;
+    padding-left: 11px;
+    position: relative; }
+    .course-card2__duration:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 3px;
+      height: 3px;
+      background: #59697C;
+      opacity: 0.32;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0; }
+  .course-card2__teacher {
+    font-size: 14px;
+    line-height: 20px;
+    color: #74869C;
+    margin-top: 4px; }
+
+.tarif-card {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.05), 0px 4px 6px -2px rgba(16, 24, 40, 0.025);
+  border-radius: 16px;
+  padding: 24px 24px 32px; }
+  .tarif-card__title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 129%;
+    text-align: center; }
+  .tarif-card__desc {
+    font-size: 18px;
+    line-height: 144%;
+    color: #74869C;
+    text-align: center; }
+  .tarif-card__prices {
+    margin-top: 24px;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center; }
+    .tarif-card__prices-new {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 127%; }
+    .tarif-card__prices-old {
+      font-size: 18px;
+      line-height: 144%;
+      text-decoration-line: line-through;
+      color: #74869C; }
+  .tarif-card__item {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+    display: flex; }
+    .tarif-card__item i {
+      margin-top: 4px;
+      background: #ECF2FA;
+      margin-right: 12px;
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='%2359697C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center; }
+    .tarif-card__item:nth-child(1n+5) i {
+      background-color: #F0F8ED;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='%2394C97E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+    .tarif-card__item:nth-child(1n+7) i {
+      background-color: #ECF2FA;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='%235E62DA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+  .tarif-card__btn {
+    margin-top: 24px;
+    height: 56px;
+    width: 100%;
+    border-radius: 40px;
+    font-weight: 800;
+    font-size: 16px; }
+  .tarif-card__open {
+    display: none; }
+
+@media screen and (max-width: 1024px) {
+  .course-card__img {
+    height: 180px; }
+
+  .tarif-card__items {
+    display: none; }
+  .tarif-card__btn {
+    height: 48px; }
+  .tarif-card--show .tarif-card__open svg {
+    transform: rotate(180deg); }
+  .tarif-card--show .tarif-card__open-hidden {
+    display: unset; }
+  .tarif-card--show .tarif-card__open-show {
+    display: none; }
+  .tarif-card--show .tarif-card__items {
+    display: block; }
+  .tarif-card__open {
+    display: flex;
+    width: 100%;
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #9FADBF; }
+    .tarif-card__open svg {
+      margin-right: 12px; }
+    .tarif-card__open-hidden {
+      display: none; } }
+@media screen and (max-width: 576px) {
+  .course-card__img {
+    height: unset; }
+  .course-card__content {
+    padding: 16px 12px 16px; }
+  .course-card__title {
+    font-size: 16px;
+    margin-top: 2px; }
+  .course-card__desc {
+    font-size: 14px;
+    margin-top: 2px; }
+
+  .course-card2__teacher {
+    margin-top: 1px; }
+
+  .tarif-card {
+    padding: 16px; }
+    .tarif-card__title {
+      font-size: 22px; }
+    .tarif-card__btn {
+      font-size: 14px; } }
+.display-1 {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 125%; }
+  @media screen and (max-width: 1270px) {
+    .display-1 {
+      font-size: 48px; } }
+  @media screen and (max-width: 1024px) {
+    .display-1 {
+      font-size: 36px; } }
+  @media screen and (max-width: 576px) {
+    .display-1 {
+      font-size: 32px; } }
+
+.display-2 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 125%; }
+  @media screen and (max-width: 1270px) {
+    .display-2 {
+      font-size: 40px; } }
+  @media screen and (max-width: 1024px) {
+    .display-2 {
+      font-size: 32px; } }
+  @media screen and (max-width: 576px) {
+    .display-2 {
+      font-size: 24px; } }
+
+.display-3 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 125%; }
+  @media screen and (max-width: 1024px) {
+    .display-3 {
+      font-size: 28px; } }
+  @media screen and (max-width: 576px) {
+    .display-3 {
+      font-size: 22px; } }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
 .btn {
   display: flex;
   align-items: center;
@@ -37,5 +266,42 @@
     color: #fff;
     border-color: #1B2C3E;
     background-color: #1B2C3E; }
+
+.checkbox {
+  position: relative; }
+  .checkbox:not(:first-child) {
+    margin-top: 14px; }
+  .checkbox input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0; }
+    .checkbox input:checked + label:before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-color: #5E62DA;
+      border-color: #5E62DA;
+      background-repeat: no-repeat;
+      background-position: center; }
+  .checkbox label {
+    font-size: 14px;
+    line-height: 143%;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 36px;
+    position: relative;
+    cursor: pointer; }
+    .checkbox label:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 24px;
+      height: 24px;
+      border: 2px solid #C5D6F1;
+      box-sizing: border-box;
+      border-radius: 8px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all .3s; }
 
 /*# sourceMappingURL=ux.css.map */

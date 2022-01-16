@@ -105,6 +105,7 @@ a {
     text-decoration: none !important; }
 
 button {
+  font-family: 'Mulish', sans-serif;
   cursor: pointer;
   border: none;
   outline: none;

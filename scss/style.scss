@@ -3,6 +3,9 @@
 @import 'ux';
 @import 'header';
 @import 'index';
+@import 'footer';
+@import 'categories';
+@import 'course-page';
 html {
     scroll-behavior: smooth;
 }
@@ -27,11 +30,19 @@ body {
 
 .container {
     padding: 0 15px;
+    width: 1255px;
+    margin: 0 auto;
 }
 
-@media (min-width: 1270px) {
+@media screen and (max-width: 1270px) {
     .container {
-        width: 1255px;
+        width: 1170px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 970px;
     }
 }
 
