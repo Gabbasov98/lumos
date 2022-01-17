@@ -29,6 +29,7 @@ input,
 textarea {
     outline: none !important;
     transition: all .3s;
+    font-family: 'Mulish', sans-serif;
     &::placeholder {
         color: #a8a8a8;
     }

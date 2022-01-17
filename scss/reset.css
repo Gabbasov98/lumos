@@ -26,7 +26,8 @@ button,
 input,
 textarea {
   outline: none !important;
-  transition: all .3s; }
+  transition: all .3s;
+  font-family: 'Mulish', sans-serif; }
   button::placeholder,
   input::placeholder,
   textarea::placeholder {
