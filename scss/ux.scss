@@ -160,4 +160,22 @@
     }
 }
 
+.form-group {
+    input {
+        &.input-error {
+            border: 2px solid #EC9898;
+        }
+        &:focus {
+            border: 2px solid #8B9EE6;
+        }
+    }
+}
+
+.input-error-text {
+    font-size: 12px;
+    line-height: 133%;
+    margin-top: 4px;
+    color: #CF2626;
+}
+
 @import 'cards';

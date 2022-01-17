@@ -134,6 +134,17 @@
       color: #1B2C3E;
       margin-left: 8px; }
 
+.form-group input.input-error {
+  border: 2px solid #EC9898; }
+.form-group input:focus {
+  border: 2px solid #8B9EE6; }
+
+.input-error-text {
+  font-size: 12px;
+  line-height: 133%;
+  margin-top: 4px;
+  color: #CF2626; }
+
 .course-card,
 .course-card2,
 .course-card3 {
@@ -387,6 +398,59 @@
     overflow: hidden;
     flex-grow: 1; }
 
+.blog-card {
+  background: #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.05), 0px 8px 8px -4px rgba(16, 24, 40, 0.02);
+  border-radius: 16px; }
+  .blog-card__img img {
+    width: 100%; }
+  .blog-card__content {
+    padding: 16px 24px; }
+  .blog-card__category {
+    font-size: 12px;
+    line-height: 133%;
+    color: #74869C; }
+  .blog-card__title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 4px; }
+    .blog-card__title:hover {
+      color: #5E62DA; }
+  .blog-card__desc {
+    font-size: 14px;
+    line-height: 143%;
+    color: #59697C;
+    margin-top: 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; }
+  .blog-card__bottom {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .blog-card__name, .blog-card__comments {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 143%; }
+    .blog-card__name img, .blog-card__comments img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      border-radius: 50%; }
+    .blog-card__name svg, .blog-card__comments svg {
+      margin-right: 4px; }
+  .blog-card__comments {
+    color: #9FADBF; }
+
 @media screen and (max-width: 1200px) {
   .event-card__right {
     padding: 24px 32px; } }
@@ -492,6 +556,9 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical; }
   .course-card3__content {
+    padding: 12px 16px; }
+
+  .blog-card__content {
     padding: 12px 16px; } }
 
 /*# sourceMappingURL=ux.css.map */

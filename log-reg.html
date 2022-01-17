@@ -15,6 +15,7 @@
     <div style="padding: 50px;">
         <button class="modal-target" data-modal="login1" style="width: 250px; height: 45px; border: 1px solid #000; margin-bottom: 20px;">Вход1</button>
         <button class="modal-target" data-modal="login2" style="width: 250px; height: 45px; border: 1px solid #000; margin-bottom: 20px;">Вход2</button>
+        <button class="modal-target" data-modal="reg" style="width: 250px; height: 45px; border: 1px solid #000; margin-bottom: 20px;">Регистрация</button>
     </div>
 
     <div class="modal" id="login1">
@@ -33,9 +34,10 @@
             </div>
             <div class="modal__content">
                 <form class="modal__form">
-                    <div class="modal__form-group">
+                    <div class="modal__form-group form-group">
                         <label>E-mail</label>
-                        <input type="email" placeholder="E-mail">
+                        <input class="input-error" type="email" placeholder="E-mail">
+                        <div class="input-error-text">Error message here</div>
                     </div>
                     <button class="modal__form-btn btn btn-blue">Продолжить</button>
                 </form>
@@ -90,12 +92,12 @@
                 </button>
             </div>
             <div class="modal__content">
-                <form class="modal__form">
+                <form class="modal__form form-group">
                     <div class="modal__form-group">
                         <label>E-mail</label>
                         <input type="email" placeholder="E-mail">
                     </div>
-                    <div class="modal__form-group">
+                    <div class="modal__form-group form-group">
                         <label>Пароль</label>
                         <input type="password" placeholder="Пароль">
                     </div>
@@ -106,7 +108,7 @@
         </div>
     </div>
 
-    <div class="modal modal--show" id="reg">
+    <div class="modal" id="reg">
         <div class="modal__bg"></div>
         <div class="modal-dialog">
             <div class="modal__top">
@@ -122,19 +124,19 @@
             </div>
             <div class="modal__content">
                 <form class="modal__form">
-                    <div class="modal__form-group">
+                    <div class="modal__form-group form-group">
                         <label>E-mail</label>
                         <input type="email" placeholder="E-mail">
                     </div>
-                    <div class="modal__form-group">
+                    <div class="modal__form-group form-group">
                         <label>Пароль</label>
                         <input type="password" placeholder="Пароль">
                     </div>
-                    <div class="modal__form-group">
+                    <div class="modal__form-group form-group">
                         <label>Имя Фамилия</label>
                         <input type="text" placeholder="Имя Фамилия">
                     </div>
-                    <div class="modal__form-group">
+                    <div class="modal__form-group form-group">
                         <label>Телефон</label>
                         <input type="tel" placeholder="Телефон">
                     </div>
