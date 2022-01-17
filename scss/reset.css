@@ -72,7 +72,8 @@ svg {
   flex-shrink: 0; }
 
 svg,
-path {
+path,
+rect {
   transition: all .3s; }
 
 body {

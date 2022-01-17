@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Мои курсы</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+
+            <header class='header'>
+                <div class='container'>
+                    <div class='header__inner'>
+                        <div class="header__left">
+                            <button class="header__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <a href="" class="header__logo">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                            <nav class="nav">
+                                <div class="nav__wrap">
+                                    <div class="nav__dropdown">
+                                        <div class="nav__dropdown-show">
+                                            <span>Курсы</span>
+                                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1.5L6 6.5L11 1.5" stroke="#5E62DA" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <div class="nav__dropdown-hidden">
+                                            <a href="" class="nav__dropdown-link">Программирование</a>
+                                            <a href="" class="nav__dropdown-link">Дизайн</a>
+                                            <a href="" class="nav__dropdown-link">Маркетинг</a>
+                                            <a href="" class="nav__dropdown-link">Управление</a>
+                                            <a href="" class="nav__dropdown-link">Аналитика</a>
+                                            <a href="" class="nav__dropdown-link">Фото/Видео</a>
+                                            <a href="" class="nav__dropdown-link">Бизнес</a>
+                                            <a href="" class="nav__dropdown-link">Компаниям</a>
+                                        </div>
+                                    </div>
+                                    <a href="" class="nav__item">Мероприятия</a>
+                                    <a href="" class="nav__item">Подписка</a>
+                                    <a href="" class="nav__item">О нас</a>
+                                    <a href="" class="nav__item">Новости</a>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="header__right">
+                            <div class="header__search">
+                                <input type="text" placeholder="Поиск">
+                                <button class="header__search-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="11.7659" cy="11.7659" r="8.98856" stroke="#1B2C3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.0195 18.4844L21.5436 21.9992" stroke="#1B2C3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="header__authed">
+                                <div class="header__notification ">
+                                    <div class="header__notification-show">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.50083 13.7871V13.5681C3.53295 12.9202 3.7406 12.2925 4.10236 11.7496C4.7045 11.0975 5.1167 10.2983 5.29571 9.43598C5.29571 8.7695 5.29571 8.0935 5.35393 7.42703C5.65469 4.21842 8.82728 2 11.9611 2H12.0387C15.1725 2 18.345 4.21842 18.6555 7.42703C18.7137 8.0935 18.6555 8.7695 18.704 9.43598C18.8854 10.3003 19.2972 11.1019 19.8974 11.7591C20.2618 12.2972 20.4698 12.9227 20.4989 13.5681V13.7776C20.5206 14.648 20.2208 15.4968 19.6548 16.1674C18.907 16.9515 17.8921 17.4393 16.8024 17.5384C13.607 17.8812 10.383 17.8812 7.18762 17.5384C6.09914 17.435 5.08576 16.9479 4.33521 16.1674C3.778 15.4963 3.48224 14.6526 3.50083 13.7871Z" stroke="#1B2C3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.55518 20.8518C10.0545 21.4785 10.7876 21.884 11.5925 21.9788C12.3973 22.0735 13.2074 21.8495 13.8435 21.3564C14.0391 21.2106 14.2152 21.041 14.3674 20.8518" stroke="#1B2C3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <i>2</i>
+                                    </div>
+                                    <div class="header__notification-dropdown">
+                                        <div class="header__notification-top">
+                                            <div class="header__notification-title">Уведомления</div>
+                                            <div class="header__notification-new">2 новых</div>
+                                        </div>
+                                        <div class="header__notification-items">
+                                            <div class="header__notification-item">
+                                                <i style="background: #FDF0D8;" class="header__notification-item-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17.9184 14.3201C17.6594 14.5711 17.5404 14.9341 17.5994 15.2901L18.4884 20.2101C18.5634 20.6271 18.3874 21.0491 18.0384 21.2901C17.6964 21.5401 17.2414 21.5701 16.8684 21.3701L12.4394 19.0601C12.2854 18.9781 12.1144 18.9341 11.9394 18.9291H11.6684C11.5744 18.9431 11.4824 18.9731 11.3984 19.0191L6.96839 21.3401C6.74939 21.4501 6.50139 21.4891 6.25839 21.4501C5.66639 21.3381 5.27139 20.7741 5.36839 20.1791L6.25839 15.2591C6.31739 14.9001 6.19839 14.5351 5.93939 14.2801L2.32839 10.7801C2.02639 10.4871 1.92139 10.0471 2.05939 9.65012C2.19339 9.25412 2.53539 8.96512 2.94839 8.90012L7.91839 8.17912C8.29639 8.14012 8.62839 7.91012 8.79839 7.57012L10.9884 3.08012C11.0404 2.98012 11.1074 2.88812 11.1884 2.81012L11.2784 2.74012C11.3254 2.68812 11.3794 2.64512 11.4394 2.61012L11.5484 2.57012L11.7184 2.50012H12.1394C12.5154 2.53912 12.8464 2.76412 13.0194 3.10012L15.2384 7.57012C15.3984 7.89712 15.7094 8.12412 16.0684 8.17912L21.0384 8.90012C21.4584 8.96012 21.8094 9.25012 21.9484 9.65012C22.0794 10.0511 21.9664 10.4911 21.6584 10.7801L17.9184 14.3201Z" fill="#F7B23B"/>
+                                                    </svg>
+                                                </i>
+                                                <div class="header__notification-item-content">
+                                                    <div class="header__notification-item-text">Accumsan tortor augue velit est amet lobortis. Sit pretium, urna, lobortis eget vitae sit aliquet id. Enim vitae aenean est, pharetra quis volutpat etiam lorem.</div>
+                                                    <div class="header__notification-item-date">12 сен в 12:40</div>
+                                                </div>
+                                            </div>
+                                            <div class="header__notification-item">
+                                                <i style="background: #E7F3E2;" class="header__notification-item-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1796 4.41C17.1796 3.08 18.2596 2 19.5896 2C20.9196 2 21.9996 3.08 21.9996 4.41C21.9996 5.74 20.9196 6.82 19.5896 6.82C18.2596 6.82 17.1796 5.74 17.1796 4.41ZM13.3295 14.7593L16.2195 11.0303L16.1795 11.0503C16.3395 10.8303 16.3695 10.5503 16.2595 10.3003C16.1505 10.0503 15.9095 9.8803 15.6505 9.8603C15.3795 9.8303 15.1105 9.9503 14.9495 10.1703L12.5305 13.3003L9.75951 11.1203C9.58951 10.9903 9.38951 10.9393 9.18951 10.9603C8.99051 10.9903 8.81051 11.0993 8.68951 11.2593L5.73051 15.1103L5.66951 15.2003C5.49951 15.5193 5.57951 15.9293 5.87951 16.1503C6.01951 16.2403 6.16951 16.3003 6.33951 16.3003C6.57051 16.3103 6.78951 16.1893 6.92951 16.0003L9.43951 12.7693L12.2895 14.9103L12.3795 14.9693C12.6995 15.1393 13.0995 15.0603 13.3295 14.7593ZM15.4495 3.7803C15.4095 4.0303 15.3895 4.2803 15.3895 4.5303C15.3895 6.7803 17.2095 8.5993 19.4495 8.5993C19.6995 8.5993 19.9395 8.5703 20.1895 8.5303V16.5993C20.1895 19.9903 18.1895 22.0003 14.7895 22.0003H7.40051C3.99951 22.0003 1.99951 19.9903 1.99951 16.5993V9.2003C1.99951 5.8003 3.99951 3.7803 7.40051 3.7803H15.4495Z" fill="#ACD59A"/>
+                                                    </svg>
+                                                </i>
+                                                <div class="header__notification-item-content">
+                                                    <div class="header__notification-item-text">Accumsan tortor augue velit est amet lobortis. Sit pretium, urna, lobortis eget vitae sit aliquet id.</div>
+                                                    <div class="header__notification-item-date">12 сен в 12:40</div>
+                                                </div>
+                                            </div>
+                                            <div class="header__notification-item">
+                                                <i style="background: #E9EBFE;" class="header__notification-item-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17.9184 14.3201C17.6594 14.5711 17.5404 14.9341 17.5994 15.2901L18.4884 20.2101C18.5634 20.6271 18.3874 21.0491 18.0384 21.2901C17.6964 21.5401 17.2414 21.5701 16.8684 21.3701L12.4394 19.0601C12.2854 18.9781 12.1144 18.9341 11.9394 18.9291H11.6684C11.5744 18.9431 11.4824 18.9731 11.3984 19.0191L6.96839 21.3401C6.74939 21.4501 6.50139 21.4891 6.25839 21.4501C5.66639 21.3381 5.27139 20.7741 5.36839 20.1791L6.25839 15.2591C6.31739 14.9001 6.19839 14.5351 5.93939 14.2801L2.32839 10.7801C2.02639 10.4871 1.92139 10.0471 2.05939 9.65012C2.19339 9.25412 2.53539 8.96512 2.94839 8.90012L7.91839 8.17912C8.29639 8.14012 8.62839 7.91012 8.79839 7.57012L10.9884 3.08012C11.0404 2.98012 11.1074 2.88812 11.1884 2.81012L11.2784 2.74012C11.3254 2.68812 11.3794 2.64512 11.4394 2.61012L11.5484 2.57012L11.7184 2.50012H12.1394C12.5154 2.53912 12.8464 2.76412 13.0194 3.10012L15.2384 7.57012C15.3984 7.89712 15.7094 8.12412 16.0684 8.17912L21.0384 8.90012C21.4584 8.96012 21.8094 9.25012 21.9484 9.65012C22.0794 10.0511 21.9664 10.4911 21.6584 10.7801L17.9184 14.3201Z" fill="#8C52D6"/>
+                                                    </svg>
+                                                </i>
+                                                <div class="header__notification-item-content">
+                                                    <div class="header__notification-item-text">Accumsan tortor augue velit est amet lobortis. Sit pretium, urna, lobortis eget vitae sit aliquet id. Enim vitae aenean est, pharetra quis volutpat etiam lorem.</div>
+                                                    <div class="header__notification-item-date">12 сен в 12:40</div>
+                                                </div>
+                                            </div>
+                                            <div class="header__notification-item">
+                                                <i style="background: #E9EBFE;" class="header__notification-item-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17.9184 14.3201C17.6594 14.5711 17.5404 14.9341 17.5994 15.2901L18.4884 20.2101C18.5634 20.6271 18.3874 21.0491 18.0384 21.2901C17.6964 21.5401 17.2414 21.5701 16.8684 21.3701L12.4394 19.0601C12.2854 18.9781 12.1144 18.9341 11.9394 18.9291H11.6684C11.5744 18.9431 11.4824 18.9731 11.3984 19.0191L6.96839 21.3401C6.74939 21.4501 6.50139 21.4891 6.25839 21.4501C5.66639 21.3381 5.27139 20.7741 5.36839 20.1791L6.25839 15.2591C6.31739 14.9001 6.19839 14.5351 5.93939 14.2801L2.32839 10.7801C2.02639 10.4871 1.92139 10.0471 2.05939 9.65012C2.19339 9.25412 2.53539 8.96512 2.94839 8.90012L7.91839 8.17912C8.29639 8.14012 8.62839 7.91012 8.79839 7.57012L10.9884 3.08012C11.0404 2.98012 11.1074 2.88812 11.1884 2.81012L11.2784 2.74012C11.3254 2.68812 11.3794 2.64512 11.4394 2.61012L11.5484 2.57012L11.7184 2.50012H12.1394C12.5154 2.53912 12.8464 2.76412 13.0194 3.10012L15.2384 7.57012C15.3984 7.89712 15.7094 8.12412 16.0684 8.17912L21.0384 8.90012C21.4584 8.96012 21.8094 9.25012 21.9484 9.65012C22.0794 10.0511 21.9664 10.4911 21.6584 10.7801L17.9184 14.3201Z" fill="#8C52D6"/>
+                                                    </svg>
+                                                </i>
+                                                <div class="header__notification-item-content">
+                                                    <div class="header__notification-item-text">Accumsan tortor augue velit est amet lobortis. Sit pretium, urna, lobortis eget vitae sit aliquet id. Enim vitae aenean est, pharetra quis volutpat etiam lorem.</div>
+                                                    <div class="header__notification-item-date">12 сен в 12:40</div>
+                                                </div>
+                                            </div>
+                                            <div class="header__notification-item">
+                                                <i style="background: #E9EBFE;" class="header__notification-item-icon">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17.9184 14.3201C17.6594 14.5711 17.5404 14.9341 17.5994 15.2901L18.4884 20.2101C18.5634 20.6271 18.3874 21.0491 18.0384 21.2901C17.6964 21.5401 17.2414 21.5701 16.8684 21.3701L12.4394 19.0601C12.2854 18.9781 12.1144 18.9341 11.9394 18.9291H11.6684C11.5744 18.9431 11.4824 18.9731 11.3984 19.0191L6.96839 21.3401C6.74939 21.4501 6.50139 21.4891 6.25839 21.4501C5.66639 21.3381 5.27139 20.7741 5.36839 20.1791L6.25839 15.2591C6.31739 14.9001 6.19839 14.5351 5.93939 14.2801L2.32839 10.7801C2.02639 10.4871 1.92139 10.0471 2.05939 9.65012C2.19339 9.25412 2.53539 8.96512 2.94839 8.90012L7.91839 8.17912C8.29639 8.14012 8.62839 7.91012 8.79839 7.57012L10.9884 3.08012C11.0404 2.98012 11.1074 2.88812 11.1884 2.81012L11.2784 2.74012C11.3254 2.68812 11.3794 2.64512 11.4394 2.61012L11.5484 2.57012L11.7184 2.50012H12.1394C12.5154 2.53912 12.8464 2.76412 13.0194 3.10012L15.2384 7.57012C15.3984 7.89712 15.7094 8.12412 16.0684 8.17912L21.0384 8.90012C21.4584 8.96012 21.8094 9.25012 21.9484 9.65012C22.0794 10.0511 21.9664 10.4911 21.6584 10.7801L17.9184 14.3201Z" fill="#8C52D6"/>
+                                                    </svg>
+                                                </i>
+                                                <div class="header__notification-item-content">
+                                                    <div class="header__notification-item-text">Accumsan tortor augue velit est amet lobortis. Sit pretium, urna, lobortis eget vitae sit aliquet id. Enim vitae aenean est, pharetra quis volutpat etiam lorem.</div>
+                                                    <div class="header__notification-item-date">12 сен в 12:40</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__notification-bottom">
+                                            <button class="header__notification-all">Показать все</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__lk">
+                                    <div class="header__lk-avatar">
+                                        <img src="img/avatar2.jpg" alt="">
+                                    </div>
+                                    <div class="header__lk-dropdown">
+                                        <a href="" class="header__lk-item">
+                                            <span>Олег Олегов</span>
+                                            <i></i>
+                                        </a>
+                                        <a href="" class="header__lk-item">
+                                            <span>Мои курсы</span>
+                                            <i></i>
+                                        </a>
+                                        <a href="" class="header__lk-item header__lk-item--notification">
+                                            <span>Мои мероприятия</span>
+                                            <i>1</i>
+                                        </a>
+                                        <a href="" class="header__lk-item">
+                                            <span>Служба поддержки</span>
+                                            <i></i>
+                                        </a>
+                                        <a href="" class="header__lk-item">
+                                            <span>Настройки аккаунта</span>
+                                            <i></i>
+                                        </a>
+                                        <button class="header__lk-item header__lk-item--logout">
+                                            <span>Выйти из аккаунта</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0108 4.92632V4.30432C10.0108 2.94766 8.91081 1.84766 7.55414 1.84766H4.30414C2.94814 1.84766 1.84814 2.94766 1.84814 4.30432V11.7243C1.84814 13.081 2.94814 14.181 4.30414 14.181H7.56081C8.91348 14.181 10.0108 13.0843 10.0108 11.7317V11.103" stroke="#E15A5A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14.54 8.01427H6.5127" stroke="#E15A5A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12.5874 6.07086L14.5394 8.0142L12.5874 9.9582" stroke="#E15A5A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class='cabinet-page'>
+                <div class='container'>
+                    <div class='cabinet-page__inner'>
+                        <aside class="cabinet-page__sidebar">
+                            <div class="sidebar">
+                                <a href="" class="sidebar__link">
+                                    <span>Мои курсы</span>
+                                    <i>1</i>
+                                </a>
+                                <div class="sidebar__item sidebar__item--notification">
+                                    <div class="sidebar__item-show">
+                                        <span>Мои мероприятия</span>
+                                        <i>1</i>
+                                    </div>
+                                    <div class="sidebar__item-hidden">
+                                        <a href="" class="sidebar__sublink sidebar__sublink--active">
+                                            <span>Все</span>
+                                            <i></i>
+                                        </a>
+                                        <a href="" class="sidebar__sublink">
+                                            <span>Запланированные</span>
+                                            <i></i>
+                                        </a>
+                                        <a href="" class="sidebar__sublink sidebar__sublink--notification">
+                                            <span>На модерации</span>
+                                            <i>1</i>
+                                        </a>
+                                        <a href="" class="sidebar__sublink">
+                                            <span>Завершенные</span>
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="" class="sidebar__link">
+                                    <span>Статистика</span>
+                                    <i></i>
+                                </a>
+                                <a href="" class="sidebar__link sidebar__link--notification">
+                                    <span>Служба поддержки</span>
+                                    <i>2</i>
+                                </a>
+                                <a href="" class="sidebar__link">
+                                    <span>Настройки аккаунта</span>
+                                    <i></i>
+                                </a>
+                            </div>
+                        </aside>
+                        <main class="cabinet-page__main">
+                            <div class="lkt-courses">
+                                <div class="lkt-courses__top">
+                                    <h1 class="lkt-courses__title display-3">Мои курсы</h1>
+                                    <button class="lkt-courses__add btn btn-outline">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.02858 2.66675V13.3334" stroke="#1B2C3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.3347 8.02548H2.66797" stroke="#1B2C3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Добавить</span>
+                                    </button>
+                                </div>
+                                <div class="lkt-courses__nav">
+                                    <div class="lkt-courses__nav-title">4 курса</div>
+                                    <div class="lkt-courses__nav-wrap">
+                                        <button class="lkt-courses__nav-item lkt-courses__nav-item--col lkt-courses__nav-item--active">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="9" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="17" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="1" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="9" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="17" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                            </svg>
+                                        </button>
+                                        <button class="lkt-courses__nav-item lkt-courses__nav-item--row">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="9" y="5" width="14" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="1" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="9" y="13" width="14" height="6" rx="2" fill="#C6D0DD"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="lkt-courses__items">
+                                    <div class="lkt-courses__item">
+                                        <div class="course-card3">
+                                            <div class="course-card3__img">
+                                                <img src="img/course.jpg" alt="">
+                                            </div>
+                                            <div class="course-card3__content">
+                                                <div class="course-card3__title truncate">Название курса в нескольких строках Название курса в нескольких строках</div>
+                                                <div class="course-card3__bottom">
+                                                    <div class="course-card3__students">
+                                                        <div class="course-card3__students-title">48 учеников</div>
+                                                        <div class="course-card3__students-new">8 новых</div>
+                                                    </div>
+                                                    <div class="course-card3__num">2</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lkt-courses__item">
+                                        <div class="course-card3">
+                                            <div class="course-card3__img">
+                                                <img src="img/course2.jpg" alt="">
+                                            </div>
+                                            <div class="course-card3__content">
+                                                <div class="course-card3__title truncate">Название курса в нескольких строках оооо</div>
+                                                <div class="course-card3__bottom">
+                                                    <div class="course-card3__students">
+                                                        <div class="course-card3__students-title">48 учеников</div>
+                                                        <div class="course-card3__students-new">8 новых</div>
+                                                    </div>
+                                                    <div class="course-card3__num">2</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lkt-courses__item">
+                                        <div class="course-card3">
+                                            <div class="course-card3__img">
+                                                <img src="img/course3.jpg" alt="">
+                                            </div>
+                                            <div class="course-card3__content">
+                                                <div class="course-card3__title truncate">Название курса в нескольких строках оооо</div>
+                                                <div class="course-card3__bottom">
+                                                    <div class="course-card3__students">
+                                                        <div class="course-card3__students-title">48 учеников</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lkt-courses__item">
+                                        <div class="course-card3">
+                                            <div class="course-card3__img">
+                                                <img src="img/course4.jpg" alt="">
+                                            </div>
+                                            <div class="course-card3__content">
+                                                <div class="course-card3__title truncate">Название курса в нескольких строках оооо</div>
+                                                <div class="course-card3__bottom">
+                                                    <div class="course-card3__students">
+                                                        <div class="course-card3__students-status">На модерации</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class='footer'>
+            <section class='footer-top'>
+                <div class='container'>
+                    <div class='footer-top__inner'>
+                        <div class="footer__col">
+                            <div class="footer__group">
+                                <div class="footer__title">О портале</div>
+                                <a href="" class="footer__link">Информация о нас</a>
+                                <a href="" class="footer__link">Блог</a>
+                                <a href="" class="footer__link">Партнёры</a>
+                                <a href="" class="footer__link">Для прессы</a>
+                                <a href="" class="footer__link">Наша миссия</a>
+                                <a href="" class="footer__link">Вакансии</a>
+                                <a href="" class="footer__link">Отзывы</a>
+                                <a href="" class="footer__link">Партнёрская программа</a>
+                                <a href="" class="footer__link">Часто задаваемые вопросы</a>
+                                <a href="" class="footer__link">Контакты</a>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__group">
+                                <div class="footer__title">Направления обучения</div>
+                                <a href="" class="footer__link">Программирование</a>
+                                <a href="" class="footer__link">Дизайн</a>
+                                <a href="" class="footer__link">Маркетинг</a>
+                                <a href="" class="footer__link">Управление</a>
+                                <a href="" class="footer__link">Аналитика</a>
+                                <a href="" class="footer__link">Фото/Видео</a>
+                                <a href="" class="footer__link">Бизнес</a>
+                                <a href="" class="footer__link">Компаниям</a>
+                                <a href="" class="footer__link">Пример направления 1</a>
+                                <a href="" class="footer__link">Пример направления 2</a>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__group">
+                                <div class="footer__title">Аккаунт</div>
+                                <a href="" class="footer__link">Личный кабинет</a>
+                                <a href="" class="footer__link">Рабочий кабинет</a>
+                                <a href="" class="footer__link">Выйти</a>
+                            </div>
+                            <div class="footer__group">
+                                <div class="footer__title">Информация</div>
+                                <a href="" class="footer__link">Условия пользования</a>
+                                <a href="" class="footer__link">Правила конфиденциальности</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class='footer-bottom'>
+                <div class='container'>
+                    <div class='footer-bottom__inner'>
+                        <div class="footer__by">© 2021 Люмос</div>
+                        <div class="footer__socials">
+                            <a href="" class="footer__socials-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.1743 5.32056H17V2.14082C16.685 2.09749 15.6018 2 14.3402 2C11.7079 2 9.90476 3.6557 9.90476 6.69878V9.49938H7V13.0541H9.90476V21.9983H13.4661V13.0549H16.2534L16.6959 9.50021H13.4653V7.05125C13.4661 6.02383 13.7428 5.32056 15.1743 5.32056Z" fill="#1877F2"/>
+                                </svg>
+                            </a>
+                            <a href="" class="footer__socials-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23 5.11613C22.1819 5.475 21.3101 5.71287 20.4012 5.82837C21.3362 5.27012 22.0499 4.39287 22.3854 3.3355C21.5136 3.85525 20.5511 4.22238 19.5254 4.42725C18.6976 3.54588 17.5179 3 16.2309 3C13.7339 3 11.7236 5.02675 11.7236 7.51138C11.7236 7.86888 11.7539 8.21262 11.8281 8.53987C8.0785 8.357 4.76062 6.55988 2.53175 3.82225C2.14262 4.49738 1.91437 5.27012 1.91437 6.102C1.91437 7.664 2.71875 9.04862 3.91775 9.85025C3.19312 9.8365 2.48225 9.62612 1.88 9.29475C1.88 9.3085 1.88 9.32638 1.88 9.34425C1.88 11.536 3.44337 13.3565 5.4935 13.7759C5.12637 13.8763 4.72625 13.9244 4.311 13.9244C4.02225 13.9244 3.73075 13.9079 3.45712 13.8474C4.0415 15.6335 5.69975 16.9466 7.6715 16.9893C6.137 18.1896 4.18862 18.9129 2.07937 18.9129C1.7095 18.9129 1.35475 18.8964 1 18.851C2.99787 20.1394 5.36562 20.875 7.919 20.875C16.2185 20.875 20.756 14 20.756 8.04075C20.756 7.84137 20.7491 7.64888 20.7395 7.45775C21.6346 6.8225 22.3867 6.02912 23 5.11613Z" fill="#1DA1F2"/>
+                                </svg>
+                            </a>
+                            <a href="" class="footer__socials-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.7861 17.3664C23.7216 17.2584 23.3225 16.3913 21.4024 14.6092C19.3923 12.743 19.6623 13.0461 22.0835 9.81932C23.5581 7.85417 24.1476 6.65408 23.9631 6.14104C23.7876 5.65201 22.703 5.78102 22.703 5.78102L19.0967 5.80202C19.0967 5.80202 18.8297 5.76602 18.6302 5.88453C18.4367 6.00153 18.3122 6.27155 18.3122 6.27155C18.3122 6.27155 17.7406 7.79267 16.9786 9.08576C15.372 11.8145 14.7284 11.9585 14.4659 11.789C13.8553 11.3944 14.0084 10.2018 14.0084 9.35578C14.0084 6.71109 14.4089 5.6085 13.2268 5.32348C12.8338 5.22898 12.5458 5.16597 11.5422 5.15547C10.2551 5.14197 9.16451 5.15997 8.54796 5.46149C8.13693 5.66251 7.82041 6.11104 8.01392 6.13654C8.25244 6.16805 8.79248 6.28205 9.079 6.67208C9.44953 7.17462 9.43602 8.3057 9.43602 8.3057C9.43602 8.3057 9.64904 11.4184 8.93949 11.8055C8.45195 12.071 7.7844 11.5294 6.3518 9.05276C5.61825 7.78517 5.06321 6.38256 5.06321 6.38256C5.06321 6.38256 4.9567 6.12154 4.76618 5.98203C4.53517 5.81252 4.21114 5.75852 4.21114 5.75852L0.781892 5.77952C0.781892 5.77952 0.267354 5.79452 0.0783406 6.01804C-0.0896717 6.21755 0.0648396 6.62858 0.0648396 6.62858C0.0648396 6.62858 2.75004 12.9095 5.78926 16.0763C8.57796 18.979 11.7432 18.7885 11.7432 18.7885H13.1773C13.1773 18.7885 13.6108 18.7405 13.8313 18.502C14.0354 18.2829 14.0279 17.8719 14.0279 17.8719C14.0279 17.8719 13.9994 15.9473 14.8934 15.6637C15.774 15.3847 16.9051 17.5239 18.1037 18.3474C19.0097 18.97 19.6983 18.8335 19.6983 18.8335L22.904 18.7885C22.904 18.7885 24.5811 18.685 23.7861 17.3664Z" fill="#0077FF"/>
+                                </svg>
+                            </a>
+                            <a href="" class="footer__socials-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.7747 6.37717C22.5154 5.41325 21.7554 4.65341 20.7916 4.39386C19.0309 3.91211 11.988 3.91211 11.988 3.91211C11.988 3.91211 4.94536 3.91211 3.18466 4.3756C2.23943 4.63487 1.46091 5.41339 1.20163 6.37717C0.738281 8.13773 0.738281 11.7889 0.738281 11.7889C0.738281 11.7889 0.738281 15.4585 1.20163 17.2006C1.46118 18.1644 2.22089 18.9242 3.1848 19.1838C4.9639 19.6657 11.9883 19.6657 11.9883 19.6657C11.9883 19.6657 19.0309 19.6657 20.7916 19.2022C21.7555 18.9428 22.5154 18.1829 22.7749 17.2192C23.2381 15.4585 23.2381 11.8074 23.2381 11.8074C23.2381 11.8074 23.2567 8.13773 22.7747 6.37717ZM9.7457 15.162V8.41582L15.6022 11.7889L9.7457 15.162Z" fill="#FF0000"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="" class="footer__phone">8 800 888-88-88</a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+
+
+
+    </div>
+
+    <script src="js/swiper.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        document.querySelectorAll(".sidebar__item-show").forEach(el => {
+            el.onclick = function() {
+                this.closest(".sidebar__item").classList.toggle("sidebar__item--open")
+            }
+        });
+
+        document.querySelector(".lkt-courses__nav-item--row").onclick = function() {
+            document.querySelector(".lkt-courses__nav-item--col").classList.remove("lkt-courses__nav-item--active")
+            this.classList.add("lkt-courses__nav-item--active")
+            document.querySelector(".lkt-courses__items").classList.add("lkt-courses__items--row")
+        }
+
+        document.querySelector(".lkt-courses__nav-item--col").onclick = function() {
+            document.querySelector(".lkt-courses__nav-item--row").classList.remove("lkt-courses__nav-item--active")
+            this.classList.add("lkt-courses__nav-item--active")
+            document.querySelector(".lkt-courses__items").classList.remove("lkt-courses__items--row")
+        }
+
+        document.querySelector(".header__lk-avatar").onclick = function() {
+            document.querySelector(".header__lk-dropdown").classList.toggle("header__lk-dropdown--active")
+        }
+
+        document.querySelector(".header__notification-show").onclick = function() {
+            this.closest(".header__notification").classList.toggle("header__notification--active")
+        }
+    </script>
+
+</body>
+
+</html>

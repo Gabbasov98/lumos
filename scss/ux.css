@@ -1,188 +1,3 @@
-.course-card,
-.course-card2 {
-  background: #FFFFFF;
-  overflow: hidden;
-  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.05), 0px 8px 8px -4px rgba(16, 24, 40, 0.02);
-  border-radius: 24px;
-  overflow: hidden; }
-  .course-card__img,
-  .course-card2__img {
-    height: 220px;
-    overflow: hidden; }
-    .course-card__img img,
-    .course-card2__img img {
-      width: 100%;
-      display: block; }
-  .course-card__content,
-  .course-card2__content {
-    padding: 16px 24px 20px; }
-  .course-card__student,
-  .course-card2__student {
-    font-size: 14px;
-    line-height: 143%;
-    color: #74869C; }
-  .course-card__title,
-  .course-card2__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 143%;
-    margin-top: 4px; }
-  .course-card__desc,
-  .course-card2__desc {
-    font-size: 16px;
-    line-height: 150%;
-    color: #59697C;
-    margin-top: 4px; }
-
-.course-card2 {
-  border-radius: 16px; }
-  .course-card2__img {
-    height: unset; }
-  .course-card2__title {
-    font-size: 16px;
-    line-height: 150%;
-    margin-top: 0; }
-  .course-card2__content {
-    padding-bottom: 16px; }
-  .course-card2__info {
-    margin-top: 4px;
-    display: flex;
-    align-items: center; }
-  .course-card2__student {
-    font-weight: 600; }
-  .course-card2__duration {
-    margin-left: 8px;
-    font-size: 14px;
-    color: #74869C;
-    padding-left: 11px;
-    position: relative; }
-    .course-card2__duration:before {
-      content: '';
-      position: absolute;
-      z-index: 1;
-      width: 3px;
-      height: 3px;
-      background: #59697C;
-      opacity: 0.32;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0; }
-  .course-card2__teacher {
-    font-size: 14px;
-    line-height: 20px;
-    color: #74869C;
-    margin-top: 4px; }
-
-.tarif-card {
-  background: #FFFFFF;
-  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.05), 0px 4px 6px -2px rgba(16, 24, 40, 0.025);
-  border-radius: 16px;
-  padding: 24px 24px 32px; }
-  .tarif-card__title {
-    font-weight: 800;
-    font-size: 28px;
-    line-height: 129%;
-    text-align: center; }
-  .tarif-card__desc {
-    font-size: 18px;
-    line-height: 144%;
-    color: #74869C;
-    text-align: center; }
-  .tarif-card__prices {
-    margin-top: 24px;
-    border-radius: 16px;
-    padding: 16px;
-    text-align: center; }
-    .tarif-card__prices-new {
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 127%; }
-    .tarif-card__prices-old {
-      font-size: 18px;
-      line-height: 144%;
-      text-decoration-line: line-through;
-      color: #74869C; }
-  .tarif-card__item {
-    margin-top: 24px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 143%;
-    display: flex; }
-    .tarif-card__item i {
-      margin-top: 4px;
-      background: #ECF2FA;
-      margin-right: 12px;
-      flex-shrink: 0;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='%2359697C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: center; }
-    .tarif-card__item:nth-child(1n+5) i {
-      background-color: #F0F8ED;
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='%2394C97E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
-    .tarif-card__item:nth-child(1n+7) i {
-      background-color: #ECF2FA;
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='%235E62DA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
-  .tarif-card__btn {
-    margin-top: 24px;
-    height: 56px;
-    width: 100%;
-    border-radius: 40px;
-    font-weight: 800;
-    font-size: 16px; }
-  .tarif-card__open {
-    display: none; }
-
-@media screen and (max-width: 1024px) {
-  .course-card__img {
-    height: 180px; }
-
-  .tarif-card__items {
-    display: none; }
-  .tarif-card__btn {
-    height: 48px; }
-  .tarif-card--show .tarif-card__open svg {
-    transform: rotate(180deg); }
-  .tarif-card--show .tarif-card__open-hidden {
-    display: unset; }
-  .tarif-card--show .tarif-card__open-show {
-    display: none; }
-  .tarif-card--show .tarif-card__items {
-    display: block; }
-  .tarif-card__open {
-    display: flex;
-    width: 100%;
-    margin-top: 24px;
-    font-weight: 600;
-    font-size: 14px;
-    color: #9FADBF; }
-    .tarif-card__open svg {
-      margin-right: 12px; }
-    .tarif-card__open-hidden {
-      display: none; } }
-@media screen and (max-width: 576px) {
-  .course-card__img {
-    height: unset; }
-  .course-card__content {
-    padding: 16px 12px 16px; }
-  .course-card__title {
-    font-size: 16px;
-    margin-top: 2px; }
-  .course-card__desc {
-    font-size: 14px;
-    margin-top: 2px; }
-
-  .course-card2__teacher {
-    margin-top: 1px; }
-
-  .tarif-card {
-    padding: 16px; }
-    .tarif-card__title {
-      font-size: 22px; }
-    .tarif-card__btn {
-      font-size: 14px; } }
 .display-1 {
   font-weight: 800;
   font-size: 56px;
@@ -303,5 +118,380 @@
       top: 50%;
       transform: translateY(-50%);
       transition: all .3s; }
+
+.breadcrumbs {
+  display: flex;
+  align-items: center; }
+  .breadcrumbs__item {
+    margin-right: 8px;
+    color: #5E62DA;
+    font-size: 14px;
+    line-height: 143%; }
+    .breadcrumbs__item:after {
+      content: '/';
+      position: absolute;
+      z-index: 1;
+      color: #1B2C3E;
+      margin-left: 8px; }
+
+.course-card,
+.course-card2,
+.course-card3 {
+  background: #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.05), 0px 8px 8px -4px rgba(16, 24, 40, 0.02);
+  border-radius: 24px;
+  overflow: hidden; }
+  .course-card__img,
+  .course-card2__img,
+  .course-card3__img {
+    height: 220px;
+    overflow: hidden; }
+    .course-card__img img,
+    .course-card2__img img,
+    .course-card3__img img {
+      width: 100%;
+      display: block; }
+  .course-card__content,
+  .course-card2__content,
+  .course-card3__content {
+    padding: 16px 24px 20px; }
+  .course-card__student,
+  .course-card2__student,
+  .course-card3__student {
+    font-size: 14px;
+    line-height: 143%;
+    color: #74869C; }
+  .course-card__title,
+  .course-card2__title,
+  .course-card3__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 143%;
+    margin-top: 4px; }
+  .course-card__desc,
+  .course-card2__desc,
+  .course-card3__desc {
+    font-size: 16px;
+    line-height: 150%;
+    color: #59697C;
+    margin-top: 4px; }
+
+.course-card2 {
+  border-radius: 16px; }
+  .course-card2__img {
+    height: unset; }
+  .course-card2__title {
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 0; }
+  .course-card2__content {
+    padding-bottom: 16px; }
+  .course-card2__info {
+    margin-top: 4px;
+    display: flex;
+    align-items: center; }
+  .course-card2__student {
+    font-weight: 600; }
+  .course-card2__duration {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #74869C;
+    padding-left: 11px;
+    position: relative; }
+    .course-card2__duration:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 3px;
+      height: 3px;
+      background: #59697C;
+      opacity: 0.32;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0; }
+  .course-card2__teacher {
+    font-size: 14px;
+    line-height: 20px;
+    color: #74869C;
+    margin-top: 4px; }
+
+.course-card3 {
+  border-radius: 16px; }
+  .course-card3__img {
+    height: unset; }
+  .course-card3__title {
+    margin-top: 0; }
+  .course-card3__content {
+    padding-bottom: 16px; }
+  .course-card3__bottom {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .course-card3__num {
+    background: #5E62DA;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 13px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .course-card3__students {
+    display: flex;
+    align-items: center; }
+    .course-card3__students-status, .course-card3__students-title, .course-card3__students-new {
+      font-size: 14px;
+      line-height: 143%; }
+    .course-card3__students-title {
+      color: #74869C;
+      padding-right: 11px;
+      position: relative; }
+      .course-card3__students-title:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        background: #59697C;
+        opacity: 0.32;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%); }
+    .course-card3__students-new {
+      margin-left: 8px;
+      color: #94C97E; }
+    .course-card3__students-status {
+      color: #5E62DA; }
+
+.tarif-card {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.05), 0px 4px 6px -2px rgba(16, 24, 40, 0.025);
+  border-radius: 16px;
+  padding: 24px 24px 32px; }
+  .tarif-card__title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 129%;
+    text-align: center; }
+  .tarif-card__desc {
+    font-size: 18px;
+    line-height: 144%;
+    color: #74869C;
+    text-align: center; }
+  .tarif-card__prices {
+    margin-top: 24px;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center; }
+    .tarif-card__prices-new {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 127%; }
+    .tarif-card__prices-old {
+      font-size: 18px;
+      line-height: 144%;
+      text-decoration-line: line-through;
+      color: #74869C; }
+  .tarif-card__item {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+    display: flex; }
+    .tarif-card__item i {
+      margin-top: 4px;
+      background: #ECF2FA;
+      margin-right: 12px;
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='%2359697C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center; }
+    .tarif-card__item:nth-child(1n+5) i {
+      background-color: #F0F8ED;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='%2394C97E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+    .tarif-card__item:nth-child(1n+7) i {
+      background-color: #ECF2FA;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='%235E62DA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+  .tarif-card__btn {
+    margin-top: 24px;
+    height: 56px;
+    width: 100%;
+    border-radius: 40px;
+    font-weight: 800;
+    font-size: 16px; }
+  .tarif-card__open {
+    display: none; }
+
+.event-card {
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.05), 0px 4px 6px -2px rgba(16, 24, 40, 0.025);
+  border-radius: 16px;
+  height: 304px; }
+  .event-card__left {
+    width: 112px;
+    padding: 16px 16px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0; }
+  .event-card__day {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 125%; }
+  .event-card__month, .event-card__year {
+    font-size: 18px;
+    line-height: 144%; }
+  .event-card__year {
+    margin-top: 3px;
+    color: #C6D0DD; }
+  .event-card__time {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: auto; }
+  .event-card__img {
+    width: 304px;
+    height: 100%;
+    overflow: hidden;
+    flex-shrink: 0; }
+    .event-card__img img {
+      display: block;
+      width: 100%; }
+  .event-card__right {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 48px; }
+  .event-card__title {
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 130%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+  .event-card__desc {
+    font-size: 18px;
+    line-height: 156%;
+    margin-top: 16px;
+    color: #59697C;
+    overflow: hidden;
+    flex-grow: 1; }
+
+@media screen and (max-width: 1200px) {
+  .event-card__right {
+    padding: 24px 32px; } }
+@media screen and (max-width: 1024px) {
+  .course-card__img {
+    height: 180px; }
+
+  .tarif-card__items {
+    display: none; }
+  .tarif-card__btn {
+    height: 48px; }
+  .tarif-card--show .tarif-card__open svg {
+    transform: rotate(180deg); }
+  .tarif-card--show .tarif-card__open-hidden {
+    display: unset; }
+  .tarif-card--show .tarif-card__open-show {
+    display: none; }
+  .tarif-card--show .tarif-card__items {
+    display: block; }
+  .tarif-card__open {
+    display: flex;
+    width: 100%;
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #9FADBF; }
+    .tarif-card__open svg {
+      margin-right: 12px; }
+    .tarif-card__open-hidden {
+      display: none; }
+
+  .event-card {
+    height: 185px; }
+    .event-card__left {
+      width: 95px;
+      padding: 20px 12px 16px; }
+    .event-card__img {
+      width: 185px; }
+    .event-card__day {
+      font-size: 32px; }
+    .event-card__month, .event-card__year {
+      font-size: 16px;
+      margin: 0; }
+    .event-card__time {
+      font-size: 14px; }
+    .event-card__right {
+      padding: 12px 16px; }
+    .event-card__title {
+      font-size: 16px;
+      -webkit-line-clamp: 3; }
+    .event-card__desc {
+      margin-top: 8px;
+      font-size: 14px; }
+
+  .course-card3__title {
+    font-size: 16px; } }
+@media screen and (max-width: 576px) {
+  .course-card__img {
+    height: unset; }
+  .course-card__content {
+    padding: 16px 12px 16px; }
+  .course-card__title {
+    font-size: 16px;
+    margin-top: 2px; }
+  .course-card__desc {
+    font-size: 14px;
+    margin-top: 2px; }
+
+  .course-card2__teacher {
+    margin-top: 1px; }
+
+  .tarif-card {
+    padding: 16px; }
+    .tarif-card__title {
+      font-size: 22px; }
+    .tarif-card__btn {
+      font-size: 14px; }
+
+  .event-card {
+    flex-wrap: wrap;
+    height: unset;
+    overflow: hidden; }
+    .event-card__img {
+      order: -1;
+      width: 216px;
+      height: 216px; }
+    .event-card__left {
+      padding-top: 16px;
+      width: calc(100% - 216px); }
+    .event-card__right {
+      width: 100%; }
+    .event-card__title {
+      font-size: 14px; }
+    .event-card__desc {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical; }
+
+  .course-card3__title {
+    display: -webkit-box;
+    white-space: unset;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+  .course-card3__content {
+    padding: 12px 16px; } }
 
 /*# sourceMappingURL=ux.css.map */

@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'cards';
 .display-1 {
     font-weight: 800;
     font-size: 56px;
@@ -142,3 +141,23 @@
         }
     }
 }
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    &__item {
+        margin-right: 8px;
+        color: #5E62DA;
+        font-size: 14px;
+        line-height: 143%;
+        &:after {
+            content: '/';
+            position: absolute;
+            z-index: 1;
+            color: $black;
+            margin-left: 8px;
+        }
+    }
+}
+
+@import 'cards';

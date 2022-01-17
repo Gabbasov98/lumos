@@ -1,0 +1,373 @@
+.cabinet-page {
+    padding: 34px 0 40px;
+    &__inner {
+        display: flex;
+    }
+    &__sidebar {
+        width: 288px;
+        margin-right: 24px;
+        flex-shrink: 0;
+    }
+    &__main {
+        width: calc(100% - 312px);
+    }
+}
+
+.sidebar {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.05), 0px 4px 6px -2px rgba(16, 24, 40, 0.025);
+    border-radius: 16px;
+    overflow: hidden;
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 24px;
+        font-size: 16px;
+        line-height: 125%;
+        &:not(:last-child) {
+            border-bottom: 1px solid #EAECF5;
+        }
+        i {
+            background: #8B9EE6;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            color: #fff;
+            opacity: 0;
+            font-style: normal;
+        }
+        &--notification {
+            i {
+                display: flex;
+            }
+        }
+        &:hover {
+            background: #F1F3F9;
+        }
+    }
+    &__item {
+        &:not(:last-child) {
+            border-bottom: 1px solid #EAECF5;
+        }
+        &-show {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            font-size: 16px;
+            line-height: 125%;
+            transition: all .3s;
+            &:hover {
+                background: #F1F3F9;
+                cursor: pointer;
+            }
+            i {
+                font-style: normal;
+                border: 1px solid #8B9EE6;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 14px;
+                color: #5E62DA;
+            }
+        }
+        &-hidden {
+            border-top: 1px solid #EAECF5;
+            padding-left: 32px;
+            padding-bottom: 8px;
+            display: none;
+        }
+        &--open {
+            background: #F8F9FC;
+            .sidebar__item-show {
+                background: #F1F3F9;
+                font-weight: bold;
+            }
+            .sidebar__item-hidden {
+                display: block;
+            }
+        }
+        &--notification {
+            .sidebar__item-show i {
+                display: flex;
+            }
+        }
+    }
+    &__sublink {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 24px 12px 0;
+        font-size: 14px;
+        line-height: 143%;
+        color: #59697C;
+        &:hover {
+            background: #F1F3F9;
+        }
+        &:not(:last-child) {
+            border-bottom: 1px solid #EAECF5;
+        }
+        &--active {
+            font-weight: bold;
+        }
+        i {
+            background: #ECF2FA;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            display: none;
+            font-style: normal;
+        }
+        &--notification {
+            i {
+                display: flex;
+            }
+        }
+    }
+}
+
+.lkt-courses {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__add {
+        width: 143px;
+        height: 40px;
+        border-radius: 40px;
+        font-weight: bold;
+        font-size: 14px;
+        svg {
+            margin-right: 10px;
+        }
+        &:active {
+            path {
+                stroke: #fff;
+            }
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+        &-title {
+            font-size: 16px;
+            line-height: 150%;
+            color: #74869C;
+        }
+        &-wrap {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            margin-left: 12px;
+            rect {
+                fill: $black;
+            }
+            &:hover {
+                rect {
+                    fill: $black;
+                }
+            }
+            &--active {
+                pointer-events: none;
+                rect {
+                    fill: #C6D0DD;
+                }
+            }
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: calc(33.33% - 16px) calc(33.33% - 16px) calc(33.33% - 16px);
+        gap: 24px;
+        margin-top: 16px;
+        &--row {
+            grid-template-columns: 100% !important;
+            gap: 16px;
+            .course-card3 {
+                height: 104px;
+                display: flex;
+                &__img {
+                    width: 185px;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                    img {
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+                &__content {
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 1;
+                    padding: 10px 32px 10px 24px;
+                }
+                &__title {
+                    display: -webkit-box;
+                    white-space: unset;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    max-width: 290px;
+                    flex-shrink: 0;
+                }
+                &__bottom {
+                    margin-left: 23px;
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 1;
+                    margin-top: 0;
+                }
+                &__num {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cabinet-page {
+        padding-top: 32px;
+        &__sidebar {
+            width: 300px;
+        }
+        &__main {
+            width: calc(100% - 324px);
+        }
+    }
+    .lkt-courses {
+        &__items {
+            grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+            &--row {
+                .course-card3 {
+                    &__content {
+                        padding: 10px;
+                    }
+                    &__title {
+                        font-size: 14px;
+                        max-width: 200px;
+                    }
+                    &__bottom {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cabinet-page {
+        padding-top: 24px;
+        &__inner {
+            display: block;
+        }
+        &__sidebar {
+            width: 100%;
+            margin: 0 0 24px 0;
+            position: relative;
+        }
+        &__main {
+            width: 100%;
+        }
+        .course-card3 {
+            height: 100%;
+        }
+        &__items {
+            margin-top: 20px;
+        }
+    }
+    .sidebar {
+        display: flex;
+        overflow-x: auto;
+        &__link {
+            flex-shrink: 0;
+            padding: 16px;
+            flex-grow: 1;
+            &:not(:last-child) {
+                border: none;
+                border-right: 1px solid #EAECF5;
+            }
+            i {
+                margin-left: 10px;
+            }
+        }
+        &__item {
+            flex-grow: 1;
+            flex-shrink: 0;
+            &:not(:last-child) {
+                border: none;
+                border-right: 1px solid #EAECF5;
+            }
+            &-show {
+                padding: 16px;
+                i {
+                    margin-left: 10px;
+                }
+            }
+            &-hidden {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: #F8F9FC;
+                border: 1px solid #D4DBE7;
+                z-index: 3;
+                width: 100%;
+                margin-top: 24px;
+                border-radius: 16px;
+                padding: 0;
+            }
+        }
+        &__sublink {
+            padding: 10px 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cabinet-page {
+        padding-bottom: 32px;
+        &__sidebar {
+            display: none;
+        }
+    }
+    .lkt-courses {
+        &__add {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            svg {
+                margin-right: 0;
+            }
+            span {
+                display: none;
+            }
+        }
+        &__nav {
+            &-wrap {
+                display: none;
+            }
+        }
+        &__items {
+            grid-template-columns: 100%;
+            gap: 16px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.blog {
+    padding: 48px 0 56px;
+    &__tabs {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+    }
+    &__tab {
+        white-space: nowrap;
+        flex-shrink: 0;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 0 22px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        border-radius: 24px;
+        transition: all .3s;
+        &:hover {
+            background: #EAECF5;
+            cursor: pointer;
+        }
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+        &--active {
+            background: $black;
+            color: #fff;
+            pointer-events: none;
+        }
+    }
+}

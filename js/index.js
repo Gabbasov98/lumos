@@ -143,21 +143,4 @@ document.addEventListener('DOMContentLoaded', function() { // Аналог $(doc
         this.classList.add('header__search--active');
     }
 
-
-
-    document.querySelectorAll(".filter-tablet__item").forEach(el => {
-        el.onclick = function() {
-            let path = this.getAttribute('data-filter');
-            console.log(path)
-            document.querySelector(`.filter__items[data-filter="${path}"]`).classList.add("filter__items--active")
-            document.querySelector(".filter").classList.add("filter--active")
-        }
-    });
-
-
-
-
-
-
-
 });

@@ -1,0 +1,536 @@
+.lkt-course {
+    padding: 30px 0 56px;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+    &__edit {
+        width: 217px;
+        height: 40px;
+        border-radius: 40px;
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 24px;
+        svg {
+            margin-right: 10px;
+        }
+    }
+    &__history {
+        color: #9FADBF;
+        font-size: 14px;
+        &:hover {
+            color: $black;
+        }
+    }
+    &__tabs {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+    }
+    &__tab {
+        white-space: nowrap;
+        flex-shrink: 0;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 0 24px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        border-radius: 24px;
+        transition: all .3s;
+        margin-right: 8px;
+        i {
+            background: #5E62DA;
+            margin-left: 8px;
+            border-radius: 50%;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 13px;
+            width: 20px;
+            height: 20px;
+            color: #fff;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        &:hover {
+            background: #EAECF5;
+            cursor: pointer;
+        }
+        &:not(:last-child) {
+            margin-right: 6px;
+        }
+        &--active {
+            background: $black;
+            color: #fff;
+            pointer-events: none;
+        }
+        &--notification {
+            i {
+                display: flex;
+            }
+        }
+    }
+    &__content {
+        display: none;
+        margin-top: 24px;
+        &--active {
+            display: block;
+        }
+    }
+}
+
+.lessons-tab {
+    display: flex;
+    justify-content: space-between;
+    &__left,
+    &__right {
+        width: calc(50% - 12px);
+    }
+    &__module {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.05), 0px 2px 4px -2px rgba(16, 24, 40, 0.03);
+        border-radius: 16px;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        &-top {
+            padding: 16px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #EAECF5;
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 144%;
+        }
+        &-num {
+            font-size: 16px;
+            line-height: 150%;
+            color: #74869C;
+        }
+        &-items {
+            padding: 20px 32px 24px;
+        }
+        &-item {
+            display: flex;
+            font-size: 14px;
+            line-height: 143%;
+            color: #59697C;
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+            &-num {
+                font-weight: 600;
+                color: #C6D0DD;
+                margin-right: 8px;
+            }
+            &-notification {
+                background: #ECF2FA;
+                margin-left: 8px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                font-weight: 800;
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    &__comments {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.05), 0px 2px 4px -2px rgba(16, 24, 40, 0.03);
+        border-radius: 16px;
+        &-top,
+        &-bottom {
+            padding: 16px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #EAECF5;
+        }
+        &-bottom {
+            border-top: 1px solid #EAECF5;
+            border-bottom: none;
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 144%;
+        }
+        &-new {
+            font-size: 16px;
+            line-height: 150%;
+            color: #5E62DA;
+        }
+        &-item {
+            padding: 20px 32px;
+            border-bottom: 1px solid #EAECF5;
+            opacity: 0.56;
+            &--new {
+                opacity: 1;
+            }
+            &-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &-user {
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 143%;
+                img {
+                    border-radius: 50%;
+                    margin-right: 8px;
+                    width: 24px;
+                    height: 24px;
+                    flex-shrink: 0;
+                }
+            }
+            &-date,
+            &-text,
+            &-title {
+                color: #74869C;
+                font-size: 14px;
+                line-height: 143%;
+            }
+            &-text {
+                margin-top: 4px;
+                color: $black;
+            }
+            &-title {
+                margin-top: 8px;
+                color: #59697C;
+                display: flex;
+                span {
+                    margin-right: 8px;
+                    display: block;
+                }
+            }
+        }
+        &-more {
+            color: #7481E0;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 114%;
+            svg {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.students-tab {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.05), 0px 2px 4px -2px rgba(16, 24, 40, 0.03);
+    border-radius: 16px;
+    &__top {
+        padding: 16px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #EAECF5;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 144%;
+    }
+    &__btn {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 129%;
+        svg {
+            margin-left: 8px;
+        }
+    }
+    &__items {
+        padding: 4px 32px 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 96px;
+    }
+    &__item {
+        padding: 16px 0;
+        border-top: 1px solid #EAECF5;
+        display: flex;
+        align-items: center;
+        &:nth-child(1),
+        &:nth-child(2) {
+            border: none;
+        }
+        &-img {
+            margin-right: 16px;
+            img {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+            }
+        }
+        &-name {
+            font-weight: bold;
+        }
+        &-name,
+        &-title,
+        &-date {
+            font-size: 14px;
+            line-height: 143%;
+        }
+        &-title {
+            display: flex;
+            span {
+                margin-right: 8px;
+            }
+        }
+        &-date {
+            margin-left: auto;
+            align-self: flex-start;
+        }
+    }
+}
+
+.notification-tab {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.05), 0px 2px 4px -2px rgba(16, 24, 40, 0.03);
+    border-radius: 16px;
+    max-width: 808px;
+    &__top {
+        padding: 16px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #EAECF5;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 144%;
+    }
+    &__item {
+        padding: 24px 32px;
+        opacity: 0.64;
+        &:not(:last-child) {
+            border-bottom: 1px solid #EAECF5;
+        }
+        &--new {
+            opacity: 1;
+            .notification-tab__item-title i {
+                display: block;
+            }
+        }
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            i {
+                background: #5E62DA;
+                width: 6px;
+                height: 6px;
+                display: none;
+                margin-right: 8px;
+                border-radius: 50%;
+            }
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+        }
+        &-date {
+            color: #74869C;
+            font-size: 14px;
+            line-height: 143%;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 175%;
+            margin-top: 6px;
+        }
+    }
+    &__bottom {
+        border-top: 1px solid #EAECF5;
+        padding: 16px 32px;
+        display: flex;
+        align-items: center;
+    }
+    &__more {
+        color: #7481E0;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 114%;
+        svg {
+            margin-right: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .notification-tab {
+        max-width: 786px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .lkt-course {
+        padding: 24px 0 40px;
+        &__top {
+            display: block;
+        }
+        &__nav {
+            margin-top: 16px;
+        }
+        &__edit {
+            order: -1;
+            margin-left: 0;
+            margin-right: 24px;
+        }
+        &__tabs {
+            margin-top: 24px;
+        }
+        &__tab {
+            height: 44px;
+            padding: 0 20px;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+        &__content {
+            margin-top: 16px;
+        }
+    }
+    .lessons-tab {
+        display: block;
+        &__left,
+        &__right {
+            width: 100%;
+        }
+        &__right {
+            margin-top: 24px;
+        }
+        &__module {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+            &-top {
+                padding: 16px 24px;
+            }
+            &-items {
+                padding: 20px 24px 24px;
+            }
+        }
+        &__comments {
+            &-top,
+            &-item,
+            &-bottom {
+                padding: 16px 24px;
+            }
+        }
+    }
+    .students-tab {
+        &__top {
+            padding: 16px 24px;
+        }
+        &__items {
+            grid-template-columns: 1fr;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        &__item {
+            &:nth-child(2) {
+                border-top: 1px solid #EAECF5;
+            }
+        }
+    }
+    .notification-tab {
+        &__top,
+        &__item,
+        &__bottom {
+            padding: 16px 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .lkt-course {
+        &__edit {
+            width: 100%;
+            margin: 0 0 16px 0;
+        }
+        &__nav {
+            flex-wrap: wrap;
+        }
+    }
+    .lessons-tab {
+        &__module {
+            &-top,
+            &-items {
+                padding: 12px 16px;
+            }
+            &-title {
+                font-size: 16px;
+            }
+        }
+        &__comments {
+            &-top,
+            &-item,
+            &-bottom {
+                padding: 12px 16px;
+            }
+            &-title {
+                font-size: 16px;
+            }
+        }
+    }
+    .students-tab {
+        &__top {
+            padding: 12px 16px;
+        }
+        &__items {
+            padding: 0 16px;
+        }
+        &__item {
+            padding: 12px 0;
+            &-img {
+                margin-right: 12px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+    .notification-tab {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        &__title {
+            font-size: 16px;
+        }
+        &__item {
+            padding: 12px 16px;
+            &-top {
+                display: block;
+            }
+            &-text {
+                font-size: 14px;
+            }
+        }
+        &__bottom {
+            padding: 12px 16px;
+        }
+    }
+}
