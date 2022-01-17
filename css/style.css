@@ -328,7 +328,12 @@ i {
 .form-group input.input-error {
   border: 2px solid #EC9898;
 }
-.form-group input:focus {
+.form-group input:hover {
+  background: #FFFFFF;
+  border: 2px solid #8B9EE6;
+}
+.form-group input:focus, .form-group input:active {
+  background: #FFFFFF;
   border: 2px solid #8B9EE6;
 }
 

@@ -165,7 +165,13 @@
         &.input-error {
             border: 2px solid #EC9898;
         }
-        &:focus {
+        &:hover {
+            background: #FFFFFF;
+            border: 2px solid #8B9EE6;
+        }
+        &:focus,
+        &:active {
+            background: #FFFFFF;
             border: 2px solid #8B9EE6;
         }
     }
