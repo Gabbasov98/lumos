@@ -327,6 +327,7 @@ i {
 
 .form-group input.input-error {
   border: 2px solid #EC9898;
+  background: #FFFFFF;
 }
 .form-group input:hover {
   background: #FFFFFF;
