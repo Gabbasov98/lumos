@@ -11,6 +11,100 @@
     &__main {
         width: calc(100% - 312px);
     }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+        &-title {
+            font-size: 16px;
+            line-height: 150%;
+            color: #74869C;
+        }
+        &-wrap {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            margin-left: 12px;
+            &:hover {
+                rect {
+                    fill: $black;
+                }
+            }
+            &--active {
+                pointer-events: none;
+                rect {
+                    fill: $black;
+                }
+            }
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: calc(33.33% - 16px) calc(33.33% - 16px) calc(33.33% - 16px);
+        gap: 24px;
+        margin-top: 16px;
+        &--row {
+            grid-template-columns: 100% !important;
+            gap: 16px;
+            .course-card3,
+            .event-card2 {
+                height: 104px;
+                display: flex;
+                &__img {
+                    width: 185px;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                    img {
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+                &__content {
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 1;
+                    padding: 10px 32px 10px 24px;
+                }
+                &__title {
+                    display: -webkit-box;
+                    white-space: unset;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    max-width: 290px;
+                    flex-shrink: 0;
+                }
+                &__bottom {
+                    margin-left: 23px;
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 1;
+                    margin-top: 0;
+                }
+                &__num {
+                    margin-left: auto;
+                }
+            }
+            .event-card2 {
+                height: 160px;
+                &__img {
+                    width: unset;
+                }
+                &__time {
+                    order: 10;
+                }
+                &__title {
+                    max-width: 390px;
+                }
+            }
+        }
+    }
 }
 
 .sidebar {
@@ -141,11 +235,6 @@
 }
 
 .lkt-courses {
-    &__top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
     &__add {
         width: 143px;
         height: 40px;
@@ -161,82 +250,102 @@
             }
         }
     }
-    &__nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 12px;
-        &-title {
-            font-size: 16px;
-            line-height: 150%;
+}
+
+.cabinet-student {
+    &__events {
+        margin-top: 32px;
+    }
+    &__empty {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 16px;
+        gap: 24px;
+        position: relative;
+        &-hint {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0 15px;
+            text-align: center;
+            width: 100%;
             color: #74869C;
-        }
-        &-wrap {
-            display: flex;
-            align-items: center;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 144%;
         }
         &-item {
-            margin-left: 12px;
-            rect {
-                fill: $black;
+            background: #fff;
+            opacity: 0.32;
+            border-radius: 16px;
+            overflow: hidden;
+            &-top {
+                width: 100%;
+                height: 288px;
+                background: #D4DBE7;
             }
-            &:hover {
-                rect {
-                    fill: $black;
+            &-top2 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                span {
+                    background: #EAECF5;
+                    width: 44px;
+                    height: 10px;
+                    display: block;
                 }
             }
-            &--active {
-                pointer-events: none;
-                rect {
-                    fill: #C6D0DD;
-                }
+            &-bottom,
+            &-bottom2 {
+                width: 225px;
+                height: 11px;
+                background: #9FADBF;
+                margin-top: 9px;
+            }
+            &-bottom2 {
+                width: 167px;
             }
         }
+        &-block {
+            padding: 21px 24px 16px;
+        }
     }
-    &__items {
-        display: grid;
-        grid-template-columns: calc(33.33% - 16px) calc(33.33% - 16px) calc(33.33% - 16px);
-        gap: 24px;
-        margin-top: 16px;
-        &--row {
-            grid-template-columns: 100% !important;
-            gap: 16px;
-            .course-card3 {
-                height: 104px;
-                display: flex;
-                &__img {
-                    width: 185px;
-                    overflow: hidden;
-                    flex-shrink: 0;
-                    img {
-                        height: 100%;
-                        width: auto;
-                    }
-                }
-                &__content {
-                    display: flex;
-                    align-items: center;
-                    flex-grow: 1;
-                    padding: 10px 32px 10px 24px;
-                }
-                &__title {
-                    display: -webkit-box;
-                    white-space: unset;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    max-width: 290px;
-                    flex-shrink: 0;
-                }
-                &__bottom {
-                    margin-left: 23px;
-                    display: flex;
-                    align-items: center;
-                    flex-grow: 1;
-                    margin-top: 0;
-                }
-                &__num {
-                    margin-left: auto;
-                }
+    &__card {
+        padding: 16px 24px;
+        &-img {
+            img {
+                width: 96px;
+                height: 96px;
+                display: block;
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+        }
+        &-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 16px;
+            line-height: 144%;
+            text-align: center;
+        }
+        &-bottom {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #eaecf5;
+        }
+        &-item {
+            font-size: 14px;
+            line-height: 143%;
+            &-title {
+                font-weight: 600;
+                display: block;
+            }
+            &-link {
+                color: #5E62DA;
+            }
+            &:not(:last-child) {
+                margin-bottom: 12px;
             }
         }
     }
@@ -251,12 +360,11 @@
         &__main {
             width: calc(100% - 324px);
         }
-    }
-    .lkt-courses {
         &__items {
             grid-template-columns: calc(50% - 12px) calc(50% - 12px);
             &--row {
-                .course-card3 {
+                .course-card3,
+                .event-card2 {
                     &__content {
                         padding: 10px;
                     }
@@ -267,6 +375,19 @@
                     &__bottom {
                         margin-left: 10px;
                     }
+                }
+                .event-card2 {
+                    height: 110px;
+                }
+            }
+        }
+    }
+    .cabinet-student {
+        &__empty {
+            grid-template-columns: 1fr 1fr;
+            &-item {
+                &:nth-child(3) {
+                    display: none;
                 }
             }
         }
@@ -339,6 +460,23 @@
             padding: 10px 24px;
         }
     }
+    .cabinet-student {
+        &__events {
+            margin-top: 24px;
+        }
+        &__card {
+            &-bottom {
+                display: flex;
+            }
+            &-item {
+                width: 50%;
+                padding-right: 5px;
+                &:not(:last-child) {
+                    margin: 0;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -346,6 +484,15 @@
         padding-bottom: 32px;
         &__sidebar {
             display: none;
+        }
+        &__nav {
+            &-wrap {
+                display: none;
+            }
+        }
+        &__items {
+            grid-template-columns: 100%;
+            gap: 16px;
         }
     }
     .lkt-courses {
@@ -360,14 +507,33 @@
                 display: none;
             }
         }
-        &__nav {
-            &-wrap {
-                display: none;
+    }
+    .cabinet-student {
+        &__events {
+            margin-top: 24px;
+        }
+        &__card {
+            &-bottom {
+                display: block;
+            }
+            &-item {
+                width: 100%;
+                padding-right: 0px;
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
             }
         }
-        &__items {
-            grid-template-columns: 100%;
-            gap: 16px;
+        &__sidebar {
+            display: block;
+        }
+        &__empty {
+            grid-template-columns: 1fr;
+            &-item {
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
         }
     }
 }

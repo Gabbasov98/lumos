@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Мои курсы</title>
+    <title>Страница мероприятия
+    </title>
 </head>
 
 <body>
@@ -180,156 +181,80 @@
                 </div>
             </header>
 
-            <section class='cabinet-page'>
+            <section class='edit-event'>
                 <div class='container'>
-                    <div class='cabinet-page__inner'>
-                        <aside class="cabinet-page__sidebar">
-                            <div class="sidebar">
-                                <a href="" class="sidebar__link">
-                                    <span>Мои курсы</span>
-                                    <i>1</i>
-                                </a>
-                                <div class="sidebar__item sidebar__item--notification">
-                                    <div class="sidebar__item-show">
-                                        <span>Мои мероприятия</span>
-                                        <i>1</i>
+                    <div class='edit-event__inner'>
+                        <div class="edit-event__left">
+                            <h1 class="edit-event__title display-3">Редактирование мероприятия</h1>
+                            <form class="course-edit__form">
+                                <h3 class="course-edit__form-title">Основная информация</h3>
+                                <div class="course-edit__form-upload edit-event__upload">
+                                    <div class="course-edit__form-upload-title">Изображение</div>
+                                    <div class="course-edit__form-upload-desc">
+                                        Соотношение сторон: 16:9 (рекомендуемое разрешение: 1280x720) <br> PNG, JPG до 5 MБ
                                     </div>
-                                    <div class="sidebar__item-hidden">
-                                        <a href="" class="sidebar__sublink sidebar__sublink--active">
-                                            <span>Все</span>
-                                            <i></i>
-                                        </a>
-                                        <a href="" class="sidebar__sublink">
-                                            <span>Запланированные</span>
-                                            <i></i>
-                                        </a>
-                                        <a href="" class="sidebar__sublink sidebar__sublink--notification">
-                                            <span>На модерации</span>
-                                            <i>1</i>
-                                        </a>
-                                        <a href="" class="sidebar__sublink">
-                                            <span>Завершенные</span>
-                                            <i></i>
-                                        </a>
+                                    <div class="course-edit__form-upload-wrap">
+                                        <div class="course-edit__form-upload-img">
+                                            <img src="img/event1.jpg" alt="">
+                                        </div>
+                                        <div class="course-edit__form-upload-buttons">
+                                            <button class="course-edit__form-upload-btn btn btn-blue" type="button">Загрузить новое</button>
+                                            <button class="course-edit__form-upload-delete btn btn-outline" type="button">Удалить</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <a href="" class="sidebar__link">
-                                    <span>Статистика</span>
-                                    <i></i>
-                                </a>
-                                <a href="" class="sidebar__link sidebar__link--notification">
-                                    <span>Служба поддержки</span>
-                                    <i>2</i>
-                                </a>
-                                <a href="" class="sidebar__link">
-                                    <span>Настройки аккаунта</span>
-                                    <i></i>
-                                </a>
-                            </div>
-                        </aside>
-                        <main class="cabinet-page__main">
-                            <div class="lkt-courses">
-                                <div class="cabinet-page__top">
-                                    <h1 class="lkt-courses__title display-3">Мои курсы</h1>
-                                    <button class="lkt-courses__add btn btn-outline">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.02858 2.66675V13.3334" stroke="#1B2C3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M13.3347 8.02548H2.66797" stroke="#1B2C3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span>Добавить</span>
-                                    </button>
-                                </div>
-                                <div class="cabinet-page__nav lkt-courses__nav">
-                                    <div class="cabinet-page__nav-title">4 курса</div>
-                                    <div class="cabinet-page__nav-wrap">
-                                        <button class="cabinet-page__nav-item cabinet-page__nav-item--col cabinet-page__nav-item--active">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="1" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="9" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="17" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="1" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="9" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="17" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                            </svg>
-                                        </button>
-                                        <button class="cabinet-page__nav-item cabinet-page__nav-item--row">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="1" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="9" y="5" width="14" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="1" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="9" y="13" width="14" height="6" rx="2" fill="#C6D0DD"/>
-                                            </svg>
-                                        </button>
+                                <div class="course-edit__form-grid">
+                                    <div class="course-edit__form-group form-group">
+                                        <label>Название</label>
+                                        <input type="text" placeholder="Название">
+                                    </div>
+                                    <div class="course-edit__form-group form-group">
+                                        <label>Тип</label>
+                                        <select>
+                                        <option selected="" hidden="">Тип</option>
+                                        <option value="">Онлайн-трансляция</option>
+                                        <option value="">Онлайн-трансляция 2</option>
+                                    </select>
+                                    </div>
+                                    <div class="course-edit__form-group form-group">
+                                        <label>Дата</label>
+                                        <input type="text" placeholder="Дата">
+                                    </div>
+                                    <div class="course-edit__form-group form-group">
+                                        <label>Время начала (по МСК)</label>
+                                        <input type="text" placeholder="Время начала (по МСК)">
+                                    </div>
+                                    <div class="course-edit__form-group form-group">
+                                        <label>Ориентировочная длительность</label>
+                                        <input type="text" placeholder="Ориентировочная длительность">
                                     </div>
                                 </div>
-                                <div class="cabinet-page__items">
-                                    <div class="cabinet-page__item">
-                                        <div class="course-card3">
-                                            <div class="course-card3__img">
-                                                <img src="img/course.jpg" alt="">
-                                            </div>
-                                            <div class="course-card3__content">
-                                                <div class="course-card3__title truncate">Название курса в нескольких строках Название курса в нескольких строках</div>
-                                                <div class="course-card3__bottom">
-                                                    <div class="course-card3__students">
-                                                        <div class="course-card3__students-title">48 учеников</div>
-                                                        <div class="course-card3__students-new">8 новых</div>
-                                                    </div>
-                                                    <div class="course-card3__num">2</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet-page__item">
-                                        <div class="course-card3">
-                                            <div class="course-card3__img">
-                                                <img src="img/course2.jpg" alt="">
-                                            </div>
-                                            <div class="course-card3__content">
-                                                <div class="course-card3__title truncate">Название курса в нескольких строках оооо</div>
-                                                <div class="course-card3__bottom">
-                                                    <div class="course-card3__students">
-                                                        <div class="course-card3__students-title">48 учеников</div>
-                                                        <div class="course-card3__students-new">8 новых</div>
-                                                    </div>
-                                                    <div class="course-card3__num">2</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet-page__item">
-                                        <div class="course-card3">
-                                            <div class="course-card3__img">
-                                                <img src="img/course3.jpg" alt="">
-                                            </div>
-                                            <div class="course-card3__content">
-                                                <div class="course-card3__title truncate">Название курса в нескольких строках оооо</div>
-                                                <div class="course-card3__bottom">
-                                                    <div class="course-card3__students">
-                                                        <div class="course-card3__students-title">48 учеников</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet-page__item">
-                                        <div class="course-card3">
-                                            <div class="course-card3__img">
-                                                <img src="img/course4.jpg" alt="">
-                                            </div>
-                                            <div class="course-card3__content">
-                                                <div class="course-card3__title truncate">Название курса в нескольких строках оооо</div>
-                                                <div class="course-card3__bottom">
-                                                    <div class="course-card3__students">
-                                                        <div class="course-card3__students-status">На модерации</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                            </form>
+                            <div class="create-about card-bg">
+                                <h3 class="create-about__title display-4">Описание</h3>
+                                <div class="create-about__editor">
+                                    <textarea></textarea>
                                 </div>
                             </div>
-                        </main>
+                            <div class="edit-event__broadcast card-bg">
+                                <h3 class="edit-event__broadcast-title display-4">Трансляция</h3>
+                                <div class="edit-event__broadcast-bottom">
+                                    <div class='edit-event__broadcast-form-group form-group'>
+                                        <label>Ключ трансляции</label>
+                                        <input type='text' placeholder="Ключ трансляции">
+                                    </div>
+                                    <button class="edit-event__broadcast-btn btn btn-outline">Как узнать ключ трансляции?</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit-event__right">
+                            <div class="edit-event__nav card-bg">
+                                <button class="edit-event__save btn btn-blue">Сохранить</button>
+                                <div class="edit-event__hint">Ваши изменения будут отправлены на модерацию.</div>
+                            </div>
+                            <button class="edit-event__delete btn btn-light-red">Удалить мероприятие</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -432,17 +357,7 @@
             }
         });
 
-        document.querySelector(".cabinet-page__nav-item--row").onclick = function() {
-            document.querySelector(".cabinet-page__nav-item--col").classList.remove("cabinet-page__nav-item--active")
-            this.classList.add("cabinet-page__nav-item--active")
-            document.querySelector(".cabinet-page__items").classList.add("cabinet-page__items--row")
-        }
 
-        document.querySelector(".cabinet-page__nav-item--col").onclick = function() {
-            document.querySelector(".cabinet-page__nav-item--row").classList.remove("cabinet-page__nav-item--active")
-            this.classList.add("cabinet-page__nav-item--active")
-            document.querySelector(".cabinet-page__items").classList.remove("cabinet-page__items--row")
-        }
 
         document.querySelector(".header__lk-avatar").onclick = function() {
             document.querySelector(".header__lk-dropdown").classList.toggle("header__lk-dropdown--active")

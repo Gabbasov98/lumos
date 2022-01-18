@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Мои курсы</title>
+    <title>Статистика Курс </title>
 </head>
 
 <body>
@@ -195,7 +195,7 @@
                                         <i>1</i>
                                     </div>
                                     <div class="sidebar__item-hidden">
-                                        <a href="" class="sidebar__sublink sidebar__sublink--active">
+                                        <a href="" class="sidebar__sublink">
                                             <span>Все</span>
                                             <i></i>
                                         </a>
@@ -221,118 +221,309 @@
                                     <span>Служба поддержки</span>
                                     <i>2</i>
                                 </a>
-                                <a href="" class="sidebar__link">
-                                    <span>Настройки аккаунта</span>
-                                    <i></i>
-                                </a>
+                                <div class="sidebar__item sidebar__item--notification">
+                                    <div class="sidebar__item-show">
+                                        <span>Настройки аккаунта</span>
+                                        <i>1</i>
+                                    </div>
+                                    <div class="sidebar__item-hidden">
+                                        <a href="" class="sidebar__sublink sidebar__sublink--active">
+                                            <span>Аккаунт</span>
+                                            <i></i>
+                                        </a>
+                                        <a href="" class="sidebar__sublink sidebar__sublink--active">
+                                            <span>Личная информация</span>
+                                            <i></i>
+                                        </a>
+                                        <a href="" class="sidebar__sublink sidebar__sublink--notification">
+                                            <span>Уведомления</span>
+                                            <i>1</i>
+                                        </a>
+                                        <a href="" class="sidebar__sublink">
+                                            <span>Документы</span>
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </aside>
                         <main class="cabinet-page__main">
-                            <div class="lkt-courses">
-                                <div class="cabinet-page__top">
-                                    <h1 class="lkt-courses__title display-3">Мои курсы</h1>
-                                    <button class="lkt-courses__add btn btn-outline">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.02858 2.66675V13.3334" stroke="#1B2C3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M13.3347 8.02548H2.66797" stroke="#1B2C3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span>Добавить</span>
-                                    </button>
-                                </div>
-                                <div class="cabinet-page__nav lkt-courses__nav">
-                                    <div class="cabinet-page__nav-title">4 курса</div>
-                                    <div class="cabinet-page__nav-wrap">
-                                        <button class="cabinet-page__nav-item cabinet-page__nav-item--col cabinet-page__nav-item--active">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="1" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="9" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="17" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="1" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="9" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="17" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                            </svg>
-                                        </button>
-                                        <button class="cabinet-page__nav-item cabinet-page__nav-item--row">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="1" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="9" y="5" width="14" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="1" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
-                                                <rect x="9" y="13" width="14" height="6" rx="2" fill="#C6D0DD"/>
-                                            </svg>
-                                        </button>
+                            <div class="course-report">
+                                <h1 class="course-report__title display-3">Отчет по курсу</h1>
+                                <div class="course-report__top card-bg">
+                                    <div class='course-report__top-form-group form-group'>
+                                        <label>Курс</label>
+                                        <select>
+                                           <option selected hidden>Курс</option>
+                                           <option>Курс 1</option>
+                                           <option>Курс 2</option>
+                                       </select>
                                     </div>
-                                </div>
-                                <div class="cabinet-page__items">
-                                    <div class="cabinet-page__item">
-                                        <div class="course-card3">
-                                            <div class="course-card3__img">
-                                                <img src="img/course.jpg" alt="">
-                                            </div>
-                                            <div class="course-card3__content">
-                                                <div class="course-card3__title truncate">Название курса в нескольких строках Название курса в нескольких строках</div>
-                                                <div class="course-card3__bottom">
-                                                    <div class="course-card3__students">
-                                                        <div class="course-card3__students-title">48 учеников</div>
-                                                        <div class="course-card3__students-new">8 новых</div>
-                                                    </div>
-                                                    <div class="course-card3__num">2</div>
-                                                </div>
-                                            </div>
+                                    <div class="course-report__items">
+                                        <div class="course-report__item">
+                                            <span class="course-report__item-title">Начало курса</span>
+                                            <div class="course-report__item-desc">12.10.2021</div>
                                         </div>
-                                    </div>
-                                    <div class="cabinet-page__item">
-                                        <div class="course-card3">
-                                            <div class="course-card3__img">
-                                                <img src="img/course2.jpg" alt="">
-                                            </div>
-                                            <div class="course-card3__content">
-                                                <div class="course-card3__title truncate">Название курса в нескольких строках оооо</div>
-                                                <div class="course-card3__bottom">
-                                                    <div class="course-card3__students">
-                                                        <div class="course-card3__students-title">48 учеников</div>
-                                                        <div class="course-card3__students-new">8 новых</div>
-                                                    </div>
-                                                    <div class="course-card3__num">2</div>
-                                                </div>
-                                            </div>
+                                        <div class="course-report__item">
+                                            <span class="course-report__item-title">Дней со старта</span>
+                                            <div class="course-report__item-desc">50 дней</div>
                                         </div>
-                                    </div>
-                                    <div class="cabinet-page__item">
-                                        <div class="course-card3">
-                                            <div class="course-card3__img">
-                                                <img src="img/course3.jpg" alt="">
-                                            </div>
-                                            <div class="course-card3__content">
-                                                <div class="course-card3__title truncate">Название курса в нескольких строках оооо</div>
-                                                <div class="course-card3__bottom">
-                                                    <div class="course-card3__students">
-                                                        <div class="course-card3__students-title">48 учеников</div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="course-report__item">
+                                            <span class="course-report__item-title">Всего уроков</span>
+                                            <div class="course-report__item-desc">24 урока</div>
                                         </div>
-                                    </div>
-                                    <div class="cabinet-page__item">
-                                        <div class="course-card3">
-                                            <div class="course-card3__img">
-                                                <img src="img/course4.jpg" alt="">
-                                            </div>
-                                            <div class="course-card3__content">
-                                                <div class="course-card3__title truncate">Название курса в нескольких строках оооо</div>
-                                                <div class="course-card3__bottom">
-                                                    <div class="course-card3__students">
-                                                        <div class="course-card3__students-status">На модерации</div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="course-report__item">
+                                            <span class="course-report__item-title">Всего учеников</span>
+                                            <div class="course-report__item-desc">35 учеников</div>
+                                        </div>
+                                        <div class="course-report__item">
+                                            <span class="course-report__item-title">Процент завершивших</span>
+                                            <div class="course-report__item-desc" style="color: #D6921F;">63%</div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="course-report__nav">
+                                    <div class="course-report__tabs">
+                                        <div data-tab-path="1" class="course-report__tab course-report__tab--active">Ученики</div>
+                                        <div data-tab-path="2" class="course-report__tab">Динамика курса</div>
+                                    </div>
+                                    <div class="course-report__selects">
+                                        <select>
+                                            <option>Все статусы</option>
+                                            <option>Все статусы 2</option>
+                                        </select>
+                                        <select>
+                                            <option>За месяц</option>
+                                            <option>За месяц 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div data-tab-path="1" class="course-report__content  course-report__content--active">
+                                    <div class="course-report__items course-report__items--num card-bg">
+                                        <div class="course-report__item">
+                                            <span class="course-report__item-title">Количество учеников</span>
+                                            <div class="course-report__item-desc">11 учеников</div>
+                                        </div>
+                                        <div class="course-report__item">
+                                            <span class="course-report__item-title">Процент завершивших</span>
+                                            <div class="course-report__item-desc" style="color: #94C97E;">75%</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-report__table card-bg">
+                                        <div class="course-report__table-inner">
+                                            <div class="course-report__table-head">
+                                                <div class="course-report__table-head-col">Ученик</div>
+                                                <div class="course-report__table-head-col">Статус</div>
+                                            </div>
+                                            <div class="course-report__table-items">
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-user">
+                                                            <div class="course-report__table-avatar">
+                                                                <img src="img/avatar2.jpg" alt="">
+                                                            </div>
+                                                            <div class="course-report__table-info">
+                                                                <div class="course-report__table-name">Мария Мариева</div>
+                                                                <div class="course-report__table-lesson">
+                                                                    <span>01</span>
+                                                                    <span>Название урока</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-status" style="color: #D6921F;">Не приступил</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-user">
+                                                            <div class="course-report__table-avatar">
+                                                                <img src="img/avatar5.jpg" alt="">
+                                                            </div>
+                                                            <div class="course-report__table-info">
+                                                                <div class="course-report__table-name">Мария Мариева</div>
+                                                                <div class="course-report__table-lesson">
+                                                                    <span>01</span>
+                                                                    <span>Название урока</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-status" style="color: #94C97E;">Пройден</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-user">
+                                                            <div class="course-report__table-avatar">
+                                                                <img src="img/avatar3.jpg" alt="">
+                                                            </div>
+                                                            <div class="course-report__table-info">
+                                                                <div class="course-report__table-name">Мария Мариева</div>
+                                                                <div class="course-report__table-lesson">
+                                                                    <span>02</span>
+                                                                    <span>Название урока</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-status">Завершен 20.12.2021</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-user">
+                                                            <div class="course-report__table-avatar">
+                                                                <img src="img/avatar2.jpg" alt="">
+                                                            </div>
+                                                            <div class="course-report__table-info">
+                                                                <div class="course-report__table-name">Мария Мариева</div>
+                                                                <div class="course-report__table-lesson">
+                                                                    <span>01</span>
+                                                                    <span>Название урока</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-status" style="color: #D6921F;">Не приступил</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-user">
+                                                            <div class="course-report__table-avatar">
+                                                                <img src="img/avatar5.jpg" alt="">
+                                                            </div>
+                                                            <div class="course-report__table-info">
+                                                                <div class="course-report__table-name">Мария Мариева</div>
+                                                                <div class="course-report__table-lesson">
+                                                                    <span>01</span>
+                                                                    <span>Название урока</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-status" style="color: #94C97E;">Пройден</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-user">
+                                                            <div class="course-report__table-avatar">
+                                                                <img src="img/avatar3.jpg" alt="">
+                                                            </div>
+                                                            <div class="course-report__table-info">
+                                                                <div class="course-report__table-name">Мария Мариева</div>
+                                                                <div class="course-report__table-lesson">
+                                                                    <span>02</span>
+                                                                    <span>Название урока</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-status">Завершен 20.12.2021</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div data-tab-path="2" class="course-report__content">
+                                    <div class="course-report__items course-report__items--num card-bg">
+                                        <div class="course-report__item">
+                                            <span class="course-report__item-title">Количество учеников</span>
+                                            <div class="course-report__item-desc">11 учеников</div>
+                                        </div>
+                                        <div class="course-report__item">
+                                            <span class="course-report__item-title">Среднее прохождение урока</span>
+                                            <div class="course-report__item-desc">1.5 дня</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-report__table course-report__table2 card-bg">
+                                        <div class="course-report__table-inner">
+                                            <div class="course-report__table-head">
+                                                <div class="course-report__table-head-col">№</div>
+                                                <div class="course-report__table-head-col">Название</div>
+                                                <div class="course-report__table-head-col">Прохождение</div>
+                                            </div>
+                                            <div class="course-report__table-items">
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-num">01</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Название урока</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-duration">1 день</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-num">01</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Название урока</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-duration">1 день</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-num">01</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Название урока</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-duration">1 день</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-num">01</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Название урока</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-duration">1 день</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-num">01</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Название урока</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-duration">1 день</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
                         </main>
                     </div>
                 </div>
             </section>
+
 
         </div>
 
@@ -426,24 +617,6 @@
     <script src="js/swiper.js"></script>
     <script src="js/index.js"></script>
     <script>
-        document.querySelectorAll(".sidebar__item-show").forEach(el => {
-            el.onclick = function() {
-                this.closest(".sidebar__item").classList.toggle("sidebar__item--open")
-            }
-        });
-
-        document.querySelector(".cabinet-page__nav-item--row").onclick = function() {
-            document.querySelector(".cabinet-page__nav-item--col").classList.remove("cabinet-page__nav-item--active")
-            this.classList.add("cabinet-page__nav-item--active")
-            document.querySelector(".cabinet-page__items").classList.add("cabinet-page__items--row")
-        }
-
-        document.querySelector(".cabinet-page__nav-item--col").onclick = function() {
-            document.querySelector(".cabinet-page__nav-item--row").classList.remove("cabinet-page__nav-item--active")
-            this.classList.add("cabinet-page__nav-item--active")
-            document.querySelector(".cabinet-page__items").classList.remove("cabinet-page__items--row")
-        }
-
         document.querySelector(".header__lk-avatar").onclick = function() {
             document.querySelector(".header__lk-dropdown").classList.toggle("header__lk-dropdown--active")
         }
@@ -451,6 +624,27 @@
         document.querySelector(".header__notification-show").onclick = function() {
             this.closest(".header__notification").classList.toggle("header__notification--active")
         }
+
+        document.querySelectorAll(".sidebar__item-show").forEach(el => {
+            el.onclick = function() {
+                this.closest(".sidebar__item").classList.toggle("sidebar__item--open")
+            }
+        });
+
+        document.querySelectorAll(".course-report__tab").forEach(el => {
+
+            el.onclick = function() {
+                let path = this.getAttribute("data-tab-path")
+                document.querySelectorAll(".course-report__tab").forEach(el => {
+                    el.classList.remove("course-report__tab--active")
+                });
+                document.querySelectorAll(".course-report__content").forEach(el => {
+                    el.classList.remove("course-report__content--active")
+                });
+                document.querySelector(`.course-report__content[data-tab-path="${path}"]`).classList.add("course-report__content--active")
+                this.classList.add("course-report__tab--active")
+            }
+        });
     </script>
 
 </body>

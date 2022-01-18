@@ -1,0 +1,274 @@
+.account-settings {
+    &__group {
+        margin-top: 32px;
+    }
+    &__photo {
+        margin-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #EAECF5;
+        &-title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 144%;
+        }
+        &-wrap {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+        }
+        &-img {
+            margin-right: 24px;
+            flex-shrink: 0;
+            img {
+                width: 128px;
+                height: 128px;
+                border-radius: 50%;
+                display: block;
+            }
+        }
+        &-buttons {
+            display: flex;
+            align-items: center;
+        }
+        &-save {
+            width: 217px;
+        }
+        &-delete {
+            width: 148px;
+            margin-left: 16px;
+        }
+    }
+    &__item {
+        margin-top: 24px;
+        &:not(:last-child) {
+            padding-bottom: 24px;
+            border-bottom: 1px solid #EAECF5;
+        }
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 144%;
+        }
+        &-desc {
+            margin-top: 2px;
+            font-size: 14px;
+            line-height: 143%;
+            color: #74869C;
+            display: block;
+        }
+        &-btn {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 144%;
+            color: #9FADBF;
+            &:hover {
+                color: $black;
+            }
+        }
+        &-input {
+            height: 26px;
+            margin-top: 4px;
+            padding: 0;
+            font-size: 18px;
+            opacity: 1;
+            background-color: transparent;
+            border: none;
+            &:disabled {}
+        }
+        &-socials {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        &-social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 32px;
+            height: 56px;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 16px;
+            border: 2px solid #EAECF5;
+            margin: 16px 16px 0 0;
+            cursor: pointer;
+            transition: all .3s;
+            &:hover {
+                color: $black;
+                border-color: $black;
+            }
+            &:active {
+                color: #fff;
+                border-color: $black;
+                background-color: $black;
+            }
+            svg {
+                margin-right: 10px;
+            }
+            &--active {
+                border-color: transparent;
+                background: #F2F9FF;
+                &:hover {
+                    background: #E2EDFC;
+                    color: $black;
+                    border-color: transparent;
+                }
+                &:active {
+                    background: #ECF2FA;
+                    color: $black;
+                    border-color: transparent;
+                }
+            }
+        }
+        &-doc {
+            margin-top: 8px;
+            width: 168px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__logout {
+        margin-top: 24px;
+        width: 268px;
+        svg {
+            margin-right: 10px;
+        }
+    }
+    &__switches {
+        margin-top: 16px;
+    }
+    &__switch {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+        }
+        &-input {
+            height: 24px;
+            width: 48px;
+        }
+    }
+    &__desc {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 143%;
+        color: #74869C;
+    }
+    &__upload {
+        margin-top: 8px;
+        border: 1px dashed #C6D0DD;
+        border-radius: 8px;
+        text-align: center;
+        padding: 20px 16px;
+        position: relative;
+        &-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            line-height: 150%;
+            margin-top: 4px;
+            strong {
+                font-weight: bold;
+                color: #5E62DA;
+            }
+            span {
+                margin-left: 6px;
+                color: #9FADBF;
+            }
+        }
+        &-hint {
+            margin-top: 4px;
+            font-size: 12px;
+            line-height: 133%;
+            color: #59697C;
+        }
+        &-input {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .account-settings {
+        &__photo {
+            &-buttons {
+                display: block;
+                max-width: 328px;
+                flex-grow: 1;
+            }
+            &-save,
+            &-delete {
+                width: 100%;
+            }
+            &-delete {
+                margin-top: 16px;
+                margin-left: 0;
+            }
+        }
+        &__logout {
+            width: 100%;
+        }
+        &__upload {
+            &-title {
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .account-settings {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        &__title {
+            padding: 0 15px;
+        }
+        &__photo {
+            margin-top: 16px;
+            &-wrap {
+                display: block;
+            }
+            &-buttons {
+                max-width: 100%;
+                margin-top: 24px;
+            }
+        }
+        &__logout {
+            margin-top: 16px;
+        }
+        &__group,
+        &__item {
+            margin-top: 16px;
+            &:not(:last-child) {
+                padding-bottom: 16px;
+            }
+        }
+        &__item {
+            &-social {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+    }
+}

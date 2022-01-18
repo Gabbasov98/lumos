@@ -60,9 +60,13 @@
             width: calc(100% - 64px);
             height: 56px;
             border-radius: 40px;
-            font-weight: 800;
-            font-size: 16px;
             margin: 24px auto 0;
+            svg {
+                margin-right: 10px;
+            }
+            &--edit {
+                margin-top: 16px;
+            }
         }
         &-hint {
             margin-top: 16px;
@@ -71,6 +75,18 @@
             line-height: 150%;
             color: #74869C;
             text-align: center;
+        }
+        &-num {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 144%;
+            margin-top: 16px;
+        }
+        &-progress {
+            text-align: center;
+            font-weight: 600;
+            line-height: 150%;
         }
     }
     &__share {
@@ -144,6 +160,69 @@
     }
 }
 
+.edit-event {
+    padding: 32px 0 56px;
+    &__inner {
+        display: flex;
+    }
+    &__title {
+        margin-bottom: 32px;
+    }
+    &__left {
+        flex-grow: 1;
+    }
+    &__right {
+        width: 288px;
+        flex-shrink: 0;
+        margin-left: 24px;
+    }
+    &__upload {
+        margin-top: 24px;
+        border-bottom: 1px solid #EAECF5;
+        border-top: none !important;
+        padding-top: 0 !important;
+        padding-bottom: 24px;
+        .course-edit__form-upload-img {
+            width: 200px;
+        }
+    }
+    &__broadcast {
+        margin-top: 32px;
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+            align-items: flex-end;
+        }
+        &-btn {
+            width: calc(50% - 12px);
+            height: 40px;
+            font-size: 14px;
+        }
+        &-form-group {
+            width: calc(50% - 12px);
+        }
+    }
+    &__nav {
+        padding: 24px 16px;
+    }
+    &__save {
+        width: 100%;
+    }
+    &__hint {
+        font-weight: 600;
+        font-size: 14px;
+        margin-top: 24px;
+        line-height: 143%;
+        color: #74869C;
+        text-align: center;
+    }
+    &__delete {
+        width: 100%;
+        margin-top: 24px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .events {
         padding-bottom: 48px;
@@ -159,6 +238,27 @@
         }
         &__share {
             width: 100%;
+        }
+    }
+    .edit-event {
+        padding-bottom: 48px;
+        &__right {
+            width: 300px;
+        }
+        &__upload {
+            .course-edit__form-upload-img {
+                width: 170px;
+            }
+            .course-edit__form-upload-buttons {
+                display: flex;
+            }
+            .course-edit__form-upload-btn {
+                width: 217px;
+            }
+            .course-edit__form-upload-delete {
+                width: 148px;
+                margin: 0 0 0 16px;
+            }
         }
     }
 }
@@ -186,6 +286,9 @@
             display: block;
             position: relative;
             padding-top: 50px;
+            &--bread {
+                padding-top: 86px;
+            }
         }
         &__left {
             width: 100%;
@@ -196,7 +299,10 @@
             overflow: hidden;
             box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.05), 0px 4px 6px -2px rgba(16, 24, 40, 0.025);
             border-radius: 16px;
-            padding: 46px 0px 46px 252px;
+            padding: 0px 0px 0px 252px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         &__card {
             background-color: transparent;
@@ -215,6 +321,12 @@
                 margin-top: 0;
                 width: 100%;
                 height: 48px;
+                &--edit {
+                    margin-top: 16px;
+                }
+            }
+            &-num {
+                margin-top: 0;
             }
         }
         &__share {
@@ -224,6 +336,8 @@
         }
         &__title {
             font-size: 28px;
+        }
+        &__top {
             position: absolute;
             left: 0;
             top: 0;
@@ -233,6 +347,91 @@
         }
         &__desc {
             padding: 16px 24px;
+        }
+    }
+    .edit-event {
+        padding: 0 0 40px;
+        &__inner {
+            display: block;
+            position: relative;
+        }
+        &__title {
+            background: #FFFFFF;
+            min-height: 64px;
+            box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.05), 0px 2px 4px -2px rgba(16, 24, 40, 0.03);
+            border-radius: 0px 0px 24px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 60px;
+            width: calc(100% + 30px);
+            margin: 0 0 24px -15px;
+            border-top: 1px solid #eaecf5;
+            font-size: 16px;
+            line-height: 150%;
+        }
+        &__delete,
+        &__save {
+            width: 40px;
+            height: 40px;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8835 6.31201C12.8835 6.31201 12.5215 10.802 12.3115 12.6933C12.2115 13.5967 11.6535 14.126 10.7395 14.1427C9.00019 14.174 7.25885 14.176 5.52018 14.1393C4.64085 14.1213 4.09218 13.5853 3.99418 12.698C3.78285 10.79 3.42285 6.31201 3.42285 6.31201' stroke='%23E15A5A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.8053 4.15975H2.5' stroke='%23E15A5A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M11.6274 4.15974C11.104 4.15974 10.6534 3.78974 10.5507 3.27707L10.3887 2.46641C10.2887 2.09241 9.95004 1.83374 9.56404 1.83374H6.74204C6.35604 1.83374 6.01738 2.09241 5.91738 2.46641L5.75538 3.27707C5.65271 3.78974 5.20204 4.15974 4.67871 4.15974' stroke='%23E15A5A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-size: 0;
+            left: 0;
+            top: 0;
+            position: absolute;
+            margin-top: 12px;
+        }
+        &__save {
+            background: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"), linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
+            background-repeat: no-repeat;
+            background-position: center center;
+            right: 0;
+            left: unset;
+            &:hover {
+                background: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"), linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            &:active {
+                background: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"), linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+        &__broadcast {
+            margin-top: 24px;
+        }
+        &__nav {
+            padding: 0;
+            background: transparent;
+            box-shadow: none;
+        }
+        &__hint {
+            display: none;
+        }
+        &__right {
+            margin-left: 0;
+        }
+        &__upload {
+            .course-edit__form-upload-img {
+                margin-right: 24px;
+            }
+            .course-edit__form-upload-wrap {
+                display: flex;
+            }
+            .course-edit__form-upload-buttons {
+                display: block;
+                max-width: 286px;
+            }
+            .course-edit__form-upload-btn {
+                width: 100%;
+            }
+            .course-edit__form-upload-delete {
+                width: 100%;
+                margin: 16px 0 0 0;
+            }
         }
     }
 }
@@ -274,8 +473,14 @@
         .container {
             padding: 0;
         }
+        &__top {
+            padding: 0 15px;
+        }
         &__inner {
             padding-top: 51px;
+            &--bread {
+                padding-top: 80px;
+            }
         }
         &__title {
             font-size: 22px;
@@ -292,6 +497,9 @@
                 height: 40px;
                 font-size: 14px;
             }
+            &-num {
+                margin-top: 16px;
+            }
         }
         &__left {
             padding: 0;
@@ -301,6 +509,7 @@
         &__share {
             height: 40px;
             font-size: 14px;
+            margin-top: 16px;
             svg {
                 width: 16px;
                 height: auto;
@@ -326,6 +535,39 @@
         &__desc {
             margin-top: 24px;
             padding: 16px;
+        }
+    }
+    .edit-event {
+        padding-bottom: 64px;
+        &__title {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        &__upload {
+            padding-bottom: 16px;
+            .course-edit__form-upload-img {
+                width: 100%;
+            }
+            .course-edit__form-upload-wrap {
+                display: block;
+            }
+            .course-edit__form-upload-buttons {
+                display: block;
+                max-width: 100%;
+            }
+        }
+        &__broadcast {
+            &-bottom {
+                margin-top: 16px;
+                display: block;
+            }
+            &-form-group {
+                width: 100%;
+            }
+            &-btn {
+                width: 100%;
+                margin-top: 16px;
+            }
         }
     }
 }

@@ -1,0 +1,588 @@
+.course-report {
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 24px;
+        &--num {
+            grid-template-columns: 1fr 1fr;
+        }
+        &--sale {
+            margin-top: 24px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        &--sale2 {
+            margin-top: 24px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    &__item {
+        &-title {
+            font-size: 12px;
+            line-height: 133%;
+        }
+        &-desc {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 144%;
+            margin-top: 4px;
+        }
+    }
+    &__top {
+        margin-top: 32px;
+        &-form-group {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #EAECF5;
+        }
+    }
+    &__nav {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__tabs {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+    }
+    &__tab {
+        white-space: nowrap;
+        flex-shrink: 0;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 0 22px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        border-radius: 24px;
+        transition: all .3s;
+        &:hover {
+            background: #EAECF5;
+            cursor: pointer;
+        }
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+        &--active {
+            background: $black;
+            color: #fff;
+            pointer-events: none;
+        }
+    }
+    &__selects {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        select {
+            border: none;
+            background-color: transparent;
+            font-size: 14px;
+            line-height: 130%;
+            outline: none;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6663 5.66602L7.99967 10.3327L3.33301 5.66602' stroke='%231B2C3E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            color: $black;
+            width: 140px;
+            padding: 0 16px;
+            &:last-child {
+                width: 115px;
+            }
+        }
+    }
+    &__content {
+        margin-top: 24px;
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+    &__table {
+        padding: 0;
+        margin-top: 24px;
+        overflow-x: auto;
+        &-head,
+        &-item {
+            padding: 16px 32px;
+            border-bottom: 1px solid #EAECF5;
+            display: flex;
+            align-items: center;
+            &-col {
+                font-size: 12px;
+                line-height: 133%;
+                &:nth-child(1) {
+                    flex-grow: 1;
+                }
+                &:nth-child(2) {
+                    width: 180px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+        &-items {
+            padding: 8px 32px;
+        }
+        &-item {
+            padding: 16px 0;
+            &:last-child {
+                border: none;
+            }
+        }
+        &-user {
+            display: flex;
+            align-items: center;
+        }
+        &-avatar {
+            margin-right: 16px;
+            flex-shrink: 0;
+            img {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+            }
+        }
+        &-name {
+            font-weight: bold;
+        }
+        &-lesson {
+            color: #74869C;
+            span {
+                &:not(:last-child) {
+                    margin-right: 8px;
+                }
+            }
+        }
+        &-name,
+        &-status,
+        &-lesson,
+        &-num,
+        &-title,
+        &-duration {
+            font-size: 14px;
+            line-height: 143%;
+        }
+        &-status {
+            color: #74869C;
+        }
+        &-creator {
+            &-title {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 143%;
+            }
+            &-wrap {
+                margin-top: 4px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                line-height: 143%;
+                img {
+                    width: 20px;
+                    margin-right: 8px;
+                    height: 20px;
+                    flex-shrink: 0;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    &__table2 {
+        .course-report__table-head-col,
+        .course-report__table-item-col {
+            &:nth-child(1) {
+                width: 20px;
+                flex-shrink: 0;
+                flex-grow: 0;
+                margin-right: 10px;
+            }
+            &:nth-child(2) {
+                flex-grow: 1;
+            }
+            &:nth-child(3) {
+                width: 180px;
+                flex-shrink: 0;
+            }
+        }
+    }
+    &__table3 {
+        .course-report__table-head-col,
+        .course-report__table-item-col {
+            &:nth-child(1) {
+                width: 260px;
+                flex-shrink: 0;
+                margin-right: 10px;
+            }
+            &:nth-child(2) {
+                width: 260px;
+                text-align: center;
+                flex-shrink: 0;
+            }
+            &:nth-child(3) {
+                width: 260px;
+                text-align: center;
+                flex-shrink: 0;
+            }
+            &:nth-child(4) {
+                width: 16px;
+                flex-shrink: 0;
+            }
+        }
+    }
+    &__table4 {
+        .course-report__table-head-col,
+        .course-report__table-item-col {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5) {
+                width: 155px;
+                flex-shrink: 0;
+                flex-grow: 1;
+            }
+        }
+    }
+    &__table5 {
+        .course-report__table-head-col,
+        .course-report__table-item-col {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                width: 275px;
+                flex-shrink: 0;
+                flex-grow: 1;
+            }
+        }
+    }
+    &__table6 {
+        .course-report__table-head-col,
+        .course-report__table-item-col {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                width: 140px;
+                flex-shrink: 0;
+                flex-grow: 1;
+                margin-right: 5px;
+            }
+            &:nth-child(1) {
+                width: 70px;
+            }
+            &:nth-child(6) {
+                margin-right: 0;
+            }
+        }
+    }
+    &__table7 {
+        .course-report__table-head-col,
+        .course-report__table-item-col {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                width: 200px;
+                flex-shrink: 0;
+                flex-grow: 1;
+                margin-right: 5px;
+            }
+            &:nth-child(6) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.sale-report {
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 144%;
+        margin-top: 32px;
+        &.mt0 {
+            margin: 0px;
+        }
+    }
+    &__top {
+        padding: 24px 32px;
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-left,
+        &-right {
+            width: 50%;
+        }
+        &-title {
+            font-size: 12px;
+            line-height: 133%;
+        }
+        &-date {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 144%;
+            margin-top: 4px;
+            display: block;
+        }
+        &-img {
+            width: 48px;
+            height: 48px;
+            margin-right: 16px;
+            flex-shrink: 0;
+            border-radius: 16px;
+            position: relative;
+            overflow: hidden;
+            img {
+                width: 92px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &-left {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 143%;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__back {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 143%;
+        color: #5E62DA;
+        svg {
+            margin-right: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .course-report {
+        &__items {
+            gap: unset;
+            display: flex;
+            flex-wrap: wrap;
+            &--sale,
+            &--sale2,
+            &--trener {
+                gap: 24px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                .course-report__item {
+                    margin: 0;
+                }
+            }
+        }
+        &__item {
+            margin-right: 24px;
+            flex-grow: 1;
+            margin-top: 16px;
+            min-width: calc(33% - 24px);
+            flex-shrink: 0;
+        }
+        &__top {
+            &-form-group {
+                margin-bottom: 0;
+            }
+        }
+        &__table3 {
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                    width: 170px;
+                }
+            }
+        }
+        &__table4 {
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    width: 100px;
+                    margin-right: 9px;
+                }
+                &:nth-child(5) {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__table5 {
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                    width: 176px;
+                    margin-right: 9px;
+                }
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__table7 {
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    width: 140px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .course-report {
+        &__top {
+            margin-top: 24px;
+        }
+        &__tab {
+            padding: 0 20px;
+            height: 44px;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+        &__table3 {
+            .course-report__table-inner {
+                min-width: 500px;
+            }
+        }
+        &__table4 {
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    width: 83px;
+                    margin-right: 5px;
+                }
+                &:nth-child(5) {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__table5 {
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                    width: 156px;
+                    margin-right: 9px;
+                }
+            }
+        }
+        &__table7 {
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    width: 117px;
+                }
+            }
+        }
+        &__items {
+            &--num {
+                padding-top: 0px;
+            }
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                    width: 140px;
+                }
+            }
+        }
+    }
+    .sale-report {
+        &__title {
+            margin-top: 24px;
+        }
+        &__top {
+            padding: 16px 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .course-report {
+        &__item {
+            width: 50%;
+            margin-right: 0;
+        }
+        &__table {
+            overflow-x: auto;
+            width: calc(100% + 15px);
+            border-radius: 16px 0 0 16px;
+            &-inner {
+                min-width: 560px;
+            }
+        }
+        &__table4 {
+            .course-report__table-inner {
+                min-width: 525px;
+            }
+        }
+        &__tab {
+            height: 40px;
+            padding: 0 16px;
+        }
+        &__nav {
+            display: block;
+        }
+        &__table {
+            &-head {
+                padding: 16px;
+            }
+            &-items {
+                padding: 4px 16px;
+            }
+        }
+        &__items {
+            &--sale,
+            &--sale2,
+            &--trener {
+                grid-template-columns: 1fr 1fr;
+                .course-report__item {
+                    width: unset;
+                }
+            }
+        }
+    }
+    .sale-report {
+        &__top {
+            padding: 16px;
+            display: block;
+            &-left,
+            &-right {
+                width: 100%;
+            }
+            &-right {
+                margin-top: 24px;
+            }
+        }
+    }
+}
