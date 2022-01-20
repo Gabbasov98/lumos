@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Статистика Курс </title>
+    <title>Статистика Продажи</title>
 </head>
 
 <body>
@@ -248,116 +248,126 @@
                             </div>
                         </aside>
                         <main class="cabinet-page__main">
-                            <div class="course-report">
-                                <h1 class="course-report__title display-3">Отчет по тренеру</h1>
-
+                            <div class="course-report sale-report">
+                                <h1 class="course-report__title display-3">Отчет по пользователям</h1>
                                 <div class="course-report__nav">
-                                    <div class="course-report__tabs">
-                                        <div data-tab-path="1" class="course-report__tab course-report__tab--active">Отчет по тренеру</div>
-                                        <div data-tab-path="2" class="course-report__tab">Выплаты</div>
-                                        <div data-tab-path="3" class="course-report__tab">Транзакции</div>
-                                    </div>
                                     <div class="course-report__selects">
+                                        <select>
+                                            <option>Все тренеры</option>
+                                            <option>Все тренеры 2</option>
+                                        </select>
+                                        <select>
+                                            <option>Все курсы</option>
+                                            <option>Все курсы 2</option>
+                                        </select>
                                         <select>
                                             <option>За месяц</option>
                                             <option>За месяц 2</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div data-tab-path="1" class="course-report__content  course-report__content--active">
-                                    <div class="course-report__items course-report__items--trener card-bg">
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">% Комиссия</span>
-                                            <div class="course-report__item-desc">30%</div>
-                                        </div>
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">Заработано</span>
-                                            <div class="course-report__item-desc">100 000 руб.</div>
-                                        </div>
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">Начислено</span>
-                                            <div class="course-report__item-desc">70 000 руб.</div>
-                                        </div>
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">Выплачено</span>
-                                            <div class="course-report__item-desc">50 000 руб.</div>
-                                        </div>
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">Задолженность</span>
-                                            <div class="course-report__item-desc" style="color: #D6921F;">20 000 руб.</div>
-                                        </div>
+                                <div class="course-report__items course-report__items--sale2 card-bg">
+                                    <div class="course-report__item">
+                                        <span class="course-report__item-title">Новые регистрации</span>
+                                        <div class="course-report__item-desc">10</div>
+                                    </div>
+                                    <div class="course-report__item">
+                                        <span class="course-report__item-title">Уникальные посетители</span>
+                                        <div class="course-report__item-desc">23</div>
+                                    </div>
+                                    <div class="course-report__item">
+                                        <span class="course-report__item-title">Посещение курсов</span>
+                                        <div class="course-report__item-desc">16</div>
+                                    </div>
+                                    <div class="course-report__item">
+                                        <span class="course-report__item-title">Покупки курс, шт</span>
+                                        <div class="course-report__item-desc">10</div>
+                                    </div>
+                                    <div class="course-report__item">
+                                        <span class="course-report__item-title">Купили подписку</span>
+                                        <div class="course-report__item-desc">12</div>
+                                    </div>
+                                    <div class="course-report__item">
+                                        <span class="course-report__item-title">Количество Завершивших обучение</span>
+                                        <div class="course-report__item-desc">17</div>
                                     </div>
                                 </div>
-                                <div data-tab-path="2" class="course-report__content">
-                                    <div class="course-report__table course-report__table6 card-bg">
+
+                                <div class="course-report__tabs">
+                                    <div data-tab-path="1" class="course-report__tab course-report__tab--active">Новые регистрации</div>
+                                    <div data-tab-path="2" class="course-report__tab">Посещения курсов</div>
+                                    <div data-tab-path="3" class="course-report__tab">Покупки курс, шт</div>
+                                    <div data-tab-path="4" class="course-report__tab">Купили подписку</div>
+                                    <div data-tab-path="5" class="course-report__tab">Завершили курс</div>
+                                </div>
+
+                                <div data-tab-path="1" class="course-report__content  course-report__content--active">
+                                    <div class="course-report__table card-bg">
                                         <div class="course-report__table-inner">
                                             <div class="course-report__table-head">
-                                                <div class="course-report__table-head-col">ID</div>
                                                 <div class="course-report__table-head-col">ФИО</div>
-                                                <div class="course-report__table-head-col">Дата транзакции</div>
-                                                <div class="course-report__table-head-col">Сумма выплаты</div>
-                                                <div class="course-report__table-head-col">Кто добавил</div>
-                                                <div class="course-report__table-head-col">Способ</div>
+                                                <div class="course-report__table-head-col">Дата регистрации</div>
                                             </div>
                                             <div class="course-report__table-items">
                                                 <div class="course-report__table-item">
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">384050</div>
+                                                        <div class="course-report__table-title">Петр Петренко Петров</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Дмитрий Дмитриев Дмитриевич</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Банковский перевод</div>
+                                                        <div class="course-report__table-title">14.02.2021</div>
                                                     </div>
                                                 </div>
                                                 <div class="course-report__table-item">
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">384050</div>
+                                                        <div class="course-report__table-title">Петр Петренко Петров</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Дмитрий Дмитриев Дмитриевич</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Банковский перевод</div>
+                                                        <div class="course-report__table-title">14.02.2021</div>
                                                     </div>
                                                 </div>
                                                 <div class="course-report__table-item">
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">384050</div>
+                                                        <div class="course-report__table-title">Петр Петренко Петров</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
+                                                        <div class="course-report__table-title">14.02.2021</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div data-tab-path="2" class="course-report__content">
+                                    <div class="course-report__table card-bg">
+                                        <div class="course-report__table-inner">
+                                            <div class="course-report__table-head">
+                                                <div class="course-report__table-head-col">Название курса</div>
+                                                <div class="course-report__table-head-col">Количество посещений</div>
+                                            </div>
+                                            <div class="course-report__table-items">
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Название курса</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
+                                                        <div class="course-report__table-title">2</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Название курса</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
+                                                        <div class="course-report__table-title">5</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Название курса</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Дмитрий Дмитриев Дмитриевич</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Банковский перевод</div>
+                                                        <div class="course-report__table-title">4</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -366,69 +376,108 @@
                                     </div>
                                 </div>
                                 <div data-tab-path="3" class="course-report__content">
-                                    <div class="course-report__table course-report__table7 card-bg">
+                                    <div class="course-report__table card-bg">
                                         <div class="course-report__table-inner">
                                             <div class="course-report__table-head">
-                                                <div class="course-report__table-head-col">ФИО</div>
-                                                <div class="course-report__table-head-col">Заказ</div>
-                                                <div class="course-report__table-head-col">Дата</div>
-                                                <div class="course-report__table-head-col">Сумма платежа</div>
+                                                <div class="course-report__table-head-col">Название курса</div>
+                                                <div class="course-report__table-head-col">Количество покупок</div>
                                             </div>
                                             <div class="course-report__table-items">
                                                 <div class="course-report__table-item">
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
+                                                        <div class="course-report__table-title">Название курса</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">170893</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
+                                                        <div class="course-report__table-title">2</div>
                                                     </div>
                                                 </div>
                                                 <div class="course-report__table-item">
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
+                                                        <div class="course-report__table-title">Название курса</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">170893</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
+                                                        <div class="course-report__table-title">5</div>
                                                     </div>
                                                 </div>
                                                 <div class="course-report__table-item">
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
+                                                        <div class="course-report__table-title">Название курса</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">170893</div>
+                                                        <div class="course-report__table-title">4</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div data-tab-path="4" class="course-report__content">
+                                    <div class="course-report__table card-bg">
+                                        <div class="course-report__table-inner">
+                                            <div class="course-report__table-head">
+                                                <div class="course-report__table-head-col">Название подписки</div>
+                                                <div class="course-report__table-head-col">Количество покупок</div>
+                                            </div>
+                                            <div class="course-report__table-items">
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Базовая</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
+                                                        <div class="course-report__table-title">2</div>
                                                     </div>
                                                 </div>
                                                 <div class="course-report__table-item">
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
+                                                        <div class="course-report__table-title">Премиум</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">170893</div>
+                                                        <div class="course-report__table-title">5</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">ВИП</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
+                                                        <div class="course-report__table-title">4</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div data-tab-path="5" class="course-report__content">
+                                    <div class="course-report__table course-report__table2 card-bg">
+                                        <div class="course-report__table-inner">
+                                            <div class="course-report__table-head">
+                                                <div class="course-report__table-head-col">Название курса</div>
+                                                <div class="course-report__table-head-col">Количество завершивших</div>
+                                                <div class="course-report__table-head-col">Тип</div>
+                                            </div>
+                                            <div class="course-report__table-items">
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Название курса</div>
                                                     </div>
                                                     <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
+                                                        <div class="course-report__table-title">7</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Курс</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Название курса</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">10</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Подписка</div>
                                                     </div>
                                                 </div>
                                             </div>

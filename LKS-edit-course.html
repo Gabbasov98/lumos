@@ -180,7 +180,7 @@
                 </div>
             </header>
 
-            <section class='course-edit'>
+            <section class='course-edit course-edit--lks'>
                 <div class='container'>
                     <div class='course-edit__inner'>
                         <div class="course-edit__left">
@@ -188,15 +188,24 @@
                                 <span>Редактирование курса</span>
                             </h1>
                             <div class="course-edit__tabs">
-                                <div data-tab-path="1" class="course-edit__tab course-edit__tab--active">Основная информация</div>
-                                <div data-tab-path="2" class="course-edit__tab">Уроки</div>
-                                <div data-tab-path="3" class="course-edit__tab">Страница курса</div>
+                                <div data-tab-path="1" class="course-edit__tab course-edit__tab--notification course-edit__tab--active">
+                                    <span>Основная информация</span>
+                                    <i>1</i>
+                                </div>
+                                <div data-tab-path="2" class="course-edit__tab">
+                                    <span>Уроки</span>
+                                    <i>2</i>
+                                </div>
+                                <div data-tab-path="3" class="course-edit__tab">
+                                    <span>Страница курса</span>
+                                </div>
                             </div>
                             <div data-tab-path="1" class="course-edit__content  course-edit__content--active">
                                 <form class="course-edit__form">
                                     <h3 class="course-edit__form-title">Основная информация</h3>
                                     <div class="course-edit__form-grid">
-                                        <div class="course-edit__form-group form-group">
+                                        <div class="course-edit__form-group course-edit__form-group--notification form-group">
+                                            <span class="course-edit__form-group-notification">2</span>
                                             <label>Название</label>
                                             <input type="text" placeholder="Название">
                                         </div>
@@ -241,7 +250,8 @@
                                             <label for='c'>Разрешить продавать по подписке</label>
                                         </div>
                                     </div>
-                                    <div class="course-edit__form-upload">
+                                    <div class="course-edit__form-upload course-edit__form-upload--notification">
+                                        <span class="course-edit__form-upload-notification">2</span>
                                         <div class="course-edit__form-upload-title">Изображение</div>
                                         <div class="course-edit__form-upload-desc">
                                             Соотношение сторон: 16:9 (рекомендуемое разрешение: 1280x720) <br> PNG, JPG до 5 MБ
@@ -969,14 +979,45 @@
                             </div>
                         </div>
                         <div class="course-edit__right">
-                            <div class="course-edit__right">
-                                <div class="course-edit__hint">
-                                    <button class="course-edit__hint-btn btn btn-blue">Сохранить</button>
-                                    <button class="course-edit__hint-cancel btn btn-outline">
-                                        <span>Отменить</span>
-                                    </button>
-                                    <div class="course-edit__hint-desc">Ваши изменения будут отправлены на модерацию.</div>
+                            <div class="course-edit__hint">
+                                <button class="course-edit__hint-btn btn btn-blue">Сохранить</button>
+                                <button class="course-edit__hint-cancel course-edit__hint-cancel--red btn btn-light-red">
+                                    <span>Отклонить</span>
+                                </button>
+                            </div>
+                            <div class="course-edit__field z">
+                                <div class="course-edit__field-top">
+                                    <div class="course-edit__field-badge">2</div>
+                                    <div class="course-edit__field-buttons">
+                                        <button class="course-edit__field-delete">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.8825 6.3125C12.8825 6.3125 12.5205 10.8025 12.3105 12.6938C12.2105 13.5972 11.6525 14.1265 10.7385 14.1432C8.99921 14.1745 7.25788 14.1765 5.51921 14.1398C4.63987 14.1218 4.09121 13.5858 3.99321 12.6985C3.78188 10.7905 3.42188 6.3125 3.42188 6.3125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M13.8053 4.15951H2.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11.6264 4.15998C11.1031 4.15998 10.6524 3.78998 10.5497 3.27732L10.3877 2.46665C10.2877 2.09265 9.94907 1.83398 9.56307 1.83398H6.74107C6.35507 1.83398 6.0164 2.09265 5.9164 2.46665L5.7544 3.27732C5.65173 3.78998 5.20107 4.15998 4.67773 4.15998" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
+                                <textarea class="course-edit__field-text">Lorem ipsum dolor sit amet, consectetur adipiscing e</textarea>
+                            </div>
+                            <div class="course-edit__field course-edit__field--active">
+                                <div class="course-edit__field-top">
+                                    <div class="course-edit__field-badge">1</div>
+                                    <div class="course-edit__field-buttons">
+                                        <button class="course-edit__field-cancel">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.3327 2.66699L2.66602 13.3337" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M13.3327 13.3337L2.66602 2.66699" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <button class="course-edit__field-confirm">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5 12L9.66798 17L19 7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <textarea class="course-edit__field-text">Lorem ipsum dolor sit amet, consectetur adipiscing e</textarea>
                             </div>
                         </div>
                     </div>

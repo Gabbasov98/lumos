@@ -103,6 +103,35 @@
                     max-width: 390px;
                 }
             }
+            .course-card3 {
+                &__user {
+                    margin-top: 0;
+                    margin-left: 10px;
+                    img {
+                        margin-right: 0;
+                    }
+                    span {
+                        display: none;
+                    }
+                }
+                &__status {
+                    margin-left: auto;
+                    margin-top: 0;
+                    flex-grow: 1;
+                    max-width: 100px;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    &__group {
+        &:not(:first-child) {
+            margin-top: 32px;
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 144%;
         }
     }
 }
@@ -235,7 +264,8 @@
 }
 
 .lkt-courses {
-    &__add {
+    &__add,
+    &__show {
         width: 143px;
         height: 40px;
         border-radius: 40px;
@@ -329,12 +359,30 @@
             line-height: 144%;
             text-align: center;
         }
+        &-balls {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+            i {
+                display: block;
+                margin-right: 8px;
+                flex-shrink: 0;
+                width: 17px;
+                height: 17px;
+                background: linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
+                border-radius: 4px;
+                transform: rotate(-45deg);
+            }
+        }
         &-bottom {
             margin-top: 16px;
-            padding-top: 16px;
             border-top: 1px solid #eaecf5;
         }
         &-item {
+            padding-top: 16px;
             font-size: 14px;
             line-height: 143%;
             &-title {
@@ -347,6 +395,59 @@
             &:not(:last-child) {
                 margin-bottom: 12px;
             }
+            &-text {
+                color: #74869C;
+                line-height: 143%;
+            }
+        }
+    }
+}
+
+.dashboard {
+    &__greet {
+        display: flex;
+        align-items: center;
+        padding: 16px 24px;
+        &-img {
+            margin-right: 32px;
+            flex-shrink: 0;
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+        }
+        &-name {
+            font-weight: 800;
+            font-size: 32px;
+        }
+        &-bottom {
+            display: flex;
+            align-items: start;
+            margin-top: 10px;
+        }
+        &-balls {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 125%;
+            display: flex;
+            align-items: center;
+            i {
+                background: linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
+                border-radius: 4px;
+                transform: rotate(-45deg);
+                display: block;
+                width: 17px;
+                height: 17px;
+                margin-right: 8px;
+                flex-shrink: 0;
+            }
+        }
+        &-hint {
+            margin-left: 16px;
+            font-size: 14px;
+            color: #9FADBF;
+            line-height: 143%;
         }
     }
 }
@@ -414,6 +515,11 @@
         &__items {
             margin-top: 20px;
         }
+        &__group {
+            &:not(:first-child) {
+                margin-top: 24px;
+            }
+        }
     }
     .sidebar {
         display: flex;
@@ -467,6 +573,7 @@
         &__card {
             &-bottom {
                 display: flex;
+                flex-wrap: wrap;
             }
             &-item {
                 width: 50%;
@@ -507,6 +614,12 @@
                 display: none;
             }
         }
+        &__show {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
     }
     .cabinet-student {
         &__events {
@@ -515,10 +628,12 @@
         &__card {
             &-bottom {
                 display: block;
+                padding-top: 16px;
             }
             &-item {
                 width: 100%;
                 padding-right: 0px;
+                padding-top: 0;
                 &:not(:last-child) {
                     margin-bottom: 12px;
                 }
@@ -533,6 +648,32 @@
                 &:nth-child(2) {
                     display: none;
                 }
+            }
+        }
+    }
+    .dashboard {
+        &__greet {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            &-img {
+                margin-right: 0;
+            }
+            &-name {
+                margin-top: 16px;
+                font-size: 22px;
+                line-height: 130%;
+            }
+            &-bottom {
+                display: block;
+                margin-top: 16px;
+            }
+            &-balls {
+                justify-content: center;
+            }
+            &-hint {
+                margin-left: 0px;
+                margin-top: 4px;
             }
         }
     }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Статистика Курс </title>
+    <title>Статистика - Тренер </title>
 </head>
 
 <body>
@@ -250,7 +250,16 @@
                         <main class="cabinet-page__main">
                             <div class="course-report">
                                 <h1 class="course-report__title display-3">Отчет по тренеру</h1>
-
+                                <div class="course-report__top card-bg">
+                                    <div class="form-group">
+                                        <label>Тренер</label>
+                                        <select>
+                                           <option selected="" hidden="">Тренер</option>
+                                           <option>Все 1</option>
+                                           <option>Все 2</option>
+                                       </select>
+                                    </div>
+                                </div>
                                 <div class="course-report__nav">
                                     <div class="course-report__tabs">
                                         <div data-tab-path="1" class="course-report__tab course-report__tab--active">Отчет по тренеру</div>
@@ -265,27 +274,79 @@
                                     </div>
                                 </div>
                                 <div data-tab-path="1" class="course-report__content  course-report__content--active">
-                                    <div class="course-report__items course-report__items--trener card-bg">
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">% Комиссия</span>
-                                            <div class="course-report__item-desc">30%</div>
-                                        </div>
+                                    <div class="course-report__items course-report__items--sale card-bg">
                                         <div class="course-report__item">
                                             <span class="course-report__item-title">Заработано</span>
-                                            <div class="course-report__item-desc">100 000 руб.</div>
+                                            <div class="course-report__item-desc">600 000 руб.</div>
                                         </div>
                                         <div class="course-report__item">
                                             <span class="course-report__item-title">Начислено</span>
-                                            <div class="course-report__item-desc">70 000 руб.</div>
+                                            <div class="course-report__item-desc">520 000 руб.</div>
                                         </div>
                                         <div class="course-report__item">
                                             <span class="course-report__item-title">Выплачено</span>
-                                            <div class="course-report__item-desc">50 000 руб.</div>
+                                            <div class="course-report__item-desc">380 000 руб.</div>
                                         </div>
                                         <div class="course-report__item">
                                             <span class="course-report__item-title">Задолженность</span>
-                                            <div class="course-report__item-desc" style="color: #D6921F;">20 000 руб.</div>
+                                            <div class="course-report__item-desc" style="color: #D6921F;">140 000 руб.</div>
                                         </div>
+                                    </div>
+
+                                    <div class="course-report__table course-report__table8 card-bg">
+                                        <div class="course-report__table-inner">
+                                            <div class="course-report__table-head">
+                                                <div class="course-report__table-head-col">ФИО</div>
+                                                <div class="course-report__table-head-col">% Комиссия</div>
+                                                <div class="course-report__table-head-col">Заработано</div>
+                                                <div class="course-report__table-head-col">Начислено</div>
+                                                <div class="course-report__table-head-col">Выплачено</div>
+                                                <div class="course-report__table-head-col">Задолженность</div>
+                                            </div>
+                                            <div class="course-report__table-items">
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">30%</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">50 000 руб.</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">35 000 руб.</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">30 000 руб.</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">0 руб.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="course-report__table-item">
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">30%</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">50 000 руб.</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">35 000 руб.</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title">30 000 руб.</div>
+                                                    </div>
+                                                    <div class="course-report__table-item-col">
+                                                        <div class="course-report__table-title" style="color: #D6921F;">8 000 руб.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div data-tab-path="2" class="course-report__content">

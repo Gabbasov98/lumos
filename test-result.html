@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Результаты теста</title>
+</head>
+
+<body>
+
+    <div style="padding: 50px;">
+        <button class="modal-target" data-modal="result1" style="width: 250px; height: 45px; border: 1px solid #000; margin-bottom: 20px;">Ваш результат</button>
+    </div>
+
+    <div class="modal modal-result" id="result1">
+        <div class="modal__bg"></div>
+        <div class="modal-dialog">
+            <div class="modal__content">
+                <button class="modal__close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3327 2.66602L2.66602 13.3327" stroke="#1B2C3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3327 13.3327L2.66602 2.66602" stroke="#1B2C3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="modal-result__title display-3">Поздравляем!</div>
+                <div class="modal-result__desc">Ваш результат:</div>
+                <div class="modal-result__progress">
+                    <svg class="modal-result__progress-grey" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="donut_background_three" stroke="#D2D2D2" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="100,100" cx="17.5" cy="17.5" r="15.91549431"/>
+                    </svg>
+                    <svg class="modal-result__progress-blue" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                        <circle id="blue" class="donut_background_three" stroke="#FFBA55" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="75,100" cx="17.5" cy="17.5" r="15.91549431"/>
+                        <style type="text/css">
+                            #blue{stroke:url(#MyGradient)}
+                        </style>
+                        <defs>
+                            <linearGradient id="MyGradient">
+                              <stop offset="15%" stop-color="#5E61DA" />
+                              <stop offset="85%" stop-color="#8C52D6" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="modal-result__num">
+                        <span>75%</span>
+                    </div>
+                </div>
+                <button class="modal-result__next btn btn-blue">Следующий урок</button>
+                <button class="modal-result__reopen btn btn-outline">Пройти тест заново</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/swiper.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+
+    <script>
+        document.querySelectorAll(".modal-target").forEach(el => {
+            el.onclick = function() {
+                let modalId = this.getAttribute("data-modal")
+                document.getElementById(modalId).classList.add("modal--show")
+            }
+        });
+        document.querySelectorAll(".modal__bg").forEach(el => {
+            el.onclick = function() {
+                closeModal(el)
+            }
+        });
+        document.querySelectorAll(".modal__close").forEach(el => {
+            el.onclick = function() {
+                closeModal(el)
+            }
+        });
+
+
+        function closeModal(el) {
+            el.closest(".modal").classList.remove("modal--show")
+        }
+    </script>
+
+</body>
+
+</html>

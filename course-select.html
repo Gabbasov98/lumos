@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Выбор курсов подписки</title>
+</head>
+
+<body>
+
+    <div style="padding: 50px;">
+        <button class="modal-target" data-modal="course-select" style="width: 250px; height: 45px; border: 1px solid #000; margin-bottom: 20px;">Выбор курсов
+            подписки</button>
+    </div>
+
+
+    <div class="modal" id="course-select">
+        <div class="modal__bg"></div>
+        <div class="modal-dialog">
+            <div class="modal__top">
+                <div class="modal__title">
+                    <span>Выбор курсов подписки</span>
+                </div>
+                <button class="modal__close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3327 2.66602L2.66602 13.3327" stroke="#1B2C3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3327 13.3327L2.66602 2.66602" stroke="#1B2C3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__content">
+                <form class="modal__form">
+                    <div class='modal__form-group form-group'>
+                        <label>Курс 1</label>
+                        <select>
+                           <option selected hidden>Выберите курс</option>
+                           <option>Название курса</option>
+                           <option>Название курса 2</option>
+                       </select>
+                    </div>
+                    <div class='modal__form-group form-group'>
+                        <label>Курс 2</label>
+                        <select>
+                            <option selected hidden>Выберите курс</option>
+                            <option>Название курса</option>
+                            <option>Название курса 2</option>
+                        </select>
+                    </div>
+                    <div class='modal__form-group form-group'>
+                        <label>Курс 3</label>
+                        <select>
+                            <option selected hidden>Выберите курс</option>
+                            <option>Название курса</option>
+                            <option>Название курса 2</option>
+                        </select>
+                    </div>
+                    <button class="modal__form-btn btn btn-blue">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/swiper.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+
+    <script>
+        document.querySelectorAll(".modal-target").forEach(el => {
+            el.onclick = function() {
+                let modalId = this.getAttribute("data-modal")
+                document.getElementById(modalId).classList.add("modal--show")
+            }
+        });
+        document.querySelectorAll(".modal__bg").forEach(el => {
+            el.onclick = function() {
+                closeModal(el)
+            }
+        });
+        document.querySelectorAll(".modal__close").forEach(el => {
+            el.onclick = function() {
+                closeModal(el)
+            }
+        });
+
+
+        function closeModal(el) {
+            el.closest(".modal").classList.remove("modal--show")
+        }
+    </script>
+
+</body>
+
+</html>

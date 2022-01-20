@@ -81,6 +81,16 @@
         height: 40px;
         font-size: 14px;
     }
+    svg {
+        margin: 0 !important;
+    }
+    span {
+        margin: 0 10px;
+    }
+    &:disabled {
+        opacity: 0.48;
+        pointer-events: none;
+    }
 }
 
 .btn-light-blue {
@@ -102,11 +112,11 @@
     color: #E15A5A;
     font-weight: 700;
     &:hover {
-        background: #F6CBCB;
+        background-color: #F6CBCB;
         color: #DC4141;
     }
     &:active {
-        background: #F6CBCB;
+        background-color: #F6CBCB;
         color: #CF2626;
         box-shadow: inset 0px 6px 12px -12px rgba(207, 38, 38, 0.32);
         color: $black;
@@ -163,6 +173,14 @@
                 background-repeat: no-repeat;
                 background-position: center;
             }
+            &+label:hover:before {
+                background-color: #7481E0;
+            }
+        }
+        &:disabled {
+            &+label {
+                opacity: 0.34;
+            }
         }
     }
     label {
@@ -172,7 +190,13 @@
         margin: 0;
         padding-left: 36px;
         position: relative;
+        width: 100%;
+        display: block;
+        min-height: 24px;
         cursor: pointer;
+        &:hover:before {
+            border-color: #8B9EE6;
+        }
         &:before {
             content: '';
             position: absolute;

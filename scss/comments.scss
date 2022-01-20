@@ -100,6 +100,62 @@
     }
 }
 
+.comments {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__num {
+        color: #5E62DA;
+        line-height: 150%;
+    }
+    &__items {
+        padding: 0;
+        &:not(:first-child) {
+            margin-top: 24px;
+        }
+    }
+    &__item {
+        padding: 24px 32px;
+        &--disabled {
+            opacity: 0.4;
+        }
+        &:not(:last-child) {
+            border-bottom: 1px solid #EAECF5;
+        }
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &-user {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 143%;
+            img {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+        }
+        &-date {
+            color: #74869C;
+            font-size: 14px;
+            line-height: 143%;
+        }
+        &-text {
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 143%;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .blog-comments {
         margin-top: 32px;
@@ -112,6 +168,11 @@
         }
         &__sub {
             margin-left: 40px;
+        }
+    }
+    .comments {
+        &__item {
+            padding: 16px 24px;
         }
     }
 }
@@ -140,6 +201,24 @@
             .blog-comments__item {
                 padding-left: 0;
             }
+        }
+    }
+    .comments {
+        &__items {
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+        }
+        &__top {
+            display: block;
+        }
+        &__num {
+            margin-top: 4px;
+        }
+        &__item {
+            padding: 16px;
         }
     }
 }

@@ -59,6 +59,11 @@
             align-items: center;
             justify-content: center;
         }
+        &--notification {
+            i {
+                display: flex;
+            }
+        }
         &:hover {
             background: #EAECF5;
             cursor: pointer;
@@ -70,11 +75,6 @@
             background: $black;
             color: #fff;
             pointer-events: none;
-        }
-        &--notification {
-            i {
-                display: flex;
-            }
         }
     }
     &__content {

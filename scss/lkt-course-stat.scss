@@ -90,6 +90,12 @@
             &:last-child {
                 width: 115px;
             }
+            &.w100 {
+                width: 100px;
+            }
+        }
+        &.mt0 {
+            margin-top: 0;
         }
     }
     &__content {
@@ -194,7 +200,7 @@
             &:nth-child(1) {
                 width: 20px;
                 flex-shrink: 0;
-                flex-grow: 0;
+                flex-grow: 1;
                 margin-right: 10px;
             }
             &:nth-child(2) {
@@ -295,6 +301,18 @@
             }
         }
     }
+    &__table8 {
+        .course-report__table-head-col,
+        .course-report__table-item-col {
+            width: 130px !important;
+            flex-shrink: 0 !important;
+            flex-grow: 1 !important;
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 .sale-report {
@@ -337,11 +355,11 @@
             position: relative;
             overflow: hidden;
             img {
-                width: 92px;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+            }
+            &--avatar {
+                border-radius: 50%;
             }
         }
         &-left {
@@ -445,6 +463,12 @@
                 }
             }
         }
+        &__table8 {
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                width: 95px !important;
+            }
+        }
     }
 }
 
@@ -503,6 +527,12 @@
                 }
             }
         }
+        &__table8 {
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                width: 98px !important;
+            }
+        }
         &__items {
             &--num {
                 padding-top: 0px;
@@ -544,6 +574,12 @@
         &__table4 {
             .course-report__table-inner {
                 min-width: 525px;
+            }
+        }
+        &__table8 {
+            .course-report__table-head-col,
+            .course-report__table-item-col {
+                width: 100px !important;
             }
         }
         &__tab {

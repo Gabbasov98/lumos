@@ -133,6 +133,7 @@
             }
         }
     }
+    &__unfollow,
     &__logout {
         margin-top: 24px;
         width: 268px;
@@ -205,6 +206,22 @@
             cursor: pointer;
         }
     }
+    &__courses {
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-top: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 143%;
+            img {
+                width: 48px;
+                height: 48px;
+                margin-right: 16px;
+                border-radius: 16px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -224,6 +241,7 @@
                 margin-left: 0;
             }
         }
+        &__unfollow,
         &__logout {
             width: 100%;
         }
@@ -254,6 +272,7 @@
                 margin-top: 24px;
             }
         }
+        &__unfollow,
         &__logout {
             margin-top: 16px;
         }

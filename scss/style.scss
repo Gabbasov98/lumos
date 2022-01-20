@@ -12,6 +12,7 @@
 @import 'cabinet';
 @import 'sub';
 @import 'lkt-course';
+@import 'lkp-course';
 @import 'blog';
 @import 'contacts';
 @import 'lkt-course-edit';
@@ -21,6 +22,8 @@
 @import 'lkt-test';
 @import 'comments';
 @import 'account-settings';
+@import 'support';
+@import 'requests';
 html {
     scroll-behavior: smooth;
 }

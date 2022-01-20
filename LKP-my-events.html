@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Статистика Курс </title>
+    <title>Мои курсы</title>
 </head>
 
 <body>
@@ -195,7 +195,7 @@
                                         <i>1</i>
                                     </div>
                                     <div class="sidebar__item-hidden">
-                                        <a href="" class="sidebar__sublink">
+                                        <a href="" class="sidebar__sublink sidebar__sublink--active">
                                             <span>Все</span>
                                             <i></i>
                                         </a>
@@ -221,219 +221,100 @@
                                     <span>Служба поддержки</span>
                                     <i>2</i>
                                 </a>
-                                <div class="sidebar__item sidebar__item--notification">
-                                    <div class="sidebar__item-show">
-                                        <span>Настройки аккаунта</span>
-                                        <i>1</i>
-                                    </div>
-                                    <div class="sidebar__item-hidden">
-                                        <a href="" class="sidebar__sublink sidebar__sublink--active">
-                                            <span>Аккаунт</span>
-                                            <i></i>
-                                        </a>
-                                        <a href="" class="sidebar__sublink sidebar__sublink--active">
-                                            <span>Личная информация</span>
-                                            <i></i>
-                                        </a>
-                                        <a href="" class="sidebar__sublink sidebar__sublink--notification">
-                                            <span>Уведомления</span>
-                                            <i>1</i>
-                                        </a>
-                                        <a href="" class="sidebar__sublink">
-                                            <span>Документы</span>
-                                            <i></i>
-                                        </a>
-                                    </div>
-                                </div>
+                                <a href="" class="sidebar__link">
+                                    <span>Настройки аккаунта</span>
+                                    <i></i>
+                                </a>
                             </div>
                         </aside>
                         <main class="cabinet-page__main">
-                            <div class="course-report">
-                                <h1 class="course-report__title display-3">Отчет по тренеру</h1>
-
-                                <div class="course-report__nav">
-                                    <div class="course-report__tabs">
-                                        <div data-tab-path="1" class="course-report__tab course-report__tab--active">Отчет по тренеру</div>
-                                        <div data-tab-path="2" class="course-report__tab">Выплаты</div>
-                                        <div data-tab-path="3" class="course-report__tab">Транзакции</div>
-                                    </div>
-                                    <div class="course-report__selects">
-                                        <select>
-                                            <option>За месяц</option>
-                                            <option>За месяц 2</option>
-                                        </select>
+                            <div class="lkt-events">
+                                <div class="cabinet-page__top">
+                                    <h1 class="cabinet-page__title display-3">Все мероприятия</h1>
+                                </div>
+                                <div class="cabinet-page__nav">
+                                    <div class="cabinet-page__nav-title">4 мероприятия</div>
+                                    <div class="cabinet-page__nav-wrap">
+                                        <button class="cabinet-page__nav-item cabinet-page__nav-item--col cabinet-page__nav-item--active">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="9" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="17" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="1" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="9" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="17" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                            </svg>
+                                        </button>
+                                        <button class="cabinet-page__nav-item cabinet-page__nav-item--row">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1" y="5" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="9" y="5" width="14" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="1" y="13" width="6" height="6" rx="2" fill="#C6D0DD"/>
+                                                <rect x="9" y="13" width="14" height="6" rx="2" fill="#C6D0DD"/>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
-                                <div data-tab-path="1" class="course-report__content  course-report__content--active">
-                                    <div class="course-report__items course-report__items--trener card-bg">
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">% Комиссия</span>
-                                            <div class="course-report__item-desc">30%</div>
-                                        </div>
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">Заработано</span>
-                                            <div class="course-report__item-desc">100 000 руб.</div>
-                                        </div>
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">Начислено</span>
-                                            <div class="course-report__item-desc">70 000 руб.</div>
-                                        </div>
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">Выплачено</span>
-                                            <div class="course-report__item-desc">50 000 руб.</div>
-                                        </div>
-                                        <div class="course-report__item">
-                                            <span class="course-report__item-title">Задолженность</span>
-                                            <div class="course-report__item-desc" style="color: #D6921F;">20 000 руб.</div>
+                                <div class="cabinet-page__items">
+                                    <div class="cabinet-page__item">
+                                        <div class="event-card2">
+                                            <div class="event-card2__img">
+                                                <img src="img/event1.jpg" alt="">
+                                            </div>
+                                            <div class="event-card2__content">
+                                                <div class="event-card2__time">
+                                                    <span class="event-card2__time-day">14 сен</span>
+                                                    <span class="event-card2__time-hour">в 20:00</span>
+                                                </div>
+                                                <a href="" class="event-card2__title">Название курса в нескольких строках Название курса в нескольких строках</a>
+
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div data-tab-path="2" class="course-report__content">
-                                    <div class="course-report__table course-report__table6 card-bg">
-                                        <div class="course-report__table-inner">
-                                            <div class="course-report__table-head">
-                                                <div class="course-report__table-head-col">ID</div>
-                                                <div class="course-report__table-head-col">ФИО</div>
-                                                <div class="course-report__table-head-col">Дата транзакции</div>
-                                                <div class="course-report__table-head-col">Сумма выплаты</div>
-                                                <div class="course-report__table-head-col">Кто добавил</div>
-                                                <div class="course-report__table-head-col">Способ</div>
+                                    <div class="cabinet-page__item">
+                                        <div class="event-card2">
+                                            <div class="event-card2__img">
+                                                <img src="img/event2.jpg" alt="">
                                             </div>
-                                            <div class="course-report__table-items">
-                                                <div class="course-report__table-item">
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">384050</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Дмитрий Дмитриев Дмитриевич</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Банковский перевод</div>
-                                                    </div>
+                                            <div class="event-card2__content">
+                                                <div class="event-card2__time">
+                                                    <span class="event-card2__time-day">14 сен</span>
+                                                    <span class="event-card2__time-hour">в 20:00</span>
                                                 </div>
-                                                <div class="course-report__table-item">
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">384050</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Дмитрий Дмитриев Дмитриевич</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Банковский перевод</div>
-                                                    </div>
-                                                </div>
-                                                <div class="course-report__table-item">
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">384050</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Дмитрий Дмитриев Дмитриевич</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Банковский перевод</div>
-                                                    </div>
-                                                </div>
+                                                <a href="" class="event-card2__title">Название курса в нескольких строках Название курса в нескольких строках</a>
+
                                             </div>
                                         </div>
-
                                     </div>
-                                </div>
-                                <div data-tab-path="3" class="course-report__content">
-                                    <div class="course-report__table course-report__table7 card-bg">
-                                        <div class="course-report__table-inner">
-                                            <div class="course-report__table-head">
-                                                <div class="course-report__table-head-col">ФИО</div>
-                                                <div class="course-report__table-head-col">Заказ</div>
-                                                <div class="course-report__table-head-col">Дата</div>
-                                                <div class="course-report__table-head-col">Сумма платежа</div>
+                                    <div class="cabinet-page__item">
+                                        <div class="event-card2">
+                                            <div class="event-card2__img">
+                                                <img src="img/event3.jpg" alt="">
                                             </div>
-                                            <div class="course-report__table-items">
-                                                <div class="course-report__table-item">
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">170893</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
-                                                    </div>
+                                            <div class="event-card2__content">
+                                                <div class="event-card2__time">
+                                                    <span class="event-card2__time-day">14 сен</span>
+                                                    <span class="event-card2__time-hour">в 20:00</span>
                                                 </div>
-                                                <div class="course-report__table-item">
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">170893</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="course-report__table-item">
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">170893</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="course-report__table-item">
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">Мария Мариева Олеговна</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">170893</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">12.11.2021</div>
-                                                    </div>
-                                                    <div class="course-report__table-item-col">
-                                                        <div class="course-report__table-title">50 000 руб.</div>
-                                                    </div>
-                                                </div>
+                                                <a href="" class="event-card2__title">Название курса в нескольких строках Название курса в нескольких строках</a>
+
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="cabinet-page__item">
+                                        <div class="event-card2">
+                                            <div class="event-card2__img">
+                                                <img src="img/event4.jpg" alt="">
+                                            </div>
+                                            <div class="event-card2__content">
+                                                <div class="event-card2__time">
+                                                    <span class="event-card2__time-day">14 сен</span>
+                                                    <span class="event-card2__time-hour">в 20:00</span>
+                                                </div>
+                                                <a href="" class="event-card2__title">Название курса в нескольких строках Название курса в нескольких строках</a>
 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -441,7 +322,6 @@
                     </div>
                 </div>
             </section>
-
 
         </div>
 
@@ -535,6 +415,24 @@
     <script src="js/swiper.js"></script>
     <script src="js/index.js"></script>
     <script>
+        document.querySelectorAll(".sidebar__item-show").forEach(el => {
+            el.onclick = function() {
+                this.closest(".sidebar__item").classList.toggle("sidebar__item--open")
+            }
+        });
+
+        document.querySelector(".cabinet-page__nav-item--row").onclick = function() {
+            document.querySelector(".cabinet-page__nav-item--col").classList.remove("cabinet-page__nav-item--active")
+            this.classList.add("cabinet-page__nav-item--active")
+            document.querySelector(".cabinet-page__items").classList.add("cabinet-page__items--row")
+        }
+
+        document.querySelector(".cabinet-page__nav-item--col").onclick = function() {
+            document.querySelector(".cabinet-page__nav-item--row").classList.remove("cabinet-page__nav-item--active")
+            this.classList.add("cabinet-page__nav-item--active")
+            document.querySelector(".cabinet-page__items").classList.remove("cabinet-page__items--row")
+        }
+
         document.querySelector(".header__lk-avatar").onclick = function() {
             document.querySelector(".header__lk-dropdown").classList.toggle("header__lk-dropdown--active")
         }
@@ -542,27 +440,6 @@
         document.querySelector(".header__notification-show").onclick = function() {
             this.closest(".header__notification").classList.toggle("header__notification--active")
         }
-
-        document.querySelectorAll(".sidebar__item-show").forEach(el => {
-            el.onclick = function() {
-                this.closest(".sidebar__item").classList.toggle("sidebar__item--open")
-            }
-        });
-
-        document.querySelectorAll(".course-report__tab").forEach(el => {
-
-            el.onclick = function() {
-                let path = this.getAttribute("data-tab-path")
-                document.querySelectorAll(".course-report__tab").forEach(el => {
-                    el.classList.remove("course-report__tab--active")
-                });
-                document.querySelectorAll(".course-report__content").forEach(el => {
-                    el.classList.remove("course-report__content--active")
-                });
-                document.querySelector(`.course-report__content[data-tab-path="${path}"]`).classList.add("course-report__content--active")
-                this.classList.add("course-report__tab--active")
-            }
-        });
     </script>
 
 </body>
