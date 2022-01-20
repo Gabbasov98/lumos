@@ -39,6 +39,12 @@
             font-weight: bold;
             font-size: 22px;
             line-height: 127%;
+            &--green {
+                background: linear-gradient(93.49deg, #F4F8FD 0%, #F4FAF2 100%);
+            }
+            &--blue {
+                background: linear-gradient(93.49deg, #F4F8FD 0%, #D8E7FF 100%);
+            }
         }
         &-link {
             display: block;
