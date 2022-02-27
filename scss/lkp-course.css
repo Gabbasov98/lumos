@@ -1,0 +1,198 @@
+.lkp-course {
+  padding: 30px 0 56px; }
+  .lkp-course__top {
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0; }
+    .lkp-course__top .course-top__bottom {
+      margin-top: 0; }
+  .lkp-course__inner {
+    display: flex;
+    margin-top: 32px; }
+  .lkp-course__right {
+    width: 390px;
+    margin-left: 24px;
+    flex-shrink: 0; }
+  .lkp-course__left {
+    flex-grow: 1; }
+  .lkp-course__lesson {
+    padding: 24px 32px; }
+    .lkp-course__lesson-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px; }
+    .lkp-course__lesson-num {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 144%; }
+  .lkp-course__group:not(:last-child) {
+    margin-bottom: 32px; }
+  .lkp-course__group-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 144%; }
+  .lkp-course__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    margin-top: 24px;
+    padding-left: 48px;
+    position: relative; }
+    .lkp-course__item-num {
+      color: #74869C;
+      margin-right: 8px; }
+    .lkp-course__item i {
+      position: absolute;
+      top: -4px;
+      left: 0;
+      background: #ECF2FA;
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8L6.33427 11.5L13 4.5' stroke='%235E62DA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center; }
+    .lkp-course__item--disabled {
+      color: #C6D0DD; }
+      .lkp-course__item--disabled .lkp-course__item-num {
+        color: #C6D0DD; }
+      .lkp-course__item--disabled i {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.8977 12.5972V9.73456C21.8977 6.3839 19.1803 3.66656 15.8297 3.66656C12.479 3.6519 9.75099 6.3559 9.73633 9.7079V9.73456V12.5972' stroke='%23C6D0DD' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.91 28.3331H10.722C7.93002 28.3331 5.66602 26.0704 5.66602 23.2771V17.5584C5.66602 14.7651 7.93002 12.5024 10.722 12.5024H20.91C23.702 12.5024 25.966 14.7651 25.966 17.5584V23.2771C25.966 26.0704 23.702 28.3331 20.91 28.3331Z' stroke='%23C6D0DD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.8171 18.937V21.8983' stroke='%23C6D0DD' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-color: transparent; }
+  .lkp-course__current {
+    margin-top: 24px;
+    display: flex;
+    align-items: center; }
+    .lkp-course__current-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin-right: 24px;
+      flex-shrink: 0;
+      background: linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .lkp-course__current-status {
+      font-size: 14px;
+      line-height: 143%;
+      color: #5E62DA; }
+    .lkp-course__current-title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 144%; }
+      .lkp-course__current-title span:nth-child(1) {
+        margin-right: 8px; }
+  .lkp-course__card {
+    padding: 24px 32px; }
+    .lkp-course__card-status {
+      font-weight: 600;
+      font-size: 16px;
+      margin-top: 8px;
+      line-height: 150%;
+      color: #9FADBF; }
+    .lkp-course__card-desc {
+      color: #59697C;
+      font-size: 18px;
+      line-height: 144%;
+      margin-top: 16px; }
+    .lkp-course__card-continue {
+      width: 100%;
+      margin-top: 24px; }
+    .lkp-course__card-link {
+      margin-top: 16px;
+      width: 100%; }
+
+.lks-course__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .lks-course__top-buttons {
+    display: flex;
+    align-items: center; }
+.lks-course__create {
+  height: 40px;
+  width: 204px;
+  font-size: 14px; }
+.lks-course__add {
+  height: 40px;
+  width: 143px;
+  font-size: 14px;
+  margin-left: 16px; }
+.lks-course__filter {
+  height: 40px;
+  width: 128px;
+  font-size: 14px; }
+.lks-course__all {
+  margin: 24px auto;
+  width: 222px; }
+
+@media screen and (max-width: 1200px) {
+  .lkp-course {
+    padding-bottom: 48px; }
+    .lkp-course__right {
+      width: 300px; }
+    .lkp-course__card {
+      padding: 24px; } }
+@media screen and (max-width: 1024px) {
+  .lkp-course {
+    padding-bottom: 48px; }
+    .lkp-course__inner {
+      flex-wrap: wrap;
+      margin-top: 24px; }
+    .lkp-course__right {
+      margin-left: 0;
+      width: 100%;
+      order: -1; }
+    .lkp-course__left {
+      margin-top: 24px; }
+    .lkp-course__card {
+      padding: 24px; }
+    .lkp-course__group:not(:last-child) {
+      margin-bottom: 24px; }
+
+  .lks-course__add {
+    margin-left: 8px;
+    width: 40px; }
+    .lks-course__add span {
+      display: none; } }
+@media screen and (max-width: 576px) {
+  .lkp-course {
+    padding: 22px 0 32px; }
+    .lkp-course__inner {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+      margin-top: 16px; }
+    .lkp-course__left {
+      margin-top: 16px; }
+    .lkp-course__card {
+      padding: 16px; }
+      .lkp-course__card-desc {
+        margin-top: 8px;
+        font-size: 16px; }
+      .lkp-course__card-continue {
+        margin-top: 16px; }
+    .lkp-course__lesson {
+      padding: 16px; }
+      .lkp-course__lesson-top {
+        margin-bottom: 16px; }
+    .lkp-course__group-title {
+      font-size: 16px; }
+
+  .lks-course__top {
+    display: block; }
+    .lks-course__top-buttons {
+      margin-top: 8px; }
+  .lks-course .cabinet-page__group {
+    position: relative;
+    padding-bottom: 56px; }
+  .lks-course__filter {
+    width: 100%; }
+  .lks-course__all {
+    width: 100%;
+    margin-top: 16px; } }
+
+/*# sourceMappingURL=lkp-course.css.map */

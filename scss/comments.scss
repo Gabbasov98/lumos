@@ -86,6 +86,9 @@
         &-btn {
             color: #59697C;
             margin-left: 16px;
+            &:hover {
+                color: #5E62DA;
+            }
         }
     }
     &__more {

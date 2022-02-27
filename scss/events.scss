@@ -41,6 +41,10 @@
         margin-right: 56px;
         flex-shrink: 0;
     }
+    &__sticky {
+        position: sticky;
+        top: 104px;
+    }
     &__right {
         flex-grow: 1;
     }
@@ -308,6 +312,10 @@
             flex-direction: column;
             justify-content: center;
         }
+        &__sticky {
+            position: static;
+            max-width: 300px;
+        }
         &__card {
             background-color: transparent;
             box-shadow: none;
@@ -480,6 +488,9 @@
         padding: 24px 0 32px;
         .container {
             padding: 0;
+        }
+        &__sticky {
+            max-width: 100%;
         }
         &__top {
             padding: 0 15px;

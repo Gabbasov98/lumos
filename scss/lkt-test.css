@@ -1,0 +1,137 @@
+.test-page {
+  padding: 30px 0 56px; }
+  .test-page__wrap {
+    display: flex;
+    margin-top: 24px; }
+  .test-page__right {
+    width: 392px;
+    flex-shrink: 0;
+    margin-left: 24px; }
+  .test-page__left {
+    flex-grow: 1; }
+  .test-page__nav {
+    padding: 32px; }
+  .test-page__edit, .test-page__test {
+    width: 100%; }
+  .test-page__edit {
+    margin-bottom: 16px; }
+    .test-page__edit svg {
+      margin-right: 10px; }
+  .test-page__item:not(:last-child) {
+    margin-bottom: 24px; }
+  .test-page__item-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px; }
+  .test-page__item-variant:not(:last-child) {
+    margin-bottom: 16px; }
+  .test-page__item-variant label {
+    font-size: 14px;
+    line-height: 143%;
+    display: flex;
+    align-items: center;
+    min-height: 24px; }
+  .test-page__card {
+    padding: 24px 32px; }
+    .test-page__card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .test-page__card-num {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 144%; }
+    .test-page__card-desc {
+      margin-top: 8px;
+      line-height: 150%; }
+    .test-page__card-btn {
+      width: 100%;
+      margin-top: 16px; }
+
+@media screen and (max-width: 1200px) {
+  .test-page {
+    padding-bottom: 48px; }
+    .test-page__right {
+      width: 300px; } }
+@media screen and (max-width: 1024px) {
+  .test-page {
+    padding: 23px 0 40px; }
+    .test-page__wrap {
+      display: block;
+      margin-top: 150px;
+      position: relative; }
+      .test-page__wrap--lkp {
+        margin-top: 24px; }
+    .test-page__right {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 24px; }
+    .test-page__top {
+      margin-top: 8px; }
+      .test-page__top-left, .test-page__top-right {
+        display: none; }
+      .test-page__top-center {
+        text-align: left; }
+      .test-page__top-title {
+        font-size: 28px;
+        line-height: 129%; }
+    .test-page__nav {
+      position: absolute;
+      left: 0;
+      bottom: 100%;
+      margin-bottom: 24px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 24px; }
+    .test-page__test {
+      order: -1;
+      flex-grow: 1; }
+    .test-page__edit {
+      margin-bottom: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin-left: 16px;
+      flex-shrink: 0; }
+      .test-page__edit span {
+        display: none; }
+      .test-page__edit svg {
+        margin-right: 0; }
+    .test-page__files {
+      padding: 24px; }
+    .test-page .blog-page__text {
+      border-radius: 16px; }
+    .test-page__card {
+      padding: 24px; } }
+@media screen and (max-width: 576px) {
+  .test-page {
+    padding: 16px 0 32px; }
+    .test-page__title {
+      font-size: 28px; }
+    .test-page__wrap {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+      margin-top: 120px; }
+      .test-page__wrap--lkp {
+        margin-top: 16px; }
+    .test-page .blog-page__text {
+      border-radius: 0px; }
+    .test-page__nav {
+      padding: 16px;
+      margin-bottom: 16px; }
+    .test-page__edit {
+      width: 40px;
+      height: 40px; }
+      .test-page__edit svg {
+        width: 16px;
+        height: auto; }
+    .test-page__item {
+      padding: 12px 16px; }
+      .test-page__item:not(:last-child) {
+        margin-bottom: 16px; }
+      .test-page__item-title {
+        margin-bottom: 16px; } }
+
+/*# sourceMappingURL=lkt-test.css.map */

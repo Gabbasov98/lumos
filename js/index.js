@@ -75,6 +75,7 @@ function courseSlider2() {
 }
 
 function courseDetail() {
+
     var swiper = new Swiper('.course-detail .swiper-container', {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -87,6 +88,21 @@ function courseDetail() {
             el: '.course-detail .swiper-pagination',
             type: 'bullets',
             clickable: true,
+            renderBullet: function(index, className) {
+                return `
+                <div class="pagination-item ${className}">
+                    <div class="pagination-empty"></div>
+                    <div class="pagination-progress">
+                        <svg class="pagination-progress__white" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="donut_background_three"  opacity='0.24' stroke="#1B2C3E" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="100,100" cx="17.5" cy="17.5" r="15.91549431"/>
+                        </svg>
+                        <svg class="pagination-progress__black" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="donut_background_three" stroke="#1B2C3E" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="100 100" cx="17.5" cy="17.5" r="15.91549431"/>
+                        </svg>
+                    </div>
+                </div>
+                `;
+            },
         },
     })
 }
@@ -129,10 +145,15 @@ document.addEventListener('DOMContentLoaded', function() { // Аналог $(doc
         variantSlider()
     }
 
+    // if (setPaginationProgress) {
+    //     setPaginationProgress()
+    // }
+
     document.querySelector(".header__burger").onclick = function() {
         this.classList.toggle('header__burger--active');
         document.querySelector(".nav").classList.toggle('nav--active');
         document.querySelector(".header__search").classList.toggle('header__search--active');
+        document.querySelector("body").classList.toggle('fixed-body')
     }
 
     document.querySelector(".nav__dropdown-show").onclick = function() {
@@ -142,5 +163,28 @@ document.addEventListener('DOMContentLoaded', function() { // Аналог $(doc
     document.querySelector(".header__search").onclick = function() {
         this.classList.add('header__search--active');
     }
+
+    const headerSearch = document.querySelector('.header__search');
+
+    document.addEventListener('click', (e) => {
+        const withinBoundaries = e.composedPath().includes(headerSearch);
+
+        if (!withinBoundaries && window.innerWidth > 576) {
+            headerSearch.classList.remove("header__search--active")
+        }
+
+
+    })
+
+
+    let header = document.querySelector('.header');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 80) {
+            header.classList.remove("header--b0");
+        } else {
+            header.classList.add("header--b0");
+        }
+    });
+
 
 });

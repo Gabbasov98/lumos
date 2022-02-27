@@ -23,6 +23,9 @@
         &-link {
             color: #9FADBF;
             line-height: 143%;
+            &:hover {
+                color: #5E61DA;
+            }
         }
         &-subtitle {
             font-size: 16px;
@@ -85,6 +88,11 @@
                 font-size: 14px;
                 line-height: 150%;
                 font-weight: bold;
+                transition: all .3s;
+                &:hover {
+                    color: #5E61DA;
+                    cursor: pointer;
+                }
             }
             &-weight {
                 font-weight: 400;

@@ -218,6 +218,20 @@
                 color: #fff;
             }
         }
+        &-inputs {
+            display: flex;
+            &>input {
+                flex-shrink: 0;
+                width: 144px;
+                margin-right: 12px;
+                @media screen and (max-width: 700px) {
+                    width: 80px;
+                }
+            }
+            .custom-select {
+                flex-grow: 1;
+            }
+        }
     }
     &__hint {
         background: #FFFFFF;
@@ -528,10 +542,11 @@
         margin-top: 24px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__check {
-        &:not(:first-child) {
-            margin: 0 0 0 32px;
+        &:not(:last-child) {
+            margin: 0 32px 0 0;
         }
     }
     &__text {

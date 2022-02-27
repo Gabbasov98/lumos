@@ -27,6 +27,12 @@
         svg {
             margin-right: 12px;
         }
+        &:hover {
+            color: #5E62DA;
+            path {
+                stroke: #5E62DA;
+            }
+        }
     }
     &__form {
         margin-top: 48px;

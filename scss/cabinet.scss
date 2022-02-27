@@ -34,7 +34,7 @@
             margin-left: 12px;
             &:hover {
                 rect {
-                    fill: $black;
+                    fill: rgba($black, 0.6);
                 }
             }
             &--active {
@@ -121,6 +121,10 @@
                     max-width: 100px;
                     padding-left: 10px;
                 }
+                &__info,
+                &__buy {
+                    margin-right: 5px;
+                }
             }
         }
     }
@@ -152,7 +156,9 @@
             border-bottom: 1px solid #EAECF5;
         }
         i {
-            background: #8B9EE6;
+            font-style: normal;
+            border: 1px solid #8B9EE6;
+            background-color: #8B9EE6;
             width: 24px;
             height: 24px;
             border-radius: 50%;
@@ -162,12 +168,18 @@
             font-weight: bold;
             font-size: 14px;
             color: #fff;
-            opacity: 0;
-            font-style: normal;
         }
         &--notification {
             i {
                 display: flex;
+            }
+        }
+        &--active {
+            background: #F1F3F9;
+            font-weight: bold;
+            i {
+                color: #5E62DA;
+                background-color: transparent;
             }
         }
         &:hover {
@@ -193,6 +205,7 @@
             i {
                 font-style: normal;
                 border: 1px solid #8B9EE6;
+                background-color: #8B9EE6;
                 width: 24px;
                 height: 24px;
                 border-radius: 50%;
@@ -201,7 +214,7 @@
                 justify-content: center;
                 font-weight: bold;
                 font-size: 14px;
-                color: #5E62DA;
+                color: #fff;
             }
         }
         &-hidden {
@@ -215,6 +228,10 @@
             .sidebar__item-show {
                 background: #F1F3F9;
                 font-weight: bold;
+                i {
+                    color: #5E62DA;
+                    background-color: transparent;
+                }
             }
             .sidebar__item-hidden {
                 display: block;
@@ -448,6 +465,9 @@
             font-size: 14px;
             color: #9FADBF;
             line-height: 143%;
+            &:hover {
+                color: #5E61DA;
+            }
         }
     }
 }

@@ -1,0 +1,158 @@
+.requests__group {
+  padding: 0; }
+  .requests__group:not(:first-child) {
+    margin-top: 24px; }
+  .requests__group-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px; }
+  .requests__group-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 144%; }
+  .requests__group-num {
+    font-size: 16px;
+    line-height: 150%;
+    color: #5E62DA; }
+  .requests__group-bottom {
+    border-top: 1px solid #EAECF5;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .requests__group-all {
+    color: #7481E0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 114%; }
+.requests__item {
+  border-top: 1px solid #EAECF5;
+  padding: 20px 32px; }
+  .requests__item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .requests__item-top-left {
+      display: flex;
+      align-items: center; }
+  .requests__item-id, .requests__item-time {
+    font-size: 14px;
+    line-height: 143%;
+    color: #74869C; }
+  .requests__item-status {
+    font-size: 14px;
+    line-height: 143%;
+    color: #5E62DA;
+    margin-left: 16px; }
+  .requests__item-user {
+    font-size: 14px;
+    line-height: 143%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 4px; }
+    .requests__item-user img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin-right: 8px; }
+  .requests__item-text {
+    font-size: 14px;
+    line-height: 143%;
+    margin-top: 8px; }
+
+.support-top {
+  display: flex;
+  align-items: center;
+  padding: 16px 32px 8px;
+  border-bottom: 1px solid #EAECF5;
+  flex-wrap: wrap; }
+  .support-top__user {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 143%;
+    position: relative;
+    margin-bottom: 8px; }
+    .support-top__user:not(:last-child) {
+      margin-right: 16px;
+      padding-right: 19px; }
+      .support-top__user:not(:last-child):before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 3px;
+        height: 3px;
+        background: #59697C;
+        opacity: 0.32;
+        border-radius: 50%;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%); }
+    .support-top__user img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin-right: 12px; }
+  .support-top__contact {
+    font-size: 14px;
+    line-height: 143%;
+    position: relative;
+    margin-bottom: 8px; }
+    .support-top__contact:not(:last-child) {
+      margin-right: 16px;
+      padding-right: 19px; }
+      .support-top__contact:not(:last-child):before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 3px;
+        height: 3px;
+        background: #59697C;
+        opacity: 0.32;
+        border-radius: 50%;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%); }
+
+@media screen and (max-width: 1024px) {
+  .requests__group-top {
+    padding: 16px 24px; }
+  .requests__group-bottom {
+    padding: 16px 24px; }
+  .requests__item {
+    padding: 16px 24px; }
+
+  .support-top {
+    padding: 16px 24px 8px; }
+    .support-top__user:not(:last-child) {
+      margin-right: 8px;
+      padding-right: 11px; }
+    .support-top__contact:not(:last-child) {
+      margin-right: 8px;
+      padding-right: 11px; } }
+@media screen and (max-width: 576px) {
+  .requests__group {
+    width: calc(100% + 30px);
+    margin-left: -15px; }
+    .requests__group:not(:first-child) {
+      margin-top: 16px; }
+    .requests__group-top, .requests__group-bottom {
+      padding: 12px 16px; }
+
+  .support__top2 {
+    display: block; }
+    .support__top2 .w100 {
+      margin-top: 12px; }
+  .support-top {
+    padding: 16px 24px 8px; }
+    .support-top__user:not(:last-child):before {
+      display: none;
+      padding-right: 0; }
+    .support-top__contact:not(:last-child):before {
+      display: none;
+      padding-right: 0; } }
+
+/*# sourceMappingURL=requests.css.map */

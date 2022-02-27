@@ -1,0 +1,240 @@
+.lesson-edit {
+  padding: 32px 0 56px; }
+  .lesson-edit__inner {
+    display: flex; }
+  .lesson-edit__left {
+    width: calc(100% - 312px); }
+  .lesson-edit__right {
+    width: 288px;
+    margin-left: 24px;
+    flex-shrink: 0; }
+  .lesson-edit__hint {
+    background: #FFFFFF;
+    padding: 24px 16px;
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.05), 0px 4px 6px -2px rgba(16, 24, 40, 0.025);
+    border-radius: 16px;
+    position: sticky;
+    top: 0; }
+    .lesson-edit__hint-btn {
+      height: 56px;
+      width: 100%;
+      border-radius: 40px;
+      font-weight: 800;
+      font-size: 16px; }
+    .lesson-edit__hint-desc {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 143%;
+      text-align: center;
+      margin-top: 24px;
+      color: #74869C; }
+    .lesson-edit__hint-cancel {
+      display: none; }
+  .lesson-edit__cancel, .lesson-edit__confirm {
+    display: none; }
+  .lesson-edit__info {
+    margin-top: 32px; }
+    .lesson-edit__info-title {
+      margin-bottom: 24px; }
+  .lesson-edit__switch {
+    margin-top: 24px; }
+  .lesson-edit__files {
+    margin-top: 32px; }
+    .lesson-edit__files-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .lesson-edit__files-num {
+      font-size: 16px;
+      line-height: 150%;
+      color: #74869C; }
+    .lesson-edit__files-items {
+      margin-top: 8px; }
+    .lesson-edit__files-item {
+      padding: 16px 0;
+      display: flex;
+      align-items: center; }
+      .lesson-edit__files-item:not(:last-child) {
+        border-bottom: 1px solid #EAECF5; }
+      .lesson-edit__files-item-icon {
+        width: 40px;
+        margin-right: 8px;
+        flex-shrink: 0; }
+        .lesson-edit__files-item-icon img {
+          width: 100%; }
+      .lesson-edit__files-item-delete {
+        margin-left: auto; }
+      .lesson-edit__files-item-name, .lesson-edit__files-item-weight {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 143%; }
+      .lesson-edit__files-item-name {
+        color: #9FADBF;
+        font-weight: 400; }
+    .lesson-edit__files-upload {
+      margin-top: 8px;
+      border: 1px dashed #C6D0DD;
+      border-radius: 8px;
+      text-align: center;
+      padding: 20px 16px;
+      position: relative; }
+      .lesson-edit__files-upload-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 150%; }
+        .lesson-edit__files-upload-title strong {
+          font-weight: bold;
+          color: #5E62DA; }
+        .lesson-edit__files-upload-title span {
+          margin-left: 6px;
+          color: #9FADBF; }
+      .lesson-edit__files-upload-hint {
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 133%;
+        color: #59697C; }
+      .lesson-edit__files-upload-input {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer; }
+
+.create-about {
+  margin-top: 32px; }
+  .create-about__editor {
+    margin-top: 24px; }
+  .create-about textarea {
+    min-height: 324px;
+    width: 100%; }
+
+.lesson-test {
+  margin-top: 32px; }
+  .lesson-test__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .lesson-test__num {
+    color: #74869C;
+    line-height: 150%; }
+  .lesson-test__subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 144%; }
+  .lesson-test__group {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #EAECF5; }
+    .lesson-test__group-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+  .lesson-test__form-group {
+    margin-top: 24px; }
+  .lesson-test__variants {
+    margin-top: 24px; }
+    .lesson-test__variants-title {
+      font-size: 12px;
+      line-height: 133%; }
+    .lesson-test__variants-item {
+      display: flex;
+      align-items: center;
+      margin-top: 16px; }
+      .lesson-test__variants-item input {
+        flex-grow: 1;
+        margin: 0 16px 0 8px; }
+      .lesson-test__variants-item .checkbox,
+      .lesson-test__variants-item .radio {
+        width: 24px;
+        height: 24px; }
+        .lesson-test__variants-item .checkbox label:before,
+        .lesson-test__variants-item .radio label:before {
+          top: 0;
+          transform: translate(0, 0); }
+    .lesson-test__variants-add {
+      width: 100%;
+      font-size: 14px;
+      height: 40px;
+      margin-top: 16px; }
+      .lesson-test__variants-add svg {
+        margin-right: 10px; }
+  .lesson-test__add {
+    margin-top: 24px;
+    width: 100%; }
+    .lesson-test__add svg {
+      margin-right: 10px; }
+  .lesson-test__bottom {
+    margin-top: 24px; }
+
+@media screen and (max-width: 1200px) {
+  .lesson-edit {
+    padding-bottom: 48px; }
+    .lesson-edit__right {
+      width: 300px; }
+    .lesson-edit__left {
+      width: calc(100% - 324px); }
+
+  .create-about {
+    margin-top: 24px; } }
+@media screen and (max-width: 1024px) {
+  .lesson-edit {
+    padding: 0 0 40px; }
+    .lesson-edit__inner {
+      flex-wrap: wrap;
+      position: relative; }
+    .lesson-edit__left {
+      width: 100%; }
+    .lesson-edit__cancel, .lesson-edit__confirm {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; }
+    .lesson-edit__title {
+      background: #FFFFFF;
+      min-height: 64px;
+      box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.05), 0px 2px 4px -2px rgba(16, 24, 40, 0.03);
+      border-radius: 0px 0px 24px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 60px;
+      width: calc(100% + 30px);
+      margin: 0 0 24px -15px;
+      border-top: 1px solid #eaecf5;
+      font-size: 16px;
+      line-height: 150%; }
+    .lesson-edit__files {
+      margin-top: 24px; }
+
+  .lesson-test {
+    margin-top: 24px; } }
+@media screen and (max-width: 576px) {
+  .lesson-edit {
+    padding-bottom: 32px; }
+    .lesson-edit__title {
+      font-size: 14px; }
+    .lesson-edit__info-title {
+      margin-bottom: 16px; }
+    .lesson-edit__switch {
+      margin-top: 16px; }
+    .lesson-edit__files-items {
+      margin-top: 0; }
+    .lesson-edit__files-upload {
+      margin-top: 0; }
+      .lesson-edit__files-upload-title span {
+        display: none; }
+
+  .create-about__editor {
+    margin-top: 16px; }
+
+  .lesson-test__group {
+    margin-top: 16px;
+    padding-bottom: 16px; }
+  .lesson-test__form-group, .lesson-test__variants, .lesson-test__bottom {
+    margin-top: 16px; } }
+
+/*# sourceMappingURL=lkt-lesson-edit.css.map */
