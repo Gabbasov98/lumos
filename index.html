@@ -495,28 +495,72 @@
     <script src="js/index.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            setPaginationProgress()
 
-            function setPaginationProgress() {
-                let detailSlides = document.querySelectorAll(".course-detail .pagination-progress__black circle") || []
-                let countSlides = detailSlides.length
-                let pagProgress = [100]
-                let slidesSteps = 100 / (countSlides - 1)
-                let slidesProgress = 100 - slidesSteps
+            const sliderDelay = 2000
 
-                while (slidesProgress > 0) { // когда i будет равно 0, условие станет ложным, и цикл остановится
-                    console.log(slidesProgress)
-                    pagProgress.push(slidesProgress)
-                    slidesProgress = slidesProgress - slidesSteps
-                }
+            function courseDetail() {
 
-                for (i = 0; i < countSlides; i++) {
-                    let value = pagProgress[i]
-                    let dasharay = `${value} 100`
-                    detailSlides[i].setAttribute('stroke-dasharray', dasharay);
-                }
-                detailSlides[countSlides - 1].setAttribute('stroke-dasharray', '0 100');
+                var swiper = new Swiper('.course-detail .swiper-container', {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    autoplay: {
+                        delay: sliderDelay,
+                    },
+                    loop: true,
+                    navigation: {
+                        nextEl: '.course-detail .swiper-button-next',
+                        prevEl: '.course-detail .swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.course-detail .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                        renderBullet: function(index, className) {
+                            return `
+                                <div class="pagination-item ${className}">
+                                    <div class="pagination-empty"></div>
+                                    <div class="pagination-progress">
+                                        <svg class="pagination-progress__white" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                                            <circle class="donut_background_three"  opacity='0.24' stroke="#1B2C3E" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="100,100" cx="17.5" cy="17.5" r="15.91549431"/>
+                                        </svg>
+                                        <svg class="pagination-progress__black" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                                            <circle class="donut_background_three" stroke="#1B2C3E" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="100 100" cx="17.5" cy="17.5" r="15.91549431"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                `;
+                        },
+                    },
+                })
+
+                swiper.on('slideChange', function() {
+                    setTimer(sliderDelay)
+                });
+
+                console.log(swiper.params.autoplay.delay)
             }
+            courseDetail()
+            setTimer(sliderDelay)
+
+            function setTimer(delay) {
+                console.log('slide changed');
+                let activePagination = document.querySelector(".course-detail .swiper-pagination-bullet-active .pagination-progress__black circle")
+                let progress = 100
+                var interval = setInterval(function() {
+                    let dasharay = `${progress} 100`
+                    activePagination.setAttribute('stroke-dasharray', dasharay);
+                    progress--
+                    if (progress == -1) {
+                        stopTimer()
+                    }
+                }, (delay / 100));
+
+                function stopTimer() {
+                    clearInterval(interval);
+                }
+            }
+
+
 
             let header = document.querySelector('.header-index');
             window.addEventListener('scroll', function() {

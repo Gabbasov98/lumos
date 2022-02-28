@@ -74,38 +74,7 @@ function courseSlider2() {
     })
 }
 
-function courseDetail() {
 
-    var swiper = new Swiper('.course-detail .swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        navigation: {
-            nextEl: '.course-detail .swiper-button-next',
-            prevEl: '.course-detail .swiper-button-prev',
-        },
-        pagination: {
-            el: '.course-detail .swiper-pagination',
-            type: 'bullets',
-            clickable: true,
-            renderBullet: function(index, className) {
-                return `
-                <div class="pagination-item ${className}">
-                    <div class="pagination-empty"></div>
-                    <div class="pagination-progress">
-                        <svg class="pagination-progress__white" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="donut_background_three"  opacity='0.24' stroke="#1B2C3E" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="100,100" cx="17.5" cy="17.5" r="15.91549431"/>
-                        </svg>
-                        <svg class="pagination-progress__black" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="donut_background_three" stroke="#1B2C3E" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="100 100" cx="17.5" cy="17.5" r="15.91549431"/>
-                        </svg>
-                    </div>
-                </div>
-                `;
-            },
-        },
-    })
-}
 
 function variantSlider() {
     var swiper = new Swiper('.course-variants .swiper-container', {
@@ -139,7 +108,7 @@ function feedbackSlider() {
 document.addEventListener('DOMContentLoaded', function() { // Аналог $(document).ready(function(){
     courseSlider()
     courseSlider2()
-    courseDetail()
+
     feedbackSlider()
     if (window.innerWidth > 1024) {
         variantSlider()
