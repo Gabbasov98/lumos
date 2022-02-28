@@ -131,7 +131,8 @@
     .modal-result__progress-blue {
       position: absolute;
       left: 0;
-      top: 0; }
+      top: 0;
+      transform: rotate(-90deg); }
   .modal-result__num {
     position: absolute;
     left: 50%;
