@@ -528,7 +528,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                `;
+                            `;
                         },
                     },
                 })
@@ -537,13 +537,11 @@
                     setTimer(sliderDelay)
                 });
 
-                console.log(swiper.params.autoplay.delay)
             }
             courseDetail()
             setTimer(sliderDelay)
 
             function setTimer(delay) {
-                console.log('slide changed');
                 let activePagination = document.querySelector(".course-detail .swiper-pagination-bullet-active .pagination-progress__black circle")
                 let progress = 100
                 var interval = setInterval(function() {
