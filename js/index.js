@@ -177,14 +177,7 @@ document.addEventListener('DOMContentLoaded', function() { // Аналог $(doc
     })
 
 
-    let header = document.querySelector('.header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 80) {
-            header.classList.remove("header--b0");
-        } else {
-            header.classList.add("header--b0");
-        }
-    });
+
 
 
 });

@@ -14,7 +14,7 @@
     <div class="wrapper">
         <div class="content">
 
-            <header class="header header--b0">
+            <header class="header header-index header--b0">
                 <div class="container">
                     <div class="header__inner">
                         <div class="header__left">
@@ -517,6 +517,15 @@
                 }
                 detailSlides[countSlides - 1].setAttribute('stroke-dasharray', '0 100');
             }
+
+            let header = document.querySelector('.header-index');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 80) {
+                    header.classList.remove("header--b0");
+                } else {
+                    header.classList.add("header--b0");
+                }
+            });
         })
 
 

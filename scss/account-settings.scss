@@ -1,6 +1,13 @@
 .account-settings {
     &__group {
         margin-top: 32px;
+        position: relative;
+        &-target {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            margin-bottom: 100px;
+        }
     }
     &__photo {
         margin-top: 24px;
@@ -78,6 +85,7 @@
             opacity: 1;
             background-color: transparent;
             border: none;
+            width: 100%;
             &:disabled {}
         }
         &-socials {

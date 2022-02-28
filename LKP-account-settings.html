@@ -227,15 +227,15 @@
                                         <i>1</i>
                                     </div>
                                     <div class="sidebar__item-hidden">
-                                        <a href="" class="sidebar__sublink sidebar__sublink--active">
+                                        <a href="#account" class="sidebar__sublink anchor-link sidebar__sublink--active">
                                             <span>Аккаунт</span>
                                             <i></i>
                                         </a>
-                                        <a href="" class="sidebar__sublink sidebar__sublink--active">
+                                        <a href="#info" class="sidebar__sublink anchor-link sidebar__sublink--active">
                                             <span>Личная информация</span>
                                             <i></i>
                                         </a>
-                                        <a href="" class="sidebar__sublink sidebar__sublink--notification">
+                                        <a href="#notification" class="sidebar__sublink anchor-link sidebar__sublink--notification">
                                             <span>Уведомления</span>
                                             <i>1</i>
                                         </a>
@@ -251,6 +251,7 @@
                             <div class="account-settings">
                                 <h1 class="account-settings__title display-3">Настройки аккаунта</h1>
                                 <div class="account-settings__group card-bg">
+                                    <div id="account" class="account-settings__group-target"></div>
                                     <h3 class="account-settings__subtitle display-4">Аккаунт</h3>
                                     <div class="account-settings__photo">
                                         <div class="account-settings__photo-title">Фото</div>
@@ -270,14 +271,14 @@
                                             <span class="account-settings__item-title">E-mail</span>
                                             <button class="account-settings__item-btn">Изменить</button>
                                         </div>
-                                        <input class="account-settings__item-input" disabled type="email" value="olga93@gmail.com" />
+                                        <input class="account-settings__item-input" placeholder="E-mail" type="email" value="olga93@gmail.com" />
                                     </div>
                                     <div class="account-settings__item">
                                         <div class="account-settings__item-top">
                                             <span class="account-settings__item-title">Пароль</span>
                                             <button class="account-settings__item-btn">Изменить пароль</button>
                                         </div>
-                                        <input class="account-settings__item-input" disabled type="password" value="password" />
+                                        <input class="account-settings__item-input" placeholder="Пароль" type="password" value="password" />
                                     </div>
                                     <div class="account-settings__item">
                                         <div class="account-settings__item-top">
@@ -327,25 +328,26 @@
                                     </button>
                                 </div>
                                 <div class="account-settings__group card-bg">
+                                    <div id="info" class="account-settings__group-target"></div>
                                     <h3 class="account-settings__subtitle display-4">Личная информация</h3>
                                     <div class="account-settings__item">
                                         <div class="account-settings__item-top">
                                             <span class="account-settings__item-title">Имя</span>
                                         </div>
-                                        <input class="account-settings__item-input" disabled type="text" value="Ольга" />
+                                        <input class="account-settings__item-input" placeholder="Имя" type="text" value="Ольга" />
                                     </div>
                                     <div class="account-settings__item">
                                         <div class="account-settings__item-top">
                                             <span class="account-settings__item-title">Фамилия</span>
                                         </div>
-                                        <input class="account-settings__item-input" disabled type="text" value="Олеговна" />
+                                        <input class="account-settings__item-input" placeholder="Фамилия" type="text" value="Олеговна" />
                                     </div>
                                     <div class="account-settings__item">
                                         <div class="account-settings__item-top">
                                             <span class="account-settings__item-title">Номер телефона</span>
                                             <button class="account-settings__item-btn">Изменить</button>
                                         </div>
-                                        <input class="account-settings__item-input" disabled type="tel" value="+7 999 888 77 66" />
+                                        <input class="account-settings__item-input" placeholder="Номер телефона" type="tel" value="+7 999 888 77 66" />
                                     </div>
                                 </div>
                                 <div class="account-settings__group card-bg">
@@ -355,13 +357,13 @@
                                             <span class="account-settings__item-title">План</span>
                                             <button class="account-settings__item-btn">Изменить</button>
                                         </div>
-                                        <input class="account-settings__item-input" disabled type="text" value="Премиум (16 000 руб. в месяц)" />
+                                        <input class="account-settings__item-input" placeholder="План" type="text" value="Премиум (16 000 руб. в месяц)" />
                                     </div>
                                     <div class="account-settings__item">
                                         <div class="account-settings__item-top">
                                             <span class="account-settings__item-title">Дата следущего списания</span>
                                         </div>
-                                        <input class="account-settings__item-input" disabled type="text" value="24.11.2021" />
+                                        <input class="account-settings__item-input" placeholder="Дата следущего списания" type="text" value="24.11.2021" />
                                     </div>
                                     <div class="account-settings__item">
                                         <div class="account-settings__item-top">
@@ -392,6 +394,7 @@
                                     </button>
                                 </div>
                                 <div class="account-settings__group card-bg">
+                                    <div id="notification" class="account-settings__group-target"></div>
                                     <h3 class="account-settings__subtitle display-4">Уведомления</h3>
                                     <div class="account-settings__item">
                                         <span class="account-settings__item-title">Социальные сети</span>
@@ -618,18 +621,6 @@
             }
         });
 
-        document.querySelector(".cabinet-page__nav-item--row").onclick = function() {
-            document.querySelector(".cabinet-page__nav-item--col").classList.remove("cabinet-page__nav-item--active")
-            this.classList.add("cabinet-page__nav-item--active")
-            document.querySelector(".cabinet-page__items").classList.add("cabinet-page__items--row")
-        }
-
-        document.querySelector(".cabinet-page__nav-item--col").onclick = function() {
-            document.querySelector(".cabinet-page__nav-item--row").classList.remove("cabinet-page__nav-item--active")
-            this.classList.add("cabinet-page__nav-item--active")
-            document.querySelector(".cabinet-page__items").classList.remove("cabinet-page__items--row")
-        }
-
         document.querySelector(".header__lk-avatar").onclick = function() {
             document.querySelector(".header__lk-dropdown").classList.toggle("header__lk-dropdown--active")
         }
@@ -637,6 +628,24 @@
         document.querySelector(".header__notification-show").onclick = function() {
             this.closest(".header__notification").classList.toggle("header__notification--active")
         }
+
+        // document.querySelectorAll(".anchor-link").forEach(el => {
+        //     el.onclick = function(e) {
+        //         e.preventDefault();
+        //         let id = el.getAttribute("href")
+        //         let block = document.querySelector(`${id}`)
+
+
+
+        //         block.scrollIntoView();
+        //         let elem = window.pageYOffset
+        //         console.log(elem)
+        //         setTimeout(() => {
+        //             window.scrollTo(0, elem - 10)
+        //         }, 300);
+        //         // window.pageYOffset = window.pageYOffset - 100
+        //     }
+        // });
     </script>
 
 </body>

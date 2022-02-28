@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$black".
-        on line 27 of D:\work\freelance\Lumos\scss\lkt-course.scss
+        on line 75 of D:\work\freelance\Lumos\scss\lkt-course.scss
 
-22:     }
-23:     &__history {
-24:         color: #9FADBF;
-25:         font-size: 14px;
-26:         &:hover {
-27:             color: $black;
-28:         }
-29:     }
-30:     &__tabs {
-31:         margin-top: 32px;
-32:         display: flex;
+70:         }
+71:         &:not(:last-child) {
+72:             margin-right: 6px;
+73:         }
+74:         &--active {
+75:             background: $black;
+76:             color: #fff;
+77:             pointer-events: none;
+78:         }
+79:     }
+80:     &__content {
 
 Backtrace:
-D:\work\freelance\Lumos\scss\lkt-course.scss:27
+D:\work\freelance\Lumos\scss\lkt-course.scss:75
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -84,4 +84,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 27 of D:\work\freelance\Lumos\scss\lkt-course.scss\A \A 22:     }\A 23:     &__history {\A 24:         color: #9FADBF;\A 25:         font-size: 14px;\A 26:         &:hover {\A 27:             color: $black;\A 28:         }\A 29:     }\A 30:     &__tabs {\A 31:         margin-top: 32px;\A 32:         display: flex;"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 75 of D:\work\freelance\Lumos\scss\lkt-course.scss\A \A 70:         }\A 71:         &:not(:last-child) {\A 72:             margin-right: 6px;\A 73:         }\A 74:         &--active {\A 75:             background: $black;\A 76:             color: #fff;\A 77:             pointer-events: none;\A 78:         }\A 79:     }\A 80:     &__content {"; }

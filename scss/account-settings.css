@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$black".
-        on line 70 of D:\work\freelance\Lumos\scss\account-settings.scss
+        on line 77 of D:\work\freelance\Lumos\scss\account-settings.scss
 
-65:             font-weight: normal;
-66:             font-size: 18px;
-67:             line-height: 144%;
-68:             color: #9FADBF;
-69:             &:hover {
-70:                 color: $black;
-71:             }
-72:         }
-73:         &-input {
-74:             height: 26px;
-75:             margin-top: 4px;
+72:             font-weight: normal;
+73:             font-size: 18px;
+74:             line-height: 144%;
+75:             color: #9FADBF;
+76:             &:hover {
+77:                 color: $black;
+78:             }
+79:         }
+80:         &-input {
+81:             height: 26px;
+82:             margin-top: 4px;
 
 Backtrace:
-D:\work\freelance\Lumos\scss\account-settings.scss:70
+D:\work\freelance\Lumos\scss\account-settings.scss:77
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -95,4 +95,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 70 of D:\work\freelance\Lumos\scss\account-settings.scss\A \A 65:             font-weight: normal;\A 66:             font-size: 18px;\A 67:             line-height: 144%;\A 68:             color: #9FADBF;\A 69:             &:hover {\A 70:                 color: $black;\A 71:             }\A 72:         }\A 73:         &-input {\A 74:             height: 26px;\A 75:             margin-top: 4px;"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 77 of D:\work\freelance\Lumos\scss\account-settings.scss\A \A 72:             font-weight: normal;\A 73:             font-size: 18px;\A 74:             line-height: 144%;\A 75:             color: #9FADBF;\A 76:             &:hover {\A 77:                 color: $black;\A 78:             }\A 79:         }\A 80:         &-input {\A 81:             height: 26px;\A 82:             margin-top: 4px;"; }
