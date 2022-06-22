@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$black".
-        on line 75 of D:\work\freelance\Lumos\scss\lkt-course.scss
+        on line 75 of D:\work\freelance-old\Lumos\scss\lkt-course.scss
 
 70:         }
 71:         &:not(:last-child) {
@@ -15,7 +15,7 @@ Error: Undefined variable: "$black".
 80:     &__content {
 
 Backtrace:
-D:\work\freelance\Lumos\scss\lkt-course.scss:75
+D:\work\freelance-old\Lumos\scss\lkt-course.scss:75
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -84,4 +84,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 75 of D:\work\freelance\Lumos\scss\lkt-course.scss\A \A 70:         }\A 71:         &:not(:last-child) {\A 72:             margin-right: 6px;\A 73:         }\A 74:         &--active {\A 75:             background: $black;\A 76:             color: #fff;\A 77:             pointer-events: none;\A 78:         }\A 79:     }\A 80:     &__content {"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 75 of D:\work\freelance-old\Lumos\scss\lkt-course.scss\A \A 70:         }\A 71:         &:not(:last-child) {\A 72:             margin-right: 6px;\A 73:         }\A 74:         &--active {\A 75:             background: $black;\A 76:             color: #fff;\A 77:             pointer-events: none;\A 78:         }\A 79:     }\A 80:     &__content {"; }

@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$black".
-        on line 30 of D:\work\freelance\Lumos\scss\faq.scss
+        on line 30 of D:\work\freelance-old\Lumos\scss\faq.scss
 
 25:             .faq__item-show {
 26:                 svg {
@@ -15,7 +15,7 @@ Error: Undefined variable: "$black".
 35:             margin-bottom: 32px;
 
 Backtrace:
-D:\work\freelance\Lumos\scss\faq.scss:30
+D:\work\freelance-old\Lumos\scss\faq.scss:30
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -106,4 +106,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 30 of D:\work\freelance\Lumos\scss\faq.scss\A \A 25:             .faq__item-show {\A 26:                 svg {\A 27:                     transform: rotate(180deg);\A 28:                 }\A 29:                 path {\A 30:                     stroke: $black;\A 31:                 }\A 32:             }\A 33:         }\A 34:         &:not(:last-child) {\A 35:             margin-bottom: 32px;"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 30 of D:\work\freelance-old\Lumos\scss\faq.scss\A \A 25:             .faq__item-show {\A 26:                 svg {\A 27:                     transform: rotate(180deg);\A 28:                 }\A 29:                 path {\A 30:                     stroke: $black;\A 31:                 }\A 32:             }\A 33:         }\A 34:         &:not(:last-child) {\A 35:             margin-bottom: 32px;"; }

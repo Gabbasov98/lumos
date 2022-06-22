@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$black".
-        on line 37 of D:\work\freelance\Lumos\scss\cabinet.scss
+        on line 37 of D:\work\freelance-old\Lumos\scss\cabinet.scss
 
 32:         }
 33:         &-item {
@@ -15,7 +15,7 @@ Error: Undefined variable: "$black".
 42:                 rect {
 
 Backtrace:
-D:\work\freelance\Lumos\scss\cabinet.scss:37
+D:\work\freelance-old\Lumos\scss\cabinet.scss:37
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/funcall.rb:186:in `perform_arg'
@@ -114,4 +114,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 37 of D:\work\freelance\Lumos\scss\cabinet.scss\A \A 32:         }\A 33:         &-item {\A 34:             margin-left: 12px;\A 35:             &:hover {\A 36:                 rect {\A 37:                     fill: rgba($black, 0.6);\A 38:                 }\A 39:             }\A 40:             &--active {\A 41:                 pointer-events: none;\A 42:                 rect {"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 37 of D:\work\freelance-old\Lumos\scss\cabinet.scss\A \A 32:         }\A 33:         &-item {\A 34:             margin-left: 12px;\A 35:             &:hover {\A 36:                 rect {\A 37:                     fill: rgba($black, 0.6);\A 38:                 }\A 39:             }\A 40:             &--active {\A 41:                 pointer-events: none;\A 42:                 rect {"; }

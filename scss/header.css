@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$black".
-        on line 185 of D:\work\freelance\Lumos\scss\header.scss
+        on line 185 of D:\work\freelance-old\Lumos\scss\header.scss
 
 180:         }
 181:         &--active {
@@ -15,7 +15,7 @@ Error: Undefined variable: "$black".
 190:             }
 
 Backtrace:
-D:\work\freelance\Lumos\scss\header.scss:185
+D:\work\freelance-old\Lumos\scss\header.scss:185
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -106,4 +106,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 185 of D:\work\freelance\Lumos\scss\header.scss\A \A 180:         }\A 181:         &--active {\A 182:             .header__notification-show {\A 183:                 background: #ECF2FA;\A 184:                 path {\A 185:                     fill: $black;\A 186:                 }\A 187:             }\A 188:             .header__notification-dropdown {\A 189:                 display: block;\A 190:             }"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 185 of D:\work\freelance-old\Lumos\scss\header.scss\A \A 180:         }\A 181:         &--active {\A 182:             .header__notification-show {\A 183:                 background: #ECF2FA;\A 184:                 path {\A 185:                     fill: $black;\A 186:                 }\A 187:             }\A 188:             .header__notification-dropdown {\A 189:                 display: block;\A 190:             }"; }
