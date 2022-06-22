@@ -68,6 +68,7 @@
     padding: 200px 0 90px;
     color: #fff;
     position: relative;
+    overflow: hidden;
     &:before {
         content: '';
         position: absolute;
@@ -81,9 +82,21 @@
         left: 0;
         top: 0;
     }
+    &__bg {
+        position: absolute;
+        z-index: 2;
+    }
+    &__bg1 {
+        right: 33px;
+        bottom: 284px;
+    }
+    &__bg2 {
+        bottom: 301px;
+        left: -58px;
+    }
     &__inner {
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
     &__title {
         text-align: center;
@@ -494,6 +507,18 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .about-main {
+        &__bg1 {
+            right: -152px;
+            bottom: 415px;
+            width: 327px;
+        }
+        &__bg2 {
+            bottom: 490px;
+            left: -195px;
+            width: 425px;
+        }
+    }
     .strive {
         padding-bottom: 80px;
         &__img {
@@ -541,6 +566,16 @@
 @media screen and (max-width: 1024px) {
     .about-main {
         padding: 136px 0 93px;
+        &__bg1 {
+            right: -82px;
+            bottom: 235px;
+            width: 212px;
+        }
+        &__bg2 {
+            bottom: 280px;
+            left: -108px;
+            width: 275px;
+        }
         &__video {
             height: 535px;
             margin-top: 48px;
@@ -665,6 +700,9 @@
 
 @media screen and (max-width: 576px) {
     .about-main {
+        &__bg {
+            display: none;
+        }
         &__video {
             height: 270px;
             margin-top: 24px;

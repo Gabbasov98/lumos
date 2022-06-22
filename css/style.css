@@ -308,15 +308,18 @@ i {
   color: #fff;
   background: linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
   box-shadow: 0px 8px 32px rgba(94, 97, 218, 0.4);
+  -webkit-box-shadow: 0 8px 32px rgba(94, 97, 218, 0.4);
 }
 .btn-blue:hover {
   color: #fff;
   box-shadow: 0px 8px 32px rgba(94, 97, 218, 0.56);
+  -webkit-box-shadow: 0 8px 32px rgba(94, 97, 218, 0.56);
   background: linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
 }
 .btn-blue:active {
   color: #fff;
   box-shadow: inset 0px 8px 16px -12px rgba(46, 54, 186, 0.46);
+  -webkit-box-shadow: inset 0px 8px 16px -12px rgba(94, 97, 218, 0.46);
   background: linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
 }
 
@@ -10324,6 +10327,7 @@ circle[stroke-dasharray='0 100'] {
   padding: 200px 0 90px;
   color: #fff;
   position: relative;
+  overflow: hidden;
 }
 .about-main:before {
   content: '';
@@ -10338,9 +10342,21 @@ circle[stroke-dasharray='0 100'] {
   left: 0;
   top: 0;
 }
+.about-main__bg {
+  position: absolute;
+  z-index: 2;
+}
+.about-main__bg1 {
+  right: 33px;
+  bottom: 284px;
+}
+.about-main__bg2 {
+  bottom: 301px;
+  left: -58px;
+}
 .about-main__inner {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .about-main__title {
   text-align: center;
@@ -10735,6 +10751,17 @@ circle[stroke-dasharray='0 100'] {
   }
 }
 @media screen and (max-width: 1200px) {
+  .about-main__bg1 {
+    right: -152px;
+    bottom: 415px;
+    width: 327px;
+  }
+  .about-main__bg2 {
+    bottom: 490px;
+    left: -195px;
+    width: 425px;
+  }
+
   .strive {
     padding-bottom: 80px;
   }
@@ -10781,6 +10808,16 @@ circle[stroke-dasharray='0 100'] {
 @media screen and (max-width: 1024px) {
   .about-main {
     padding: 136px 0 93px;
+  }
+  .about-main__bg1 {
+    right: -82px;
+    bottom: 235px;
+    width: 212px;
+  }
+  .about-main__bg2 {
+    bottom: 280px;
+    left: -108px;
+    width: 275px;
   }
   .about-main__video {
     height: 535px;
@@ -10896,6 +10933,9 @@ circle[stroke-dasharray='0 100'] {
   }
 }
 @media screen and (max-width: 576px) {
+  .about-main__bg {
+    display: none;
+  }
   .about-main__video {
     height: 270px;
     margin-top: 24px;

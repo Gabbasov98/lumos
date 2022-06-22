@@ -141,14 +141,17 @@
     color: #fff;
     background: linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
     box-shadow: 0px 8px 32px rgba(94, 97, 218, 0.4);
+    -webkit-box-shadow: 0 8px 32px rgba(94, 97, 218, .4);
     &:hover {
         color: #fff;
         box-shadow: 0px 8px 32px rgba(94, 97, 218, 0.56);
+        -webkit-box-shadow: 0 8px 32px rgba(94, 97, 218, .56);
         background: linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
     }
     &:active {
         color: #fff;
         box-shadow: inset 0px 8px 16px -12px rgba(46, 54, 186, 0.46);
+        -webkit-box-shadow: inset 0px 8px 16px -12px rgba(94, 97, 218, .46);
         background: linear-gradient(68.42deg, #5E61DA 14.17%, #8C52D6 85.83%);
     }
 }
